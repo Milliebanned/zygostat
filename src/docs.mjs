@@ -125,7 +125,7 @@ ${h2('what')}
 
 ${h2('thesis')}
 <p>NEAR's base layer is shrinking while NEAR Intents, its cross-chain swap and settlement service, is growing fast. Intents is now the part of NEAR that earns meaningful money for the token. So the long-term case for NEAR is a bet that Intents becomes a place where cross-chain money settles, and stays one.</p>
-<div class="callout"><p>Today ${esc(`${k.holds} of ${k.total}`)} conditions hold. Intents handled ${esc(n.vol30)} in 30 days (${esc(n.vol30_change)} on a year earlier), NEAR captures about ${esc(n.rev_ann90)} a year from it, and the contract holding users' money holds every token it owes.</p></div>
+<div class="callout"><p>Today ${esc(`${k.holds} of ${k.total}`)} conditions hold. Intents handled ${esc(n.vol30)} in 30 days (${esc(n.vol30_change)} on a year earlier), NEAR captures about ${esc(n.rev_ann90)} a year from it, and ${esc(n.head_brief)}.</p></div>
 <p>The case is conditional. Usage is real and growing. Value capture is real but small: captured revenue covers ${esc(n.cov_ann90)} of the value of the new NEAR issued each year, so holders are still diluted. And the contract that holds users' funds failed once, on 1 October 2026, when it owed ${esc(n.ep_peak_usd)} more of one token than it held. Zygostat measures that risk directly and prices it.</p>
 
 ${h2('conditions')}
@@ -148,7 +148,7 @@ ${h2('solvency')}
 </ol>
 <p>If credits are larger than holdings, users are owed tokens that are not there. Zygostat calls the difference the <strong>shortfall</strong>. A shortfall counts as <strong>material</strong> when it is worth at least $100 and is at least 0.01% of that token's credits; smaller gaps are still recorded.</p>
 <p>Both numbers can be read for any block in the chain's history, so the check can be run today and also backwards in time. Zygostat reads them from a public archive of NEAR's state, with no account or key. Two kinds of token are checked: ordinary NEAR tokens (NEP-141) and the multi-tokens of the HOT Omni bridge (NEP-245). Comparisons use exact whole numbers, so rounding cannot hide a gap.</p>
-<p>The latest reading, at block ${esc(n.head_block)} (${esc(n.head_time)}): ${esc(n.head_tokens)} tokens checked, ${esc(n.head_credits_exact)} credited, ${esc(n.head_held_exact)} held, shortfall ${esc(n.head_shortfall)}. The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.</p>
+<p>The latest reading, at block ${esc(n.head_block)} (${esc(n.head_time)}): ${esc(n.head_tokens)} tokens checked, ${esc(n.head_credits_exact)} credited, ${esc(n.head_held_exact)} held, shortfall ${esc(n.head_shortfall)}. ${esc(n.head_state)}</p>
 
 ${h2('exploit')}
 <p>On 1 October 2026 NEAR Intents was exploited for about $3.8M. The official postmortem explains that the contract kept a record of deposits that had in fact been refunded, so its ledger showed more than it held. That is exactly the gap described above, and it can be read back from the chain.</p>
@@ -164,7 +164,7 @@ ${h2('exploit')}
 
 ${h2('history')}
 <p>To see whether this ever happened at other times, the same check runs at midnight UTC: weekly from ${esc(n.first_reading_date)}, daily from 20 September 2026. Each of these readings checks credits for every token, and holdings for every multi-token and for the largest ordinary tokens (together most of the value credited).</p>
-<p>Across ${esc(n.readings_total)} readings and ${esc(n.token_checks)} individual token checks, the only material shortfall is the October exploit. Since ${esc(n.since_from)}, ${esc(n.since_material)} of ${esc(n.since_readings)} readings show one.</p>
+<p>Across ${esc(n.readings_total)} readings and ${esc(n.token_checks)} individual token checks, ${esc(n.history_line.replace('Apart from the October exploit, n', 'apart from the October exploit, n').replace(/^A/, 'a'))} Since ${esc(n.since_from)}, ${esc(n.since_material)} of ${esc(n.since_readings)} readings show one.</p>
 
 ${h2('market')}
 <p>Solvency is a condition, not a reason to own NEAR. The reasons would be usage and value capture, measured from public market data:</p>

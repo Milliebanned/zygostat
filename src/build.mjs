@@ -9,6 +9,8 @@
 //               docs/index.html    the dashboard
 //               README.md          only the block between the results markers
 
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 import { readFile, writeFile, readdir, mkdir, access } from 'node:fs/promises';
 import { compute } from './results.mjs';
 import { usd, pct, signedPct, full, compact } from './charts.mjs';
@@ -164,6 +166,18 @@ export function numbers(r) {
     m_breakeven: m ? m.base.breakEvenLambda.toFixed(1) : NM,
     m_event_months: m ? (m.base.yearsOfRevenuePerEvent * 12).toFixed(1) : NM,
 
+    v_usage: e.intents.volume30dChange >= 0 ? 'Usage is growing.' : 'Usage is shrinking.',
+    v_capture: e.supply.revenueCoverage90dAnnualised < 1 ? 'Value capture is real but small.' : 'Value capture exceeds dilution.',
+    v_capture_tail: e.supply.revenueCoverage90dAnnualised < 1 ? 'Holders are still being diluted.' : 'Captured revenue now exceeds the value of new supply.',
+    v_solvent: s.head.tokensShort > 0 && s.head.shortfallUsd >= 100 ? 'The contract is short now.' : 'The contract is solvent now.',
+    v_risk: m && m.base.drag <= 0.25 ? 'The risk is affordable at the observed rate, and that rate is uncertain.' : 'The risk is not affordable at the observed rate.',
+    dilution_line: e.supply.revenueCoverage90dAnnualised < 1
+      ? `Until captured revenue at least matches the value of new issuance, a NEAR holder is paying for security with dilution; today Intents offsets ${pct(e.supply.revenueCoverage90dAnnualised, 1)} of it.`
+      : 'Captured revenue now exceeds the value of new issuance, so Intents more than offsets dilution at today\'s price.',
+    rate_line: m ? `${m.grid[1].cells[1].drag <= 0.25 ? 'The thesis survives the middle of that range' : 'The thesis is strained even in the middle of that range'} and ${m.grid[2].cells[2].drag <= 0.25 ? 'holds even at the top of it' : 'is strained at the top of it'}.` : '',
+    history_line: s.otherMaterial === 0 ? 'Apart from the October exploit, no reading shows a material shortfall.' : `Apart from the October exploit, ${full(s.otherMaterial)} reading(s) show a material shortfall.`,
+    head_state: s.head.shortfallUsd >= 100 ? 'At that block the contract held less than it owed.' : 'The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.',
+    head_brief: s.head.shortfallUsd >= 100 ? 'the contract holding users\' money is short' : 'the contract holding users\' money holds every token it owes',
     kill_holds: full(r.killSummary.holds),
     kill_triggered: full(r.killSummary.triggered),
     kill_not_measured: full(r.killSummary.notMeasured),
@@ -222,7 +236,7 @@ export async function build() {
   };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   const { results, files } = await build();
   if (process.argv.includes('--check')) {
     let bad = 0;

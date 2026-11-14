@@ -17,6 +17,8 @@
 //   node src/scan.mjs full   2025-12-01 2026-11-01 30   every 30th UTC midnight: every token
 //   node src/scan.mjs micro  2026-09-28 2026-10-05 3000 every 3000 blocks: HOT Omni tokens only (2 requests a reading)
 
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
 import { view, blockInfo, headInfo, pool, RpcError, INTENTS, providerStats } from './rpc.mjs';
 import { blockSoonAfter, utcDays, isoDay } from './blocks.mjs';
@@ -176,4 +178,4 @@ async function main() {
   process.exit(2);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) await main();
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) await main();

@@ -4,6 +4,8 @@
 // assets Intents routes. Fungible tokens that sit in intents.near but are not
 // on this list, and NFTs (nep171), are out of scope; README "Limits" says so.
 
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
@@ -65,7 +67,7 @@ export function toUnits(raw, decimals) {
   return Number(s.slice(0, s.length - decimals) + '.' + s.slice(s.length - decimals));
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   const r = await fetchRegistry();
   const by = {};
   for (const t of r.tokens) by[t.standard] = (by[t.standard] || 0) + 1;

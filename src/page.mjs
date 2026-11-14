@@ -243,7 +243,7 @@ ${next('exploit')}
 ${head('history', 'A year of readings.', `The same check at UTC midnight blocks: weekly from ${n.first_reading_date}, daily from 20 September 2026. Each reading compares credits with holdings for every multi-token balance and for the largest fungible tokens.`).replace('<h1>', '<h1 id="h-history">')}
 <div class="card">
 ${yearChart}
-<p class="explain">The line is flat at zero except for the exploit. Since ${n.since_from}, ${n.since_material} of ${n.since_readings} readings show a material shortfall.</p>
+<p class="explain">${n.history_line} Since ${n.since_from}, ${n.since_material} of ${n.since_readings} readings show a material shortfall.</p>
 ${query('How each reading is taken', `# For a block height H (the first block at or after 00:00 UTC):\n#   credits = intents.near :: mt_batch_supply({ token_ids })                  at H\n#   held    = <token contract> :: ft_balance_of({ account_id: "intents.near" }) at H   (nep141)\n#           = <multi-token contract> :: mt_batch_balance_of(...)                 at H   (nep245)\n#   shortfall(token) = max(0, credits - held), valued at the registry price\n#\n# Re-run one day yourself (about 30 requests):\nnode src/scan.mjs series 2026-10-02 2026-10-02 1\n\n# Raw readings: data/raw/scan/series/<date>.json   Code: src/scan.mjs, src/metrics.mjs`)}
 </div>
 ${next('history')}

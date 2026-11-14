@@ -6,6 +6,8 @@
 // These are third-party series: they are quoted, not recomputed, and every
 // chart that uses them says so. The solvency numbers do not depend on them.
 
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
 import { writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
@@ -85,7 +87,7 @@ export async function fetchSeries() {
   return series;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   const s = await fetchSeries();
   const last = (o) => Object.keys(o).sort().at(-1);
   console.log(`series written: volume ${Object.keys(s.intentsVolumeUsd).length} days (to ${last(s.intentsVolumeUsd)}), fees ${Object.keys(s.intentsFeesUsd).length}, revenue ${Object.keys(s.intentsRevenueUsd).length}, L1 fees ${Object.keys(s.l1FeesUsd).length}, NearBlocks ${Object.keys(s.near).length} (to ${last(s.near)})`);

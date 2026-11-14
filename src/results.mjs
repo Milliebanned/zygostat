@@ -141,6 +141,8 @@ export function compute({ registry, series, head, seriesReadings = [], microRead
       hitSeries,
       readings: { head: 1, daily: daily.length, full: full.length, micro: micro.length, total: 1 + daily.length + full.length + micro.length },
       tokenChecks: [headSum, ...daily, ...full, ...micro].reduce((n, s) => n + s.tokensChecked, 0),
+      // Material readings outside the exploit window (29 Sep to 7 Oct): should be none.
+      otherMaterial: everything.filter((s) => s.tokensMaterial > 0 && (day(s.time) < '2026-09-29' || day(s.time) > '2026-10-07')).length,
       sinceFix: { from: INCIDENT.cleanFrom, readings: since.length, material: since.filter((s) => s.tokensMaterial > 0).length, maxShortfallUsd: since.reduce((m, s) => Math.max(m, s.shortfallUsd), 0) },
       firstReading: [...daily, ...full, ...micro].sort(byHeight)[0]?.time ?? head.time,
     },

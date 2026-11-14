@@ -16,7 +16,7 @@ A settlement layer has to hold what it owes. If the contract that keeps users' m
 
 ## Verdict
 
-- **Usage is real.** Intents handled $3.8B in the last 30 days, +44% on the same 30 days a year earlier.
+- **Usage is growing.** Intents handled $3.8B in the last 30 days, +44% on the same 30 days a year earlier.
 - **Value capture is real but small.** NEAR captured $5.24M in the last 90 days. At that pace it covers 19.6% of the value of a year's new NEAR supply. Holders are still being diluted.
 - **The contract is solvent now.** At block 224,484,215 (2026-11-14 07:45 UTC), 195 tokens were checked: $213,656,371 credited to users, $213,662,748 held, shortfall $0.
 - **It was not solvent in October.** For between 67.3 and 68.2 hours, users were credited $3,834,195 more of one token than the contract held. This repository reproduces that from chain state.
@@ -56,7 +56,7 @@ Sources: DefiLlama (`api.llama.fi/summary/dexs/near-intents`, `.../fees/near-int
 
 "Revenue captured by NEAR" follows DefiLlama's definition: NEAR swept into the revenue wallets, which it says reconciles with the on-chain buyback. Supply comes from NearBlocks and is cross-checked against the `total_supply` field of NEAR block headers stored with each reading.
 
-The gap between issuance and captured revenue is $87.3M a year. Until captured revenue grows to several times its present size, a NEAR holder is paying for security with dilution, and Intents offsets under a fifth of it.
+The gap between issuance and captured revenue is $87.3M a year. Until captured revenue at least matches the value of new issuance, a NEAR holder is paying for security with dilution; today Intents offsets 19.6% of it.
 
 ### 3. Solvency, measured
 

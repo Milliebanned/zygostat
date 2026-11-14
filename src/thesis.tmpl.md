@@ -16,11 +16,11 @@ A settlement layer has to hold what it owes. If the contract that keeps users' m
 
 ## Verdict
 
-- **Usage is real.** Intents handled {{vol30}} in the last 30 days, {{vol30_change}} on the same 30 days a year earlier.
-- **Value capture is real but small.** NEAR captured {{rev90}} in the last 90 days. At that pace it covers {{cov_ann90}} of the value of a year's new NEAR supply. Holders are still being diluted.
-- **The contract is solvent now.** At block {{head_block}} ({{head_time}}), {{head_tokens}} tokens were checked: {{head_credits_exact}} credited to users, {{head_held_exact}} held, shortfall {{head_shortfall}}.
+- **{{v_usage}}** Intents handled {{vol30}} in the last 30 days, {{vol30_change}} on the same 30 days a year earlier.
+- **{{v_capture}}** NEAR captured {{rev90}} in the last 90 days. At that pace it covers {{cov_ann90}} of the value of a year's new NEAR supply. {{v_capture_tail}}
+- **{{v_solvent}}** At block {{head_block}} ({{head_time}}), {{head_tokens}} tokens were checked: {{head_credits_exact}} credited to users, {{head_held_exact}} held, shortfall {{head_shortfall}}.
 - **It was not solvent in October.** For between {{ep_min_hours}} and {{ep_max_hours}} hours, users were credited {{ep_peak_usd_exact}} more of one token than the contract held. This repository reproduces that from chain state.
-- **The risk is affordable at the observed rate, and that rate is uncertain.** An allowance for the next loss event consumes {{m_base_drag}} of captured revenue in the base case. At the top of the 90% interval for the event rate, with nothing recovered, it consumes {{g_high_0_drag}}.
+- **{{v_risk}}** An allowance for the next loss event consumes {{m_base_drag}} of captured revenue in the base case. At the top of the 90% interval for the event rate, with nothing recovered, it consumes {{g_high_0_drag}}.
 
 The case for NEAR is therefore conditional, and the condition that matters most is the one the market cannot see on a price chart: whether `intents.near` holds what it owes. That can be checked by anyone, at any block, with two calls. This repository does it and keeps doing it.
 
@@ -56,7 +56,7 @@ Sources: DefiLlama (`api.llama.fi/summary/dexs/near-intents`, `.../fees/near-int
 
 "Revenue captured by NEAR" follows DefiLlama's definition: NEAR swept into the revenue wallets, which it says reconciles with the on-chain buyback. Supply comes from NearBlocks and is cross-checked against the `total_supply` field of NEAR block headers stored with each reading.
 
-The gap between issuance and captured revenue is {{net_dilution_usd}} a year. Until captured revenue grows to several times its present size, a NEAR holder is paying for security with dilution, and Intents offsets under a fifth of it.
+The gap between issuance and captured revenue is {{net_dilution_usd}} a year. {{dilution_line}}
 
 ### 3. Solvency, measured
 
@@ -126,7 +126,7 @@ These are the facts that cut against owning NEAR on this argument. They are not 
 4. **It was the third critical finding in one feature in a year.** The postmortem lists a similar report in January and another on 7 October, after the exploit. One feature produced all three.
 5. **Recovery was a negotiation, not a control.** The funds came back because the attacker agreed to return them. The model's base case does not assume that happens again.
 6. **CertiK reports a gap between published and deployed code.** Its analysis says a refund cap was added to the public repository in March 2026 while the contract deployed on 1 October lacked it. This repository has not verified that claim; it is quoted because, if true, it is a process risk that no on-chain balance check can see.
-7. **The rate is one data point.** One event in {{m_exposure_years}} years supports anything from {{m_lambda_low}} to {{m_lambda_high}} events a year. The thesis survives the middle of that range and is strained at the top of it.
+7. **The rate is one data point.** One event in {{m_exposure_years}} years supports anything from {{m_lambda_low}} to {{m_lambda_high}} events a year. {{rate_line}}
 8. **Fees are quoted, not derived.** Volume, fees and revenue come from DefiLlama, and this repository does not recompute them from chain data. The solvency numbers are independent of that source; the value-capture numbers are not.
 
 ## What would change the thesis
