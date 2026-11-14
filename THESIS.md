@@ -18,8 +18,8 @@ A settlement layer has to hold what it owes. If the contract that keeps users' m
 
 - **Usage is growing.** Intents handled $3.8B in the last 30 days, +44% on the same 30 days a year earlier.
 - **Value capture is real but small.** NEAR captured $5.24M in the last 90 days. At that pace it covers 19.6% of the value of a year's new NEAR supply. Holders are still being diluted.
-- **The contract is solvent now.** At block 224,484,215 (2026-11-14 07:45 UTC), 195 tokens were checked: $213,656,371 credited to users, $213,662,748 held, shortfall $0.
-- **It was not solvent in October.** For between 67.3 and 68.2 hours, users were credited $3,834,195 more of one token than the contract held. This repository reproduces that from chain state.
+- **The contract is solvent now.** At block 224,487,769 (2026-11-14 08:19 UTC), 195 tokens were checked: $214,177,422 credited to users, $214,183,800 held, shortfall $0.
+- **It was not solvent in October.** For between 67.3 and 68.2 hours, users were credited $3,834,202 more of one token than the contract held. This repository reproduces that from chain state.
 - **The risk is affordable at the observed rate, and that rate is uncertain.** An allowance for the next loss event consumes 4.9% of captured revenue in the base case. At the top of the 90% interval for the event rate, with nothing recovered, it consumes 45.7%.
 
 The case for NEAR is therefore conditional, and the condition that matters most is the one the market cannot see on a price chart: whether `intents.near` holds what it owes. That can be checked by anyone, at any block, with two calls. This repository does it and keeps doing it.
@@ -68,7 +68,7 @@ The gap between issuance and captured revenue is $87.3M a year. Until captured r
 
 A shortfall is *material* when it is at least $100 and at least 1 basis point of that token's credits.
 
-**Now.** Block 224,484,215, 2026-11-14 07:45 UTC: 195 tokens checked, $213,656,371 credited, $213,662,748 held, 0 tokens short, shortfall $0. The contract holds $6,377 more than it credits.
+**Now.** Block 224,487,769, 2026-11-14 08:19 UTC: 195 tokens checked, $214,177,422 credited, $214,183,800 held, 0 tokens short, shortfall $0. The contract holds $6,378 more than it credits.
 
 **History.** 439 readings and 17,511 token checks from 2025-11-16: 100 at UTC midnight (weekly, then daily from 20 September 2026), 338 about 30 minutes apart through the exploit week, and one of every token at the head.
 
@@ -78,13 +78,13 @@ A shortfall is *material* when it is at least $100 and at least 1 basis point of
 |---|---|---|
 | Last reading fully backed | 217,846,962 | 2026-09-30 00:15 UTC |
 | First reading with a material shortfall ($2,548) | 217,849,962 | 2026-09-30 00:44 UTC |
-| Largest shortfall, $3,834,195 | 217,996,962 | 2026-10-01 01:57 UTC |
+| Largest shortfall, $3,834,202 | 217,996,962 | 2026-10-01 01:57 UTC |
 | Last reading still short | 218,248,962 | 2026-10-02 20:00 UTC |
 | First reading fully backed again | 218,251,962 | 2026-10-02 20:30 UTC |
 
 At the largest shortfall, users were credited 3,842,954 tokens and the contract held 5,805: 99.8% of the credits had no backing. 134 readings in a row were short.
 
-The official postmortem puts the loss at about $3.8M and the first attacker transaction at 16:14 UTC on 29 September. The figure here, $3,834,195, was read independently from archival state and agrees with it. The postmortem also names the gap that let it run: the team compared origin-chain balances with NEAR-side balances, but did not compare users' total credits with the contract's own holdings. That second comparison is exactly the check above.
+The official postmortem puts the loss at about $3.8M and the first attacker transaction at 16:14 UTC on 29 September. The figure here, $3,834,202, was read independently from archival state and agrees with it. The postmortem also names the gap that let it run: the team compared origin-chain balances with NEAR-side balances, but did not compare users' total credits with the contract's own holdings. That second comparison is exactly the check above.
 
 **Since the fix.** The vulnerable feature was removed on 7 October. From 2026-10-08, 0 of 39 readings show a material shortfall. The largest shortfall of any size in that period is $0.
 
@@ -96,7 +96,7 @@ Inputs, all measured here or stated:
 |---|---|---|
 | Captured revenue a year, R | {{m_R}} | 90 days annualised (section 2) |
 | Custody, C | {{m_C}} | credits for every token at the head |
-| Share of custody lost in one event, f | 1.82% | $3.83M over $210.1M in custody that day |
+| Share of custody lost in one event, f | 1.82% | $3.83M over $210.2M in custody that day |
 | Loss events a year | 0.52 (90% interval 0.03 to 2.46) | 1 exploited loss in 1.92 years, counted from 2024-12-10 |
 | Revenue lost to one pause, D | {{m_D}} | fees lost over 2026-10-01 to 2026-10-04 against 2026-09-24 to 2026-09-27, times the capture share |
 | Share of a loss recovered | 50% in the base case | 100% was observed once; that is not a rule |
@@ -110,9 +110,9 @@ Expected cost a year, with its share of captured revenue:
 
 | Loss events a year | Fully recovered | Half recovered | Nothing recovered |
 |---|---|---|---|
-| 0.03 (low end) | $952 (0.0%) | $52.9K (0.2%) | $104.86K (0.5%) |
-| 0.52 (observed) | $18.56K (0.1%) | $1.03M (4.9%) | $2.04M (9.6%) |
-| 2.46 (high end) | $88.03K (0.4%) | $4.89M (23.0%) | $9.7M (45.7%) |
+| 0.03 (low end) | $952 (0.0%) | $53K (0.2%) | $105.05K (0.5%) |
+| 0.52 (observed) | $18.56K (0.1%) | $1.03M (4.9%) | $2.05M (9.6%) |
+| 2.46 (high end) | $88.03K (0.4%) | $4.9M (23.1%) | $9.72M (45.7%) |
 
 The pause itself was not free. Volume over 2026-10-01 to 2026-10-04 was $390.2M against $570.5M a week earlier (-31.6%), and $115.24K of fees went missing. Users came back: volume in the last 30 days is -18% against the 30 days to 2026-09-28, before the attack began.
 

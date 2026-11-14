@@ -340,7 +340,7 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 </ol>
 <p>If credits are larger than holdings, users are owed tokens that are not there. Zygostat calls the difference the <strong>shortfall</strong>. A shortfall counts as <strong>material</strong> when it is worth at least $100 and is at least 0.01% of that token's credits; smaller gaps are still recorded.</p>
 <p>Both numbers can be read for any block in the chain's history, so the check can be run today and also backwards in time. Zygostat reads them from a public archive of NEAR's state, with no account or key. Two kinds of token are checked: ordinary NEAR tokens (NEP-141) and the multi-tokens of the HOT Omni bridge (NEP-245). Comparisons use exact whole numbers, so rounding cannot hide a gap.</p>
-<p>The latest reading, at block 224,484,215 (2026-11-14 07:45 UTC): 195 tokens checked, $213,656,371 credited, $213,662,748 held, shortfall $0. The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.</p>
+<p>The latest reading, at block 224,487,769 (2026-11-14 08:19 UTC): 195 tokens checked, $214,177,422 credited, $214,183,800 held, shortfall $0. The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.</p>
 
 <h2 id="exploit"><span class="n">05</span>The October exploit</h2>
 <p>On 1 October 2026 NEAR Intents was exploited for about $3.8M. The official postmortem explains that the contract kept a record of deposits that had in fact been refunded, so its ledger showed more than it held. That is exactly the gap described above, and it can be read back from the chain.</p>
@@ -348,11 +348,11 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 <div class="tw"><table class="t"><thead><tr><th>What the chain shows</th><th>Time (UTC)</th></tr></thead><tbody>
 <tr><td>Last reading fully backed</td><td class="n">2026-09-30 00:15 UTC</td></tr>
 <tr><td>First material shortfall ($2,548)</td><td class="n">2026-09-30 00:44 UTC</td></tr>
-<tr><td>Largest shortfall, $3,834,195 (99.8% of credits unbacked)</td><td class="n">2026-10-01 01:57 UTC</td></tr>
+<tr><td>Largest shortfall, $3,834,202 (99.8% of credits unbacked)</td><td class="n">2026-10-01 01:57 UTC</td></tr>
 <tr><td>Last reading still short</td><td class="n">2026-10-02 20:00 UTC</td></tr>
 <tr><td>First reading fully backed again</td><td class="n">2026-10-02 20:30 UTC</td></tr>
 </tbody></table></div>
-<p>The largest gap measured, $3,834,195, agrees with the official $3.8M. The contract was under-backed for between 67.3 and 68.2 hours, and backing returned at 2026-10-02 20:30 UTC, one minute before the official fix was deployed at 20:31 UTC. The postmortem also notes that a similar issue was reported in January and another on 7 October, after which the feature responsible was removed.</p>
+<p>The largest gap measured, $3,834,202, agrees with the official $3.8M. The contract was under-backed for between 67.3 and 68.2 hours, and backing returned at 2026-10-02 20:30 UTC, one minute before the official fix was deployed at 20:31 UTC. The postmortem also notes that a similar issue was reported in January and another on 7 October, after which the feature responsible was removed.</p>
 
 <h2 id="history"><span class="n">06</span>A year of readings</h2>
 <p>To see whether this ever happened at other times, the same check runs at midnight UTC: weekly from 2025-11-16, daily from 20 September 2026. Each of these readings checks credits for every token, and holdings for every multi-token and for the largest ordinary tokens (together most of the value credited).</p>
@@ -375,7 +375,7 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 <pre><code>expected cost a year = events a year x (share lost x custody x (1 - recovered) x paid from revenue + revenue lost to the pause)</code></pre>
 <div class="tw"><table class="t"><thead><tr><th>Input</th><th>Value</th><th>Where it comes from</th></tr></thead><tbody>
 <tr><td>Captured revenue a year</td><td class="n">$21.2M</td><td>DefiLlama, 90 days annualised</td></tr>
-<tr><td>Custody (credits, all tokens)</td><td class="n">$213.7M</td><td>The latest chain reading</td></tr>
+<tr><td>Custody (credits, all tokens)</td><td class="n">$214.2M</td><td>The latest chain reading</td></tr>
 <tr><td>Share of custody lost in one event</td><td class="n">1.82%</td><td>The October gap over custody that day</td></tr>
 <tr><td>Loss events a year</td><td class="n">0.52</td><td>1 event in 1.92 years; 90% range 0.03 to 2.46</td></tr>
 <tr><td>Share recovered</td><td class="n">50%</td><td>Base case; 100% was observed once</td></tr>
