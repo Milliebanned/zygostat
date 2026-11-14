@@ -1,0 +1,20 @@
+{
+  "name": "zygostat",
+  "version": "0.1.0",
+  "description": "A solvency-first investment thesis for NEAR: checks from public chain state that NEAR Intents holds what it owes, and prices the risk that it does not.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "verify": "node src/verify.mjs",
+    "test": "node --test",
+    "live": "node src/verify.mjs --live",
+    "fetch": "node src/fetch.mjs",
+    "registry": "node src/registry.mjs",
+    "scan:head": "node src/scan.mjs head"
+  }
+}

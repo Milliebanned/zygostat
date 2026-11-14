@@ -1,0 +1,6873 @@
+{
+ "asOf": "2026-11-12",
+ "sources": {
+  "registryFetchedAt": "2026-11-13T19:43:09.863Z",
+  "seriesFetchedAt": "2026-11-13T19:54:35.519Z",
+  "registryTokens": 231,
+  "checkableTokens": 203
+ },
+ "solvency": {
+  "head": {
+   "date": "2026-11-13",
+   "height": 224410412,
+   "time": "2026-11-13T19:57:57.348Z",
+   "tokensChecked": 195,
+   "checkedShare": 1,
+   "creditsUsd": 223076946.4351905,
+   "heldUsd": 223083355.4104977,
+   "shortfallUsd": 0,
+   "shortfallShare": 0,
+   "surplusUsd": 6408.975307216653,
+   "tokensMaterial": 0,
+   "worst": null,
+   "creditsAllUsd": 223076946.4351905,
+   "tokensShort": 0
+  },
+  "daily": [
+   {
+    "date": "2025-11-16",
+    "height": 172805122,
+    "time": "2025-11-16T00:01:04.306Z",
+    "tokensChecked": 51,
+    "checkedShare": 0.9654996140172555,
+    "creditsUsd": 70433187.24930423,
+    "heldUsd": 70433324.13014048,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 136.88083623823348,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-11-23",
+    "height": 173788789,
+    "time": "2025-11-23T00:00:27.439Z",
+    "tokensChecked": 51,
+    "checkedShare": 0.9770951410957439,
+    "creditsUsd": 101742571.01712626,
+    "heldUsd": 101742718.89748248,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 147.88035623775073,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-11-30",
+    "height": 174775873,
+    "time": "2025-11-30T00:00:55.130Z",
+    "tokensChecked": 51,
+    "checkedShare": 0.9725234978054402,
+    "creditsUsd": 93572906.04130961,
+    "heldUsd": 93573105.01950172,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 198.97819210207027,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-12-07",
+    "height": 175746955,
+    "time": "2025-12-07T00:00:57.028Z",
+    "tokensChecked": 51,
+    "checkedShare": 0.972397266065211,
+    "creditsUsd": 93321673.38046834,
+    "heldUsd": 93321872.55820233,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 199.17773399428984,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-12-14",
+    "height": 176726259,
+    "time": "2025-12-14T00:00:58.253Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9630173348371988,
+    "creditsUsd": 69037847.28206798,
+    "heldUsd": 69038047.17949095,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 199.89742295973883,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-12-21",
+    "height": 177708812,
+    "time": "2025-12-21T00:01:03.117Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9551577521562454,
+    "creditsUsd": 71054875.92241874,
+    "heldUsd": 71055099.84872851,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 223.92630975114653,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2025-12-28",
+    "height": 178636891,
+    "time": "2025-12-28T00:00:57.554Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9584005385730159,
+    "creditsUsd": 71595426.23464778,
+    "heldUsd": 71595641.98593073,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 215.75128295855083,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-01-04",
+    "height": 179622201,
+    "time": "2026-01-04T00:01:56.817Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9461987107230212,
+    "creditsUsd": 62453821.255909406,
+    "heldUsd": 62459100.68878109,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5279.432871676022,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-01-11",
+    "height": 180611774,
+    "time": "2026-01-11T00:01:10.656Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9549973661830289,
+    "creditsUsd": 66774249.557815254,
+    "heldUsd": 66779470.22909821,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5220.671282959096,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-01-18",
+    "height": 181611431,
+    "time": "2026-01-18T00:00:56.663Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9564296940905442,
+    "creditsUsd": 68239594.56659906,
+    "heldUsd": 68244815.23788202,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5220.671282960241,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-01-25",
+    "height": 182590665,
+    "time": "2026-01-25T00:01:00.543Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9589779521679224,
+    "creditsUsd": 78687209.60470943,
+    "heldUsd": 78692456.2884367,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5246.68372727245,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-02-01",
+    "height": 183584349,
+    "time": "2026-02-01T00:01:01.172Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9613536363454958,
+    "creditsUsd": 81829520.60614866,
+    "heldUsd": 81834742.24428974,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5221.638141081219,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-02-08",
+    "height": 184580469,
+    "time": "2026-02-08T00:00:46.710Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9611480411860451,
+    "creditsUsd": 93100990.21759965,
+    "heldUsd": 93106211.85574274,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5221.6381430812,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-02-15",
+    "height": 185584294,
+    "time": "2026-02-15T00:00:58.575Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9555723036917461,
+    "creditsUsd": 84630993.46498245,
+    "heldUsd": 84636215.10312553,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5221.6381430760875,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-02-22",
+    "height": 186581665,
+    "time": "2026-02-22T00:01:59.028Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9579723004892214,
+    "creditsUsd": 82750216.17013475,
+    "heldUsd": 82755440.01198862,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5223.8418538716705,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-03-01",
+    "height": 187573999,
+    "time": "2026-03-01T00:01:01.046Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9604453452846051,
+    "creditsUsd": 88130413.68356308,
+    "heldUsd": 88135637.52541697,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5223.841853867842,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-03-08",
+    "height": 188567545,
+    "time": "2026-03-08T00:01:25.964Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9570404245207194,
+    "creditsUsd": 87464144.35175392,
+    "heldUsd": 87469368.19360778,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5223.841853867876,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-03-15",
+    "height": 189572777,
+    "time": "2026-03-15T00:00:13.394Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9566920643233051,
+    "creditsUsd": 92118090.54215042,
+    "heldUsd": 92123314.58391789,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5224.041767467954,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-03-22",
+    "height": 190574731,
+    "time": "2026-03-22T00:01:00.886Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9554886877594494,
+    "creditsUsd": 94717596.9169445,
+    "heldUsd": 94722844.04907677,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5247.1321322672475,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-03-29",
+    "height": 191581397,
+    "time": "2026-03-29T00:00:58.851Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9496964728210252,
+    "creditsUsd": 91091514.76555811,
+    "heldUsd": 91096761.88812605,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5247.122567913042,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-04-05",
+    "height": 192589281,
+    "time": "2026-04-05T00:01:40.613Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9509867056707615,
+    "creditsUsd": 91859375.2944855,
+    "heldUsd": 91864623.41631494,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5248.121829467992,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-04-12",
+    "height": 193604115,
+    "time": "2026-04-12T00:01:00.343Z",
+    "tokensChecked": 52,
+    "checkedShare": 0.9507196592422714,
+    "creditsUsd": 95418000.88393274,
+    "heldUsd": 95423252.1803142,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.296381466459,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-04-19",
+    "height": 194606170,
+    "time": "2026-04-19T00:01:50.806Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9382548420228658,
+    "creditsUsd": 94866973.58720902,
+    "heldUsd": 94872224.9543905,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.367181468443,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-04-26",
+    "height": 195608460,
+    "time": "2026-04-26T00:01:41.320Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9355753949127688,
+    "creditsUsd": 92694706.53030792,
+    "heldUsd": 92699957.89749038,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.367182464863,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-05-03",
+    "height": 196628382,
+    "time": "2026-05-03T00:00:02.043Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9434698354179544,
+    "creditsUsd": 91926409.32320124,
+    "heldUsd": 91931660.89029732,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.567096071384,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-05-10",
+    "height": 197646003,
+    "time": "2026-05-10T00:00:59.467Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9428652336623189,
+    "creditsUsd": 95016530.88731441,
+    "heldUsd": 95021782.45441046,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.567096070514,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-05-17",
+    "height": 198638395,
+    "time": "2026-05-17T00:00:12.786Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9456849034925995,
+    "creditsUsd": 100796461.48461753,
+    "heldUsd": 100801713.0517136,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.567096069018,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-05-24",
+    "height": 199630918,
+    "time": "2026-05-24T00:01:21.845Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9525775724903209,
+    "creditsUsd": 110263297.33067083,
+    "heldUsd": 110268548.90430579,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5251.57363494838,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-05-31",
+    "height": 200630683,
+    "time": "2026-05-31T00:00:59.287Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.9328631048917279,
+    "creditsUsd": 107049753.903226,
+    "heldUsd": 107055009.07353634,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310349903,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-06-07",
+    "height": 201627578,
+    "time": "2026-06-07T00:01:02.311Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.8937190318213364,
+    "creditsUsd": 117771733.46026766,
+    "heldUsd": 117776988.630578,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310345696,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-06-14",
+    "height": 202595320,
+    "time": "2026-06-14T00:00:59.664Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.8973929738563716,
+    "creditsUsd": 130698145.69448845,
+    "heldUsd": 130703400.86479881,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310347338,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-06-21",
+    "height": 203590338,
+    "time": "2026-06-21T00:01:11.293Z",
+    "tokensChecked": 53,
+    "checkedShare": 0.8987364666041946,
+    "creditsUsd": 135381691.83252865,
+    "heldUsd": 135386947.00283903,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310347222,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-06-28",
+    "height": 204589393,
+    "time": "2026-06-28T00:00:59.975Z",
+    "tokensChecked": 54,
+    "checkedShare": 0.897469814664711,
+    "creditsUsd": 132124931.01194899,
+    "heldUsd": 132130186.18225932,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310345271,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-07-05",
+    "height": 205586197,
+    "time": "2026-07-05T00:00:59.772Z",
+    "tokensChecked": 54,
+    "checkedShare": 0.9011750993694617,
+    "creditsUsd": 136757628.78151518,
+    "heldUsd": 136762888.44917232,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5259.667657113767,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-07-12",
+    "height": 206577750,
+    "time": "2026-07-12T00:00:58.507Z",
+    "tokensChecked": 54,
+    "checkedShare": 0.8953000131912376,
+    "creditsUsd": 138206472.99118584,
+    "heldUsd": 138211728.1614962,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.17031034111,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-07-19",
+    "height": 207563028,
+    "time": "2026-07-19T00:01:01.578Z",
+    "tokensChecked": 54,
+    "checkedShare": 0.9022308825603814,
+    "creditsUsd": 139639543.49861512,
+    "heldUsd": 139644798.66892546,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.170310347172,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-07-26",
+    "height": 208545999,
+    "time": "2026-07-26T00:01:04.922Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9022384518781854,
+    "creditsUsd": 146750220.27672443,
+    "heldUsd": 146755475.7656508,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488926359146,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-08-02",
+    "height": 209533203,
+    "time": "2026-08-02T00:01:05.682Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9329442867256822,
+    "creditsUsd": 145205215.51257527,
+    "heldUsd": 145210471.00150967,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488934367601,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-08-09",
+    "height": 210520436,
+    "time": "2026-08-09T00:00:28.017Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9252942868300955,
+    "creditsUsd": 143269396.46440303,
+    "heldUsd": 143274651.95333737,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488934366962,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-08-16",
+    "height": 211507271,
+    "time": "2026-08-16T00:01:06.514Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9438266679760671,
+    "creditsUsd": 143736082.58662328,
+    "heldUsd": 143741338.07555765,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488934374096,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-08-23",
+    "height": 212494511,
+    "time": "2026-08-23T00:00:58.365Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9475033345730566,
+    "creditsUsd": 146843813.16818765,
+    "heldUsd": 146849068.65712202,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488934367137,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-08-30",
+    "height": 213482674,
+    "time": "2026-08-30T00:01:00.781Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9448324777475128,
+    "creditsUsd": 151032302.1168241,
+    "heldUsd": 151037557.60575846,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5255.488934374561,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-06",
+    "height": 214450102,
+    "time": "2026-09-06T00:00:58.825Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9418715771534693,
+    "creditsUsd": 152237430.57289842,
+    "heldUsd": 152242692.61649847,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5262.043600044587,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-13",
+    "height": 215426700,
+    "time": "2026-09-13T00:01:03.013Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9349517456341679,
+    "creditsUsd": 157985278.6660834,
+    "heldUsd": 157990540.65671918,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635755365,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-20",
+    "height": 216412387,
+    "time": "2026-09-20T00:01:12.053Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9281517917517147,
+    "creditsUsd": 164574313.2839079,
+    "heldUsd": 164579575.27454364,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635751649,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-21",
+    "height": 216553455,
+    "time": "2026-09-21T00:00:47.027Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9305515088217715,
+    "creditsUsd": 167633645.36181572,
+    "heldUsd": 167638907.35245147,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.99063575763,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-22",
+    "height": 216696153,
+    "time": "2026-09-22T00:01:00.298Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9299892724572854,
+    "creditsUsd": 171827368.86184794,
+    "heldUsd": 171832630.8524837,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.9906357571645,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-23",
+    "height": 216835393,
+    "time": "2026-09-23T00:01:00.874Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9361981009874331,
+    "creditsUsd": 182756081.01374036,
+    "heldUsd": 182761343.0043761,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.99063575038,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-24",
+    "height": 216976199,
+    "time": "2026-09-24T00:00:43.988Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9417541620474571,
+    "creditsUsd": 191140891.24642852,
+    "heldUsd": 191146153.2370643,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635742988,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-25",
+    "height": 217119090,
+    "time": "2026-09-25T00:01:02.868Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9444676364774877,
+    "creditsUsd": 198909270.94658914,
+    "heldUsd": 198914532.9372249,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635757623,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-26",
+    "height": 217263984,
+    "time": "2026-09-26T00:01:02.532Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9470546798429048,
+    "creditsUsd": 211635231.3627535,
+    "heldUsd": 211640493.35338926,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635756925,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-27",
+    "height": 217410210,
+    "time": "2026-09-27T00:00:58.240Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9456036273584351,
+    "creditsUsd": 211304685.22032112,
+    "heldUsd": 211309947.2109569,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635752231,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-28",
+    "height": 217555962,
+    "time": "2026-09-28T00:00:00.103Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9463611116708974,
+    "creditsUsd": 216540657.03005838,
+    "heldUsd": 216545919.02069414,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635755944,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-29",
+    "height": 217701808,
+    "time": "2026-09-29T00:01:10.144Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9465305543906246,
+    "creditsUsd": 217442511.04198003,
+    "heldUsd": 217447773.03261584,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5261.990635757805,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-09-30",
+    "height": 217845503,
+    "time": "2026-09-30T00:00:59.022Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9418062400682213,
+    "creditsUsd": 207804464.30702263,
+    "heldUsd": 207809696.31979835,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 1.4425994215268126e-7,
+    "surplusUsd": 5261.990635755944,
+    "tokensMaterial": 0,
+    "worst": {
+     "assetId": "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+     "symbol": "USDT(DEPRECATED)",
+     "blockchain": "bsc",
+     "creditsUnits": 4029253.6221212973,
+     "heldUnits": 4029223.6221212973,
+     "gapUnits": 30,
+     "gapUsd": 29.97786,
+     "unbackedShare": 0.000007
+    }
+   },
+   {
+    "date": "2026-10-01",
+    "height": 217985013,
+    "time": "2026-10-01T00:00:22.421Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9355677056373984,
+    "creditsUsd": 203892136.20848376,
+    "heldUsd": 202598378.58362156,
+    "shortfallUsd": 1299019.615498,
+    "shortfallShare": 0.006371111900901007,
+    "surplusUsd": 5261.990635756227,
+    "tokensMaterial": 1,
+    "worst": {
+     "assetId": "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+     "symbol": "USDT(DEPRECATED)",
+     "blockchain": "bsc",
+     "creditsUnits": 3817696.115656225,
+     "heldUnits": 2517717.115656225,
+     "gapUnits": 1299979,
+     "gapUsd": 1299019.615498,
+     "unbackedShare": 0.340514
+    }
+   },
+   {
+    "date": "2026-10-02",
+    "height": 218127021,
+    "time": "2026-10-02T00:00:57.497Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9362269305014901,
+    "creditsUsd": 199407457.04608673,
+    "heldUsd": 195613692.2091519,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.019051578738919498,
+    "surplusUsd": 5262.032106405446,
+    "tokensMaterial": 1,
+    "worst": {
+     "assetId": "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+     "symbol": "USDT(DEPRECATED)",
+     "blockchain": "bsc",
+     "creditsUnits": 3869502.183743166,
+     "heldUnits": 67669.5622272579,
+     "gapUnits": 3801832.621515908,
+     "gapUsd": 3799026.869041229,
+     "unbackedShare": 0.982512
+    }
+   },
+   {
+    "date": "2026-10-03",
+    "height": 218273485,
+    "time": "2026-10-03T00:00:48.328Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.9399618254530165,
+    "creditsUsd": 203653522.19844314,
+    "heldUsd": 203658784.23054954,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5262.032106407511,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-04",
+    "height": 218420778,
+    "time": "2026-10-04T00:01:06.194Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.941144686324597,
+    "creditsUsd": 201753928.3393967,
+    "heldUsd": 201759190.3715031,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5262.032106405359,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-05",
+    "height": 218567717,
+    "time": "2026-10-05T00:00:00.496Z",
+    "tokensChecked": 55,
+    "checkedShare": 0.938826383136481,
+    "creditsUsd": 196443898.5053757,
+    "heldUsd": 196449160.5374821,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5262.032106405213,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-06",
+    "height": 218714686,
+    "time": "2026-10-06T00:01:00.687Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9389013395202719,
+    "creditsUsd": 195417167.68181518,
+    "heldUsd": 195422433.2185216,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706413812,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-07",
+    "height": 218861537,
+    "time": "2026-10-07T00:01:09.392Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9457280270283343,
+    "creditsUsd": 201734097.52032322,
+    "heldUsd": 201739363.0570296,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706400624,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-08",
+    "height": 219007503,
+    "time": "2026-10-08T00:00:58.290Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9415147304394021,
+    "creditsUsd": 196563528.11492288,
+    "heldUsd": 196568793.65162927,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706402252,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-09",
+    "height": 219154231,
+    "time": "2026-10-09T00:01:06.440Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9449642990316434,
+    "creditsUsd": 206137652.97963488,
+    "heldUsd": 206142918.51634127,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706402398,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-10",
+    "height": 219300886,
+    "time": "2026-10-10T00:01:02.189Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9421573766548829,
+    "creditsUsd": 208517711.80077973,
+    "heldUsd": 208522977.39564902,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.594869200568,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-11",
+    "height": 219447629,
+    "time": "2026-10-11T00:01:02.624Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9411314034799694,
+    "creditsUsd": 205081906.7941025,
+    "heldUsd": 205087172.3308089,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706415266,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-12",
+    "height": 219594974,
+    "time": "2026-10-12T00:01:09.970Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.942466025276231,
+    "creditsUsd": 205942475.19300926,
+    "heldUsd": 205947740.7297157,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706414045,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-13",
+    "height": 219740562,
+    "time": "2026-10-13T00:01:00.808Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9417171338972207,
+    "creditsUsd": 203736656.76163334,
+    "heldUsd": 203741922.2983397,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.53670640362,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-14",
+    "height": 219879171,
+    "time": "2026-10-14T00:00:11.558Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.935885560037471,
+    "creditsUsd": 205327741.7754204,
+    "heldUsd": 205333007.31212685,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706400624,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-15",
+    "height": 220001390,
+    "time": "2026-10-15T00:00:57.478Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9428457361295507,
+    "creditsUsd": 204150568.61906043,
+    "heldUsd": 204155834.1557668,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706401148,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-16",
+    "height": 220148084,
+    "time": "2026-10-16T00:01:38.246Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9431313861526776,
+    "creditsUsd": 203813218.6796226,
+    "heldUsd": 203818484.21632898,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5265.536706400108,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-17",
+    "height": 220292081,
+    "time": "2026-10-17T00:00:58.386Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9426266722419304,
+    "creditsUsd": 202431066.86867332,
+    "heldUsd": 202436333.58235583,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 5266.713682480889,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-18",
+    "height": 220436809,
+    "time": "2026-10-18T00:00:58.305Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.94478954272083,
+    "creditsUsd": 202924120.1842897,
+    "heldUsd": 202930394.79530272,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.611013007242,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-19",
+    "height": 220582015,
+    "time": "2026-10-19T00:01:00.977Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9445617670491933,
+    "creditsUsd": 202349114.82086787,
+    "heldUsd": 202355389.4318809,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.611013012489,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-20",
+    "height": 220727041,
+    "time": "2026-10-20T00:01:04.331Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9441974363478104,
+    "creditsUsd": 203390920.85164073,
+    "heldUsd": 203397195.46265373,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.611013015099,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-21",
+    "height": 220871434,
+    "time": "2026-10-21T00:00:59.442Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.943724544860709,
+    "creditsUsd": 204245478.2732462,
+    "heldUsd": 204251891.95618328,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6413.682937089789,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-22",
+    "height": 221015701,
+    "time": "2026-10-22T00:01:18.474Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.944146081404372,
+    "creditsUsd": 201705089.71489006,
+    "heldUsd": 201711364.53403667,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.819146548013,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-23",
+    "height": 221162212,
+    "time": "2026-10-23T00:00:52.915Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.945864213454559,
+    "creditsUsd": 201638399.1879683,
+    "heldUsd": 201644674.00711483,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.819146551845,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-24",
+    "height": 221310234,
+    "time": "2026-10-24T00:01:14.555Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.9444775780923359,
+    "creditsUsd": 199823035.9943446,
+    "heldUsd": 199829310.81349117,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.819146545079,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-25",
+    "height": 221460939,
+    "time": "2026-10-25T00:01:44.148Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.943881683505229,
+    "creditsUsd": 199952764.38538793,
+    "heldUsd": 199959039.20453447,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.819146545922,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-26",
+    "height": 221610103,
+    "time": "2026-10-26T00:01:32.810Z",
+    "tokensChecked": 56,
+    "checkedShare": 0.941509680086185,
+    "creditsUsd": 199089717.13105527,
+    "heldUsd": 199095991.9502018,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.81914655385,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-27",
+    "height": 221760368,
+    "time": "2026-10-27T00:01:30.730Z",
+    "tokensChecked": 57,
+    "checkedShare": 0.9460271563530271,
+    "creditsUsd": 200498495.46724582,
+    "heldUsd": 200504770.28639236,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6274.819146554549,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-28",
+    "height": 221898013,
+    "time": "2026-10-28T00:01:39.263Z",
+    "tokensChecked": 57,
+    "checkedShare": 0.9402237413597896,
+    "creditsUsd": 199354662.62181813,
+    "heldUsd": 199360938.21296114,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6275.591143011537,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-29",
+    "height": 222047285,
+    "time": "2026-10-29T00:00:59.624Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9400682794215072,
+    "creditsUsd": 200978124.4767321,
+    "heldUsd": 200989395.94846463,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 11271.471732512748,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-30",
+    "height": 222195078,
+    "time": "2026-10-30T00:01:05.560Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9462142430386907,
+    "creditsUsd": 201017442.7095857,
+    "heldUsd": 201023717.90130064,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6275.191714961612,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-10-31",
+    "height": 222343335,
+    "time": "2026-10-31T00:01:40.553Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9460456627731902,
+    "creditsUsd": 201946724.8703805,
+    "heldUsd": 201953000.0700908,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6275.199710280518,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-01",
+    "height": 222491461,
+    "time": "2026-11-01T00:00:59.626Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9444402836003221,
+    "creditsUsd": 201589754.65702602,
+    "heldUsd": 201596034.3171363,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6279.660110282385,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-02",
+    "height": 222641334,
+    "time": "2026-11-02T00:01:10.572Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9456731529290328,
+    "creditsUsd": 204016468.34224594,
+    "heldUsd": 204022748.00235617,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6279.660110281745,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-03",
+    "height": 222791386,
+    "time": "2026-11-03T00:01:40.469Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9511526734155622,
+    "creditsUsd": 204517969.1672601,
+    "heldUsd": 204524249.85397038,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6280.686710282058,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-04",
+    "height": 222942549,
+    "time": "2026-11-04T00:01:43.685Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9500737111973037,
+    "creditsUsd": 208901164.10681805,
+    "heldUsd": 208907444.7935283,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6280.686710280725,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-05",
+    "height": 223088160,
+    "time": "2026-11-05T00:01:24.135Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9465766849969709,
+    "creditsUsd": 207405387.92424837,
+    "heldUsd": 207411668.6109586,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6280.686710278224,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-06",
+    "height": 223238136,
+    "time": "2026-11-06T00:01:27.624Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.945935105654785,
+    "creditsUsd": 204793712.01010737,
+    "heldUsd": 204800786.8261845,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 7074.816077120708,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-07",
+    "height": 223387954,
+    "time": "2026-11-07T00:01:04.476Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9436622382687697,
+    "creditsUsd": 203696631.49712303,
+    "heldUsd": 203702915.69243163,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6284.195308559354,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-08",
+    "height": 223537444,
+    "time": "2026-11-08T00:01:40.697Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9393382526645021,
+    "creditsUsd": 205795553.8904882,
+    "heldUsd": 205801838.75839674,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6284.867908549461,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-09",
+    "height": 223688578,
+    "time": "2026-11-09T00:01:52.277Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.941944851402883,
+    "creditsUsd": 207894357.5901356,
+    "heldUsd": 207900642.45804414,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6284.86790856419,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-10",
+    "height": 223838328,
+    "time": "2026-11-10T00:01:03.796Z",
+    "tokensChecked": 58,
+    "checkedShare": 0.9475588268140109,
+    "creditsUsd": 209614395.67462128,
+    "heldUsd": 209620680.5425298,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6284.8679085639,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-11",
+    "height": 223988488,
+    "time": "2026-11-11T00:01:01.328Z",
+    "tokensChecked": 59,
+    "checkedShare": 0.9431238942579246,
+    "creditsUsd": 209547934.6007534,
+    "heldUsd": 209554219.468662,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6284.867908549229,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-12",
+    "height": 224135712,
+    "time": "2026-11-12T00:00:59.105Z",
+    "tokensChecked": 59,
+    "checkedShare": 0.9430333994158502,
+    "creditsUsd": 209383082.76762703,
+    "heldUsd": 209390998.34794015,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 7915.580313071905,
+    "tokensMaterial": 0,
+    "worst": null
+   },
+   {
+    "date": "2026-11-13",
+    "height": 224285169,
+    "time": "2026-11-13T00:00:44.848Z",
+    "tokensChecked": 59,
+    "checkedShare": 0.9396996205824278,
+    "creditsUsd": 211573412.06866017,
+    "heldUsd": 211579705.11029702,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "surplusUsd": 6293.041636832478,
+    "tokensMaterial": 0,
+    "worst": null
+   }
+  ],
+  "full": [],
+  "micro": [
+   {
+    "height": 217555962,
+    "time": "2026-09-28T00:00:00.103Z",
+    "creditsUsd": 17188614.645742748,
+    "heldUsd": 17188614.845656347,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217558962,
+    "time": "2026-09-28T00:29:34.752Z",
+    "creditsUsd": 17182174.377957735,
+    "heldUsd": 17182208.81483163,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217561962,
+    "time": "2026-09-28T00:59:02.658Z",
+    "creditsUsd": 17202670.820395097,
+    "heldUsd": 17202671.0203087,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217564962,
+    "time": "2026-09-28T01:28:39.164Z",
+    "creditsUsd": 17264739.30577083,
+    "heldUsd": 17264739.50568443,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217567962,
+    "time": "2026-09-28T01:58:08.560Z",
+    "creditsUsd": 17273274.323855184,
+    "heldUsd": 17273274.523768783,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217570962,
+    "time": "2026-09-28T02:27:48.499Z",
+    "creditsUsd": 17272262.527658515,
+    "heldUsd": 17272262.727572117,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217573962,
+    "time": "2026-09-28T02:57:08.936Z",
+    "creditsUsd": 17279273.049265087,
+    "heldUsd": 17279273.249178685,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217576962,
+    "time": "2026-09-28T03:26:31.291Z",
+    "creditsUsd": 17285181.84250562,
+    "heldUsd": 17285182.042419218,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217579962,
+    "time": "2026-09-28T03:56:02.031Z",
+    "creditsUsd": 17276463.29472679,
+    "heldUsd": 17276463.49464039,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217582962,
+    "time": "2026-09-28T04:25:23.219Z",
+    "creditsUsd": 17280319.548597366,
+    "heldUsd": 17280319.748510968,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217585962,
+    "time": "2026-09-28T04:54:53.357Z",
+    "creditsUsd": 17278699.02570305,
+    "heldUsd": 17278699.225616653,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217588962,
+    "time": "2026-09-28T05:24:24.680Z",
+    "creditsUsd": 17253533.75443538,
+    "heldUsd": 17253533.95434898,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217591962,
+    "time": "2026-09-28T05:53:49.209Z",
+    "creditsUsd": 17176284.349840485,
+    "heldUsd": 17176284.549754083,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217594962,
+    "time": "2026-09-28T06:23:22.011Z",
+    "creditsUsd": 17141918.26929176,
+    "heldUsd": 17141922.916293982,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217597962,
+    "time": "2026-09-28T06:52:55.661Z",
+    "creditsUsd": 17140331.814357523,
+    "heldUsd": 17140332.01427112,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217600962,
+    "time": "2026-09-28T07:22:25.806Z",
+    "creditsUsd": 17195611.017886877,
+    "heldUsd": 17195611.217800476,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217603962,
+    "time": "2026-09-28T07:51:56.373Z",
+    "creditsUsd": 17102692.826575305,
+    "heldUsd": 17102693.026488904,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217606962,
+    "time": "2026-09-28T08:21:18.118Z",
+    "creditsUsd": 17155781.71632607,
+    "heldUsd": 17155781.916239668,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217609962,
+    "time": "2026-09-28T08:50:52.039Z",
+    "creditsUsd": 17119910.252076868,
+    "heldUsd": 17119910.451990467,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217612962,
+    "time": "2026-09-28T09:20:17.869Z",
+    "creditsUsd": 17533384.83060997,
+    "heldUsd": 17533385.030523572,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217615962,
+    "time": "2026-09-28T09:49:46.988Z",
+    "creditsUsd": 18066870.633385345,
+    "heldUsd": 18066870.833298948,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217618962,
+    "time": "2026-09-28T10:19:17.534Z",
+    "creditsUsd": 17916055.182691175,
+    "heldUsd": 17916055.382604774,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217621962,
+    "time": "2026-09-28T10:49:18.028Z",
+    "creditsUsd": 18610893.063530818,
+    "heldUsd": 18610893.263444416,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217624962,
+    "time": "2026-09-28T11:18:57.981Z",
+    "creditsUsd": 17996773.281153783,
+    "heldUsd": 17996773.48106739,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217627962,
+    "time": "2026-09-28T11:48:42.209Z",
+    "creditsUsd": 17986447.675029602,
+    "heldUsd": 17986447.8749432,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217630962,
+    "time": "2026-09-28T12:18:12.468Z",
+    "creditsUsd": 17848521.00672501,
+    "heldUsd": 17848521.20663861,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217633962,
+    "time": "2026-09-28T12:47:56.390Z",
+    "creditsUsd": 17760937.46139732,
+    "heldUsd": 17760937.661310922,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217636962,
+    "time": "2026-09-28T13:17:36.591Z",
+    "creditsUsd": 17659105.295291565,
+    "heldUsd": 17659105.495205168,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217639962,
+    "time": "2026-09-28T13:47:21.258Z",
+    "creditsUsd": 18564588.91116923,
+    "heldUsd": 18564589.111082833,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217642962,
+    "time": "2026-09-28T14:17:02.980Z",
+    "creditsUsd": 18111030.126879904,
+    "heldUsd": 18111030.326793507,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217645962,
+    "time": "2026-09-28T14:46:46.978Z",
+    "creditsUsd": 18138066.41771387,
+    "heldUsd": 18138066.617627468,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217648962,
+    "time": "2026-09-28T15:16:27.512Z",
+    "creditsUsd": 18074461.80907652,
+    "heldUsd": 18074462.008990124,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217651962,
+    "time": "2026-09-28T15:46:11.812Z",
+    "creditsUsd": 18063332.558832396,
+    "heldUsd": 18063332.758745994,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217654962,
+    "time": "2026-09-28T16:15:49.418Z",
+    "creditsUsd": 17928123.57445778,
+    "heldUsd": 17928123.77437138,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217657962,
+    "time": "2026-09-28T16:45:35.371Z",
+    "creditsUsd": 17739232.991396517,
+    "heldUsd": 17739233.191310115,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217660962,
+    "time": "2026-09-28T17:15:41.471Z",
+    "creditsUsd": 17432863.350862302,
+    "heldUsd": 17432863.5507759,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217663962,
+    "time": "2026-09-28T17:45:25.025Z",
+    "creditsUsd": 17215826.038628485,
+    "heldUsd": 17215826.238542084,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217666962,
+    "time": "2026-09-28T18:15:01.645Z",
+    "creditsUsd": 17276861.83098371,
+    "heldUsd": 17276862.030897312,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217669962,
+    "time": "2026-09-28T18:44:42.085Z",
+    "creditsUsd": 17295465.227350585,
+    "heldUsd": 17295465.427264184,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217672962,
+    "time": "2026-09-28T19:15:09.003Z",
+    "creditsUsd": 17350345.45841073,
+    "heldUsd": 17350345.65832433,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217675962,
+    "time": "2026-09-28T19:44:59.069Z",
+    "creditsUsd": 17316873.772618636,
+    "heldUsd": 17316873.972532235,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217678962,
+    "time": "2026-09-28T20:14:30.016Z",
+    "creditsUsd": 17402727.466144215,
+    "heldUsd": 17402727.666057814,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217681962,
+    "time": "2026-09-28T20:44:04.714Z",
+    "creditsUsd": 17296992.794103943,
+    "heldUsd": 17296992.99401754,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217684962,
+    "time": "2026-09-28T21:13:38.135Z",
+    "creditsUsd": 17345694.241242427,
+    "heldUsd": 17345694.441156026,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217687962,
+    "time": "2026-09-28T21:44:26.207Z",
+    "creditsUsd": 17354405.420776647,
+    "heldUsd": 17354405.62069025,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217690962,
+    "time": "2026-09-28T22:14:04.917Z",
+    "creditsUsd": 17358351.699135497,
+    "heldUsd": 17358351.8990491,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217693962,
+    "time": "2026-09-28T22:43:36.149Z",
+    "creditsUsd": 17338185.01241438,
+    "heldUsd": 17338185.21232798,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217696962,
+    "time": "2026-09-28T23:13:11.747Z",
+    "creditsUsd": 17304990.644322474,
+    "heldUsd": 17304990.844236072,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217699962,
+    "time": "2026-09-28T23:42:47.333Z",
+    "creditsUsd": 17312954.394961648,
+    "heldUsd": 17312954.59487525,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217702962,
+    "time": "2026-09-29T00:12:27.426Z",
+    "creditsUsd": 17284952.485788524,
+    "heldUsd": 17284952.685702126,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217705962,
+    "time": "2026-09-29T00:42:01.005Z",
+    "creditsUsd": 17254997.681845255,
+    "heldUsd": 17254997.881758854,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217708962,
+    "time": "2026-09-29T01:11:40.975Z",
+    "creditsUsd": 17292365.634692278,
+    "heldUsd": 17292365.834605876,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217711962,
+    "time": "2026-09-29T01:41:12.880Z",
+    "creditsUsd": 17307633.571663685,
+    "heldUsd": 17307633.771577287,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217714962,
+    "time": "2026-09-29T02:10:50.343Z",
+    "creditsUsd": 17285831.889158823,
+    "heldUsd": 17285832.08907242,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217717962,
+    "time": "2026-09-29T02:40:40.744Z",
+    "creditsUsd": 17311454.239507113,
+    "heldUsd": 17311454.439420715,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217720962,
+    "time": "2026-09-29T03:10:12.272Z",
+    "creditsUsd": 17234569.914941024,
+    "heldUsd": 17234570.114854623,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217723962,
+    "time": "2026-09-29T03:39:52.914Z",
+    "creditsUsd": 17182181.332526665,
+    "heldUsd": 17182181.532440264,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217726962,
+    "time": "2026-09-29T04:09:47.629Z",
+    "creditsUsd": 17215292.559882432,
+    "heldUsd": 17215292.759796035,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217729962,
+    "time": "2026-09-29T04:39:22.204Z",
+    "creditsUsd": 17190466.945863582,
+    "heldUsd": 17193262.583756816,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217732962,
+    "time": "2026-09-29T05:09:02.055Z",
+    "creditsUsd": 17193833.241347425,
+    "heldUsd": 17193833.441261023,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217735962,
+    "time": "2026-09-29T05:38:35.990Z",
+    "creditsUsd": 17189097.793748192,
+    "heldUsd": 17189097.99366179,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217738962,
+    "time": "2026-09-29T06:08:51.134Z",
+    "creditsUsd": 17295342.36753778,
+    "heldUsd": 17295342.56745138,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217741962,
+    "time": "2026-09-29T06:38:32.320Z",
+    "creditsUsd": 17179824.0663739,
+    "heldUsd": 17179824.2662875,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217744962,
+    "time": "2026-09-29T07:08:50.488Z",
+    "creditsUsd": 17509290.9071538,
+    "heldUsd": 17509291.1070674,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217747962,
+    "time": "2026-09-29T07:38:44.904Z",
+    "creditsUsd": 17583587.17033723,
+    "heldUsd": 17583587.37025083,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217750962,
+    "time": "2026-09-29T08:08:27.250Z",
+    "creditsUsd": 17463232.08499997,
+    "heldUsd": 17463232.284913573,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217753962,
+    "time": "2026-09-29T08:38:33.361Z",
+    "creditsUsd": 17496555.61325762,
+    "heldUsd": 17496635.761899684,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217756962,
+    "time": "2026-09-29T09:08:21.258Z",
+    "creditsUsd": 17354042.679133166,
+    "heldUsd": 17354042.879046768,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217759962,
+    "time": "2026-09-29T09:38:01.211Z",
+    "creditsUsd": 17367924.11190965,
+    "heldUsd": 17367924.311823253,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217762962,
+    "time": "2026-09-29T10:08:03.522Z",
+    "creditsUsd": 17351842.691468842,
+    "heldUsd": 17351842.89138244,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217765962,
+    "time": "2026-09-29T10:38:10.550Z",
+    "creditsUsd": 17376667.95601879,
+    "heldUsd": 17376668.155932393,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217768962,
+    "time": "2026-09-29T11:08:03.979Z",
+    "creditsUsd": 17428435.17452221,
+    "heldUsd": 17428435.37443581,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217771962,
+    "time": "2026-09-29T11:37:47.821Z",
+    "creditsUsd": 17458509.935802415,
+    "heldUsd": 17458510.135716014,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217774962,
+    "time": "2026-09-29T12:07:47.107Z",
+    "creditsUsd": 17682923.56541481,
+    "heldUsd": 17682923.765328407,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217777962,
+    "time": "2026-09-29T12:38:29.891Z",
+    "creditsUsd": 17399760.34429469,
+    "heldUsd": 17450110.447537694,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217780962,
+    "time": "2026-09-29T13:08:38.671Z",
+    "creditsUsd": 17400995.758474816,
+    "heldUsd": 17400995.958388414,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217783962,
+    "time": "2026-09-29T13:38:49.418Z",
+    "creditsUsd": 17430489.30158345,
+    "heldUsd": 17430489.50149705,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217786962,
+    "time": "2026-09-29T14:08:58.036Z",
+    "creditsUsd": 17268932.924918488,
+    "heldUsd": 17268933.124832086,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217789962,
+    "time": "2026-09-29T14:38:58.504Z",
+    "creditsUsd": 17298815.705483284,
+    "heldUsd": 17298815.905396882,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217792962,
+    "time": "2026-09-29T15:09:11.216Z",
+    "creditsUsd": 17398414.77779227,
+    "heldUsd": 17398414.97770587,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217795962,
+    "time": "2026-09-29T15:39:07.530Z",
+    "creditsUsd": 17370497.24674085,
+    "heldUsd": 17370497.44665445,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217798962,
+    "time": "2026-09-29T16:09:03.507Z",
+    "creditsUsd": 17384835.247870367,
+    "heldUsd": 17384835.447783966,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217801962,
+    "time": "2026-09-29T16:38:48.341Z",
+    "creditsUsd": 17447109.775335748,
+    "heldUsd": 17447099.982629348,
+    "shortfallUsd": 9.99262,
+    "shortfallShare": 5.727378418932259e-7,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217804962,
+    "time": "2026-09-29T17:08:26.737Z",
+    "creditsUsd": 17329352.776577417,
+    "heldUsd": 17329322.998631015,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000017298891878130885,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217807962,
+    "time": "2026-09-29T17:38:08.454Z",
+    "creditsUsd": 17493065.182686552,
+    "heldUsd": 17493035.404740155,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000017136996682359618,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217810962,
+    "time": "2026-09-29T18:08:14.431Z",
+    "creditsUsd": 18571628.07933072,
+    "heldUsd": 18571598.301384315,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016141751208858117,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217813962,
+    "time": "2026-09-29T18:41:28.533Z",
+    "creditsUsd": 18097480.169043235,
+    "heldUsd": 18097450.391096838,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016564659676366893,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217816962,
+    "time": "2026-09-29T19:15:19.002Z",
+    "creditsUsd": 17740590.534471065,
+    "heldUsd": 17740560.756524667,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016897892965711126,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217819962,
+    "time": "2026-09-29T19:48:02.360Z",
+    "creditsUsd": 17619917.805220068,
+    "heldUsd": 17619902.51657266,
+    "shortfallUsd": 15.488560999999999,
+    "shortfallShare": 8.790370744755328e-7,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217822962,
+    "time": "2026-09-29T20:17:41.788Z",
+    "creditsUsd": 17516041.17783101,
+    "heldUsd": 17516011.399884608,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000017114517884292918,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217825962,
+    "time": "2026-09-29T20:47:12.131Z",
+    "creditsUsd": 17527342.83799192,
+    "heldUsd": 17527313.060045518,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000017103482414356948,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217828962,
+    "time": "2026-09-29T21:17:52.482Z",
+    "creditsUsd": 17744178.18487249,
+    "heldUsd": 17744148.40692609,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016894476423572627,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217831962,
+    "time": "2026-09-29T21:47:31.537Z",
+    "creditsUsd": 17737430.111484494,
+    "heldUsd": 17737400.333538093,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016900903801498373,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217834962,
+    "time": "2026-09-29T22:17:02.619Z",
+    "creditsUsd": 17742758.442833576,
+    "heldUsd": 17742728.66488717,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016895828287685596,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217837962,
+    "time": "2026-09-29T22:46:29.855Z",
+    "creditsUsd": 17717540.42431375,
+    "heldUsd": 17717510.646367352,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016919876733489167,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217840962,
+    "time": "2026-09-29T23:16:09.689Z",
+    "creditsUsd": 17765146.987789355,
+    "heldUsd": 17765117.209842954,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016874535302525161,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217843962,
+    "time": "2026-09-29T23:45:47.051Z",
+    "creditsUsd": 17733655.884521313,
+    "heldUsd": 17733733.26032304,
+    "shortfallUsd": 29.97786,
+    "shortfallShare": 0.0000016904500795104492,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217846962,
+    "time": "2026-09-30T00:15:14.482Z",
+    "creditsUsd": 17739848.905238222,
+    "heldUsd": 17739699.21585182,
+    "shortfallUsd": 149.8893,
+    "shortfallShare": 0.000008449299698135573,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 217849962,
+    "time": "2026-09-30T00:44:44.388Z",
+    "creditsUsd": 17776320.910226725,
+    "heldUsd": 17773772.992040325,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014334338994375753,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217852962,
+    "time": "2026-09-30T01:14:13.936Z",
+    "creditsUsd": 17791406.417760182,
+    "heldUsd": 17788858.499573782,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014322184768126897,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217855962,
+    "time": "2026-09-30T01:43:48.095Z",
+    "creditsUsd": 17849736.974191748,
+    "heldUsd": 17847189.056005348,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001427538178116701,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217858962,
+    "time": "2026-09-30T02:13:16.607Z",
+    "creditsUsd": 17855752.34115098,
+    "heldUsd": 17853204.422964584,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001427057259372667,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217861962,
+    "time": "2026-09-30T02:43:07.870Z",
+    "creditsUsd": 17804826.878002204,
+    "heldUsd": 17802278.959815804,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014311389363455088,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217864962,
+    "time": "2026-09-30T03:12:41.909Z",
+    "creditsUsd": 17849184.112043235,
+    "heldUsd": 17846636.19385684,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001427582394805782,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217867962,
+    "time": "2026-09-30T03:41:56.895Z",
+    "creditsUsd": 17885417.578487482,
+    "heldUsd": 17886865.609662957,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001424690303605138,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217870962,
+    "time": "2026-09-30T04:11:22.320Z",
+    "creditsUsd": 17938498.67472584,
+    "heldUsd": 17935950.75653944,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001420474559328719,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217873962,
+    "time": "2026-09-30T04:41:05.697Z",
+    "creditsUsd": 17931144.259579986,
+    "heldUsd": 17928598.673567083,
+    "shortfallUsd": 2545.794220635046,
+    "shortfallShare": 0.00014197611617980914,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217876962,
+    "time": "2026-09-30T05:10:58.310Z",
+    "creditsUsd": 17985676.16221794,
+    "heldUsd": 17983128.24403154,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001416748570928219,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217879962,
+    "time": "2026-09-30T05:42:07.687Z",
+    "creditsUsd": 18495082.350743644,
+    "heldUsd": 18492534.43255724,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013777273610774413,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217882962,
+    "time": "2026-09-30T06:11:59.442Z",
+    "creditsUsd": 18467986.836916566,
+    "heldUsd": 18465438.918730166,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013797487092130918,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217885962,
+    "time": "2026-09-30T06:45:51.322Z",
+    "creditsUsd": 18434153.186536252,
+    "heldUsd": 18431605.268349852,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013822810704757887,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217888962,
+    "time": "2026-09-30T07:19:38.858Z",
+    "creditsUsd": 18395120.8493187,
+    "heldUsd": 18392572.9311323,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013852141124119738,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217891962,
+    "time": "2026-09-30T07:52:39.653Z",
+    "creditsUsd": 18560004.187157705,
+    "heldUsd": 18557456.268971305,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.000137290814932204,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217894962,
+    "time": "2026-09-30T08:24:33.736Z",
+    "creditsUsd": 18928056.92860492,
+    "heldUsd": 18925509.010418516,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013462121915689987,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217897962,
+    "time": "2026-09-30T08:56:38.524Z",
+    "creditsUsd": 18906851.725990467,
+    "heldUsd": 18904303.807804067,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013477220517349315,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217900962,
+    "time": "2026-09-30T09:29:03.740Z",
+    "creditsUsd": 18845152.74281183,
+    "heldUsd": 18842604.82462543,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013521344903781357,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217903962,
+    "time": "2026-09-30T10:01:31.417Z",
+    "creditsUsd": 18865776.938818607,
+    "heldUsd": 18863229.020632207,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001350656327732223,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217906962,
+    "time": "2026-09-30T10:34:07.761Z",
+    "creditsUsd": 18438593.117604915,
+    "heldUsd": 18436045.19941851,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013819482233528392,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217909962,
+    "time": "2026-09-30T11:06:19.158Z",
+    "creditsUsd": 18545793.2410221,
+    "heldUsd": 18543245.3228357,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001373960157370744,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217912962,
+    "time": "2026-09-30T11:40:18.009Z",
+    "creditsUsd": 18306680.20449895,
+    "heldUsd": 18304132.286312554,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001391906162961097,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217915962,
+    "time": "2026-09-30T12:13:40.208Z",
+    "creditsUsd": 18190454.093430597,
+    "heldUsd": 18187906.175244197,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014007996100109683,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217918962,
+    "time": "2026-09-30T12:45:54.712Z",
+    "creditsUsd": 18621920.95906658,
+    "heldUsd": 18619373.04088018,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013683433119499847,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217921962,
+    "time": "2026-09-30T13:18:43.714Z",
+    "creditsUsd": 18509164.019836485,
+    "heldUsd": 18506616.101650085,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001376679193759995,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217924962,
+    "time": "2026-09-30T13:53:27.402Z",
+    "creditsUsd": 18239894.078680765,
+    "heldUsd": 18237346.160494365,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013970026848885613,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217927962,
+    "time": "2026-09-30T14:27:16.509Z",
+    "creditsUsd": 18247076.90945432,
+    "heldUsd": 18244528.99126792,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013964527648150312,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217930962,
+    "time": "2026-09-30T15:01:10.009Z",
+    "creditsUsd": 18381732.74764248,
+    "heldUsd": 18379184.82945608,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013862230155243689,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217933962,
+    "time": "2026-09-30T15:35:29.373Z",
+    "creditsUsd": 18284826.593769234,
+    "heldUsd": 18282278.675582834,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013935697376907588,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217936962,
+    "time": "2026-09-30T16:06:01.010Z",
+    "creditsUsd": 18280557.828274295,
+    "heldUsd": 18278009.91008789,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013938951556822078,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217939962,
+    "time": "2026-09-30T16:35:58.926Z",
+    "creditsUsd": 18136745.595816366,
+    "heldUsd": 18134197.677629966,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001404947809703952,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217942962,
+    "time": "2026-09-30T17:05:49.291Z",
+    "creditsUsd": 18574126.29586539,
+    "heldUsd": 18571578.37767899,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00013718643124372492,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217945962,
+    "time": "2026-09-30T17:35:59.596Z",
+    "creditsUsd": 17959289.14759281,
+    "heldUsd": 17956741.22940641,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001418830154723323,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217948962,
+    "time": "2026-09-30T18:05:49.065Z",
+    "creditsUsd": 17859520.925259072,
+    "heldUsd": 17856973.007072672,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014267561322970016,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217951962,
+    "time": "2026-09-30T18:35:28.586Z",
+    "creditsUsd": 17874580.252411745,
+    "heldUsd": 17872032.33422535,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.00014255540907911349,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217954962,
+    "time": "2026-09-30T19:04:57.298Z",
+    "creditsUsd": 17875858.88093143,
+    "heldUsd": 17873310.962745026,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001425452123432309,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217957962,
+    "time": "2026-09-30T19:34:27.202Z",
+    "creditsUsd": 17868109.31436489,
+    "heldUsd": 17865561.39617849,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001426070355385315,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217960962,
+    "time": "2026-09-30T20:03:59.302Z",
+    "creditsUsd": 17825127.05576821,
+    "heldUsd": 17822579.13758181,
+    "shortfallUsd": 2548.1181,
+    "shortfallShare": 0.0001429509081213213,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217963962,
+    "time": "2026-09-30T20:33:23.504Z",
+    "creditsUsd": 17828283.608659737,
+    "heldUsd": 17823198.56425534,
+    "shortfallUsd": 5085.244318,
+    "shortfallShare": 0.0002852346546433636,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217966962,
+    "time": "2026-09-30T21:02:53.788Z",
+    "creditsUsd": 17812047.82509526,
+    "heldUsd": 17806962.78069086,
+    "shortfallUsd": 5085.244318,
+    "shortfallShare": 0.00028549464766400626,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217969962,
+    "time": "2026-09-30T21:32:31.845Z",
+    "creditsUsd": 17793603.27159169,
+    "heldUsd": 17788518.22718729,
+    "shortfallUsd": 5085.244318,
+    "shortfallShare": 0.00028579058667216816,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217972962,
+    "time": "2026-09-30T22:01:59.191Z",
+    "creditsUsd": 17857559.26702806,
+    "heldUsd": 17852474.22262366,
+    "shortfallUsd": 5085.244318,
+    "shortfallShare": 0.00028476704133858436,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217975962,
+    "time": "2026-09-30T22:31:26.399Z",
+    "creditsUsd": 17841520.497977532,
+    "heldUsd": 17836435.453573134,
+    "shortfallUsd": 5085.244318,
+    "shortfallShare": 0.00028502303481233284,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217978962,
+    "time": "2026-09-30T23:00:55.072Z",
+    "creditsUsd": 17884786.47243691,
+    "heldUsd": 17844181.660980508,
+    "shortfallUsd": 40605.01137,
+    "shortfallShare": 0.0022703660137390128,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217981962,
+    "time": "2026-09-30T23:30:17.599Z",
+    "creditsUsd": 17994901.939281095,
+    "heldUsd": 17670138.99140869,
+    "shortfallUsd": 324763.147786,
+    "shortfallShare": 0.01804750861559707,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217984962,
+    "time": "2026-09-30T23:59:53.024Z",
+    "creditsUsd": 17856392.611734286,
+    "heldUsd": 16557373.196149882,
+    "shortfallUsd": 1299019.615498,
+    "shortfallShare": 0.07274815489016255,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217987962,
+    "time": "2026-10-01T00:29:14.464Z",
+    "creditsUsd": 17867800.399864376,
+    "heldUsd": 15069983.913431974,
+    "shortfallUsd": 2797816.686346,
+    "shortfallShare": 0.15658428142991998,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217990962,
+    "time": "2026-10-01T00:58:19.563Z",
+    "creditsUsd": 17809622.859399866,
+    "heldUsd": 14212524.678503461,
+    "shortfallUsd": 3597098.38081,
+    "shortfallShare": 0.201974988982513,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217993962,
+    "time": "2026-10-01T01:27:42.039Z",
+    "creditsUsd": 18267062.926070232,
+    "heldUsd": 14570294.356245833,
+    "shortfallUsd": 3696768.769738,
+    "shortfallShare": 0.20237346226371603,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217996962,
+    "time": "2026-10-01T01:57:03.686Z",
+    "creditsUsd": 18266121.901804235,
+    "heldUsd": 14431804.781429514,
+    "shortfallUsd": 3834317.3368765777,
+    "shortfallShare": 0.20991414365289238,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 217999962,
+    "time": "2026-10-01T02:26:23.888Z",
+    "creditsUsd": 18238301.62033574,
+    "heldUsd": 14403984.49996102,
+    "shortfallUsd": 3834317.3368765777,
+    "shortfallShare": 0.21023434180961822,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218002962,
+    "time": "2026-10-01T02:55:50.384Z",
+    "creditsUsd": 18288358.42516944,
+    "heldUsd": 14454041.304794727,
+    "shortfallUsd": 3834317.3368765777,
+    "shortfallShare": 0.20965891239311998,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218005962,
+    "time": "2026-10-01T03:25:12.403Z",
+    "creditsUsd": 18294025.13966595,
+    "heldUsd": 14467420.875491476,
+    "shortfallUsd": 3826604.497264589,
+    "shortfallShare": 0.20917236464093233,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218008962,
+    "time": "2026-10-01T03:54:44.149Z",
+    "creditsUsd": 18223595.434590414,
+    "heldUsd": 14442635.546492815,
+    "shortfallUsd": 3780960.1294818493,
+    "shortfallShare": 0.20747607918825753,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218011962,
+    "time": "2026-10-01T04:24:56.115Z",
+    "creditsUsd": 18247984.737320587,
+    "heldUsd": 14467024.849222982,
+    "shortfallUsd": 3780960.1294818493,
+    "shortfallShare": 0.20719877750385604,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218014962,
+    "time": "2026-10-01T04:54:30.195Z",
+    "creditsUsd": 18235561.25349689,
+    "heldUsd": 14454601.365399284,
+    "shortfallUsd": 3780960.1294818493,
+    "shortfallShare": 0.20733993743991863,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218017962,
+    "time": "2026-10-01T05:23:53.906Z",
+    "creditsUsd": 18207638.740289252,
+    "heldUsd": 14426678.852191648,
+    "shortfallUsd": 3780960.1294818493,
+    "shortfallShare": 0.2076579057511432,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218020962,
+    "time": "2026-10-01T05:53:13.691Z",
+    "creditsUsd": 18228129.177023735,
+    "heldUsd": 14429102.549366757,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2084156213809282,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218023962,
+    "time": "2026-10-01T06:22:56.158Z",
+    "creditsUsd": 18225379.025659658,
+    "heldUsd": 14426352.398002675,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20844707063115386,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218026962,
+    "time": "2026-10-01T06:52:38.254Z",
+    "creditsUsd": 18226075.460048687,
+    "heldUsd": 14427049.693391707,
+    "shortfallUsd": 3799026.8690412296,
+    "shortfallShare": 0.20843910568507443,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218029962,
+    "time": "2026-10-01T07:22:17.897Z",
+    "creditsUsd": 18221765.40567923,
+    "heldUsd": 14422744.094680931,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2084884084753487,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218032962,
+    "time": "2026-10-01T07:52:04.689Z",
+    "creditsUsd": 18217267.5437518,
+    "heldUsd": 14418240.91609482,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20853988447593658,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218035962,
+    "time": "2026-10-01T08:22:12.150Z",
+    "creditsUsd": 18492211.786697466,
+    "heldUsd": 14693185.159040486,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2054392904895288,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218038962,
+    "time": "2026-10-01T08:52:08.540Z",
+    "creditsUsd": 18408710.27054436,
+    "heldUsd": 14609683.64288738,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20637115871827388,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218041962,
+    "time": "2026-10-01T09:21:58.132Z",
+    "creditsUsd": 18408710.27054436,
+    "heldUsd": 14609683.64288738,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20637115871827388,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218044962,
+    "time": "2026-10-01T09:53:00.587Z",
+    "creditsUsd": 18408710.27054436,
+    "heldUsd": 14609683.64288738,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20637115871827388,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218047962,
+    "time": "2026-10-01T10:29:12.367Z",
+    "creditsUsd": 18408710.27054436,
+    "heldUsd": 14609683.64288738,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20637115871827388,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218050962,
+    "time": "2026-10-01T11:05:32.207Z",
+    "creditsUsd": 18408710.27054436,
+    "heldUsd": 14609683.64288738,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20637115871827388,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218053962,
+    "time": "2026-10-01T11:41:51.981Z",
+    "creditsUsd": 18407703.375085127,
+    "heldUsd": 14608676.747428145,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20638244715433765,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218056962,
+    "time": "2026-10-01T12:17:53.859Z",
+    "creditsUsd": 18407703.271752864,
+    "heldUsd": 14608676.64409588,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20638244831287247,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218059962,
+    "time": "2026-10-01T12:53:34.853Z",
+    "creditsUsd": 18407703.213313963,
+    "heldUsd": 14608676.585656982,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20638244896807445,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218062962,
+    "time": "2026-10-01T13:27:03.234Z",
+    "creditsUsd": 18404888.312703263,
+    "heldUsd": 14605861.685046284,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20641401373889878,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218065962,
+    "time": "2026-10-01T13:56:59.186Z",
+    "creditsUsd": 18151122.859508686,
+    "heldUsd": 14352096.231851706,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20929982670747352,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218068962,
+    "time": "2026-10-01T14:27:07.628Z",
+    "creditsUsd": 18130475.65931111,
+    "heldUsd": 14331449.03165413,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095381798265285,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218071962,
+    "time": "2026-10-01T14:57:20.368Z",
+    "creditsUsd": 18130475.622702677,
+    "heldUsd": 14331448.9950457,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095381802496208,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218074962,
+    "time": "2026-10-01T15:27:03.660Z",
+    "creditsUsd": 18130427.494611997,
+    "heldUsd": 14331400.86695502,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20953873647878543,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218077962,
+    "time": "2026-10-01T15:56:40.141Z",
+    "creditsUsd": 18130427.494611997,
+    "heldUsd": 14331400.86695502,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20953873647878543,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218080962,
+    "time": "2026-10-01T16:26:25.328Z",
+    "creditsUsd": 18130333.91585575,
+    "heldUsd": 14331307.288198773,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095398180018526,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218083962,
+    "time": "2026-10-01T16:55:52.903Z",
+    "creditsUsd": 18130333.91585575,
+    "heldUsd": 14331307.288198773,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095398180018526,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218086962,
+    "time": "2026-10-01T17:25:44.702Z",
+    "creditsUsd": 18130262.20469479,
+    "heldUsd": 14331235.577037811,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095406468008764,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218089962,
+    "time": "2026-10-01T17:55:53.135Z",
+    "creditsUsd": 18130262.14034924,
+    "heldUsd": 14331235.512692261,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954064754455057,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218092962,
+    "time": "2026-10-01T18:25:31.367Z",
+    "creditsUsd": 18130185.131410092,
+    "heldUsd": 14331158.503753114,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954153757975202,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218095962,
+    "time": "2026-10-01T18:55:17.858Z",
+    "creditsUsd": 18130185.037432984,
+    "heldUsd": 14331158.409776002,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954153866590242,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218098962,
+    "time": "2026-10-01T19:24:44.348Z",
+    "creditsUsd": 18130185.037432984,
+    "heldUsd": 14331158.409776002,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954153866590242,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218101962,
+    "time": "2026-10-01T19:54:13.783Z",
+    "creditsUsd": 18130185.037432984,
+    "heldUsd": 14331158.409776002,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954153866590242,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218104962,
+    "time": "2026-10-01T20:23:46.905Z",
+    "creditsUsd": 18130106.72196472,
+    "heldUsd": 14331080.09430774,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954244380915243,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218107962,
+    "time": "2026-10-01T20:53:23.692Z",
+    "creditsUsd": 18130106.72196472,
+    "heldUsd": 14331080.09430774,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954244380915243,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218110962,
+    "time": "2026-10-01T21:23:38.588Z",
+    "creditsUsd": 18130006.76516472,
+    "heldUsd": 14330980.137507739,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954359908683204,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218113962,
+    "time": "2026-10-01T21:53:20.757Z",
+    "creditsUsd": 18130006.76516472,
+    "heldUsd": 14330980.137507739,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954359908683204,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218116962,
+    "time": "2026-10-01T22:22:44.277Z",
+    "creditsUsd": 18130006.76516472,
+    "heldUsd": 14330980.137507739,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954359908683204,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218119962,
+    "time": "2026-10-01T22:52:07.254Z",
+    "creditsUsd": 18129915.504866492,
+    "heldUsd": 14330888.87720951,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095446538634712,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218122962,
+    "time": "2026-10-01T23:21:24.121Z",
+    "creditsUsd": 18129915.474634774,
+    "heldUsd": 14330888.846977795,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095446542128879,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218125962,
+    "time": "2026-10-01T23:50:40.870Z",
+    "creditsUsd": 18129829.970157873,
+    "heldUsd": 14330803.342500892,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954564247400648,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218128962,
+    "time": "2026-10-02T00:20:38.320Z",
+    "creditsUsd": 18129746.0800672,
+    "heldUsd": 14330719.452410217,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954661208510142,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218131962,
+    "time": "2026-10-02T00:50:07.834Z",
+    "creditsUsd": 18129746.0800672,
+    "heldUsd": 14330719.452410217,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954661208510142,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218134962,
+    "time": "2026-10-02T01:19:22.716Z",
+    "creditsUsd": 18129746.05034959,
+    "heldUsd": 14330719.42269261,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954661242858247,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218137962,
+    "time": "2026-10-02T01:48:43.266Z",
+    "creditsUsd": 18129746.05034959,
+    "heldUsd": 14330719.42269261,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954661242858247,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218140962,
+    "time": "2026-10-02T02:18:40.871Z",
+    "creditsUsd": 18129746.05034959,
+    "heldUsd": 14330719.42269261,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954661242858247,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218143962,
+    "time": "2026-10-02T02:47:56.871Z",
+    "creditsUsd": 18129587.7090927,
+    "heldUsd": 14330561.081435718,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954844257908128,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218146962,
+    "time": "2026-10-02T03:17:11.294Z",
+    "creditsUsd": 18129512.221148536,
+    "heldUsd": 14330485.593491554,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931510013644,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218149962,
+    "time": "2026-10-02T03:46:33.171Z",
+    "creditsUsd": 18129512.221148536,
+    "heldUsd": 14330485.593491554,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931510013644,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218152962,
+    "time": "2026-10-02T04:16:05.238Z",
+    "creditsUsd": 18129512.190916054,
+    "heldUsd": 14330485.563259073,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095493154495775,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218155962,
+    "time": "2026-10-02T04:45:18.511Z",
+    "creditsUsd": 18129512.190916054,
+    "heldUsd": 14330485.563259073,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095493154495775,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218158962,
+    "time": "2026-10-02T05:14:40.320Z",
+    "creditsUsd": 18129512.190916054,
+    "heldUsd": 14330485.563259073,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095493154495775,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218161962,
+    "time": "2026-10-02T05:44:01.695Z",
+    "creditsUsd": 18129512.190916054,
+    "heldUsd": 14330485.563259073,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095493154495775,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218164962,
+    "time": "2026-10-02T06:13:21.331Z",
+    "creditsUsd": 18129512.161198445,
+    "heldUsd": 14330485.533541465,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931579306743,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218167962,
+    "time": "2026-10-02T06:42:41.914Z",
+    "creditsUsd": 18129512.161198445,
+    "heldUsd": 14330485.533541465,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931579306743,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218170962,
+    "time": "2026-10-02T07:12:01.642Z",
+    "creditsUsd": 18129512.161198445,
+    "heldUsd": 14330485.533541465,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931579306743,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218173962,
+    "time": "2026-10-02T07:42:08.548Z",
+    "creditsUsd": 18129512.161198445,
+    "heldUsd": 14330485.533541465,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931579306743,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218176962,
+    "time": "2026-10-02T08:11:48.553Z",
+    "creditsUsd": 18129512.161198445,
+    "heldUsd": 14330485.533541465,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931579306743,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218179962,
+    "time": "2026-10-02T08:41:21.331Z",
+    "creditsUsd": 18129512.130968325,
+    "heldUsd": 14330485.503311343,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931614248118,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218182962,
+    "time": "2026-10-02T09:10:44.816Z",
+    "creditsUsd": 18129512.094346948,
+    "heldUsd": 14330485.466689967,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931656576806,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218185962,
+    "time": "2026-10-02T09:40:11.053Z",
+    "creditsUsd": 18129512.094346948,
+    "heldUsd": 14330485.466689967,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931656576806,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218188962,
+    "time": "2026-10-02T10:09:59.339Z",
+    "creditsUsd": 18129512.065119267,
+    "heldUsd": 14330485.437462287,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931690359516,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218191962,
+    "time": "2026-10-02T10:39:36.928Z",
+    "creditsUsd": 18129512.065119267,
+    "heldUsd": 14330485.437462287,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931690359516,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218194962,
+    "time": "2026-10-02T11:09:00.385Z",
+    "creditsUsd": 18129512.027490083,
+    "heldUsd": 14330485.3998331,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931733853074,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218197962,
+    "time": "2026-10-02T11:38:24.691Z",
+    "creditsUsd": 18129512.027490083,
+    "heldUsd": 14330485.3998331,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931733853074,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218200962,
+    "time": "2026-10-02T12:08:01.616Z",
+    "creditsUsd": 18129512.027490083,
+    "heldUsd": 14330485.3998331,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931733853074,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218203962,
+    "time": "2026-10-02T12:37:31.750Z",
+    "creditsUsd": 18129512.027490083,
+    "heldUsd": 14330485.3998331,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20954931733853074,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218206962,
+    "time": "2026-10-02T13:06:56.972Z",
+    "creditsUsd": 18129437.270422593,
+    "heldUsd": 14330410.642765611,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20955018141898868,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218209962,
+    "time": "2026-10-02T13:36:42.365Z",
+    "creditsUsd": 18129437.270422593,
+    "heldUsd": 14330410.642765611,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20955018141898868,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218212962,
+    "time": "2026-10-02T14:07:04.313Z",
+    "creditsUsd": 18129437.270422593,
+    "heldUsd": 14330410.642765611,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.20955018141898868,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218215962,
+    "time": "2026-10-02T14:36:52.356Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218218962,
+    "time": "2026-10-02T15:06:35.917Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218221962,
+    "time": "2026-10-02T15:36:17.617Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218224962,
+    "time": "2026-10-02T16:05:36.661Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218227962,
+    "time": "2026-10-02T16:35:03.980Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218230962,
+    "time": "2026-10-02T17:04:35.329Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218233962,
+    "time": "2026-10-02T17:33:53.473Z",
+    "creditsUsd": 18129437.235773966,
+    "heldUsd": 14330410.608116984,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095501818194769,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218236962,
+    "time": "2026-10-02T18:03:13.472Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 14330329.358648513,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095511209505141,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218239962,
+    "time": "2026-10-02T18:32:44.189Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 14330329.358648513,
+    "shortfallUsd": 3799026.869041229,
+    "shortfallShare": 0.2095511209505141,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218242962,
+    "time": "2026-10-02T19:02:00.348Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 14330331.357172513,
+    "shortfallUsd": 3799024.870517229,
+    "shortfallShare": 0.20955101071361426,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218245962,
+    "time": "2026-10-02T19:31:29.578Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 14430255.558648512,
+    "shortfallUsd": 3699100.669041229,
+    "shortfallShare": 0.20403927595858595,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218248962,
+    "time": "2026-10-02T20:00:51.816Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 16328853.358648513,
+    "shortfallUsd": 1800502.8690412291,
+    "shortfallShare": 0.0993142211119517,
+    "tokensMaterial": 1
+   },
+   {
+    "height": 218251962,
+    "time": "2026-10-02T20:30:11.405Z",
+    "creditsUsd": 18129355.986305494,
+    "heldUsd": 18129356.227689743,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218254962,
+    "time": "2026-10-02T20:59:33.861Z",
+    "creditsUsd": 18129356.220394272,
+    "heldUsd": 18129356.46177852,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218257962,
+    "time": "2026-10-02T21:29:04.660Z",
+    "creditsUsd": 18078039.475051373,
+    "heldUsd": 18078039.716435622,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218260962,
+    "time": "2026-10-02T21:58:17.978Z",
+    "creditsUsd": 17988140.169487305,
+    "heldUsd": 17988140.410871554,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218263962,
+    "time": "2026-10-02T22:27:42.095Z",
+    "creditsUsd": 17990383.111599866,
+    "heldUsd": 17990383.352984115,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218266962,
+    "time": "2026-10-02T22:57:01.867Z",
+    "creditsUsd": 17824698.34760182,
+    "heldUsd": 17824698.58898607,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218269962,
+    "time": "2026-10-02T23:26:24.565Z",
+    "creditsUsd": 17802848.808795605,
+    "heldUsd": 17802849.050179854,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218272962,
+    "time": "2026-10-02T23:55:41.829Z",
+    "creditsUsd": 17791787.779657822,
+    "heldUsd": 17791788.02104207,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218275962,
+    "time": "2026-10-03T00:25:02.898Z",
+    "creditsUsd": 17780769.938151125,
+    "heldUsd": 17780770.179535374,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218278962,
+    "time": "2026-10-03T00:54:26.022Z",
+    "creditsUsd": 17778720.035376728,
+    "heldUsd": 17778720.276760977,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218281962,
+    "time": "2026-10-03T01:23:48.255Z",
+    "creditsUsd": 17768189.602075372,
+    "heldUsd": 17768189.84345962,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218284962,
+    "time": "2026-10-03T01:53:11.263Z",
+    "creditsUsd": 17823840.65241363,
+    "heldUsd": 17823840.89379788,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218287962,
+    "time": "2026-10-03T02:22:29.997Z",
+    "creditsUsd": 17793668.009858448,
+    "heldUsd": 17793668.2512427,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218290962,
+    "time": "2026-10-03T02:51:38.073Z",
+    "creditsUsd": 17811838.015960813,
+    "heldUsd": 17811838.257345065,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218293962,
+    "time": "2026-10-03T03:20:52.233Z",
+    "creditsUsd": 17833726.278968435,
+    "heldUsd": 17833726.520352688,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218296962,
+    "time": "2026-10-03T03:49:57.783Z",
+    "creditsUsd": 17829157.76770592,
+    "heldUsd": 17829158.00909017,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218299962,
+    "time": "2026-10-03T04:19:13.823Z",
+    "creditsUsd": 17826511.35129773,
+    "heldUsd": 17826511.592681974,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218302962,
+    "time": "2026-10-03T04:48:35.324Z",
+    "creditsUsd": 17803229.697028898,
+    "heldUsd": 17803229.938413147,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218305962,
+    "time": "2026-10-03T05:17:57.609Z",
+    "creditsUsd": 17767168.615575332,
+    "heldUsd": 17767168.85695958,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218308962,
+    "time": "2026-10-03T05:47:05.350Z",
+    "creditsUsd": 17766475.05747486,
+    "heldUsd": 17766475.29885911,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218311962,
+    "time": "2026-10-03T06:16:22.292Z",
+    "creditsUsd": 17823113.239784837,
+    "heldUsd": 17823113.481169086,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218314962,
+    "time": "2026-10-03T06:45:37.865Z",
+    "creditsUsd": 17852637.510139026,
+    "heldUsd": 17852637.75152328,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218317962,
+    "time": "2026-10-03T07:14:59.797Z",
+    "creditsUsd": 17851957.082183637,
+    "heldUsd": 17851957.32356789,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218320962,
+    "time": "2026-10-03T07:44:14.899Z",
+    "creditsUsd": 17841428.22518068,
+    "heldUsd": 17841428.466564935,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218323962,
+    "time": "2026-10-03T08:13:38.963Z",
+    "creditsUsd": 17849763.047217123,
+    "heldUsd": 17849763.288601372,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218326962,
+    "time": "2026-10-03T08:42:51.759Z",
+    "creditsUsd": 17842828.876752727,
+    "heldUsd": 17842829.118136976,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218329962,
+    "time": "2026-10-03T09:12:23.302Z",
+    "creditsUsd": 17838075.96763945,
+    "heldUsd": 17838076.209023695,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218332962,
+    "time": "2026-10-03T09:41:45.123Z",
+    "creditsUsd": 17829583.60920686,
+    "heldUsd": 17829583.850591112,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218335962,
+    "time": "2026-10-03T10:10:52.909Z",
+    "creditsUsd": 17773526.153118566,
+    "heldUsd": 17773526.394502815,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218338962,
+    "time": "2026-10-03T10:40:21.292Z",
+    "creditsUsd": 17772259.040675692,
+    "heldUsd": 17772259.282059938,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218341962,
+    "time": "2026-10-03T11:09:35.924Z",
+    "creditsUsd": 17778765.88260669,
+    "heldUsd": 17778766.12399094,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218344962,
+    "time": "2026-10-03T11:38:49.206Z",
+    "creditsUsd": 17760887.56965886,
+    "heldUsd": 17760887.811043113,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218347962,
+    "time": "2026-10-03T12:08:10.019Z",
+    "creditsUsd": 17730897.989399135,
+    "heldUsd": 17730898.230783384,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218350962,
+    "time": "2026-10-03T12:37:29.488Z",
+    "creditsUsd": 17784482.40627964,
+    "heldUsd": 17784482.647663888,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218353962,
+    "time": "2026-10-03T13:06:53.075Z",
+    "creditsUsd": 17765382.542540684,
+    "heldUsd": 17765382.783924934,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218356962,
+    "time": "2026-10-03T13:36:08.880Z",
+    "creditsUsd": 17760686.912655424,
+    "heldUsd": 17760687.154039674,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218359962,
+    "time": "2026-10-03T14:05:37.853Z",
+    "creditsUsd": 17804296.25506036,
+    "heldUsd": 17804296.496444605,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218362962,
+    "time": "2026-10-03T14:35:08.445Z",
+    "creditsUsd": 17871536.366360147,
+    "heldUsd": 17871536.6077444,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218365962,
+    "time": "2026-10-03T15:04:46.663Z",
+    "creditsUsd": 17826050.203825317,
+    "heldUsd": 17826050.445209563,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218368962,
+    "time": "2026-10-03T15:34:15.659Z",
+    "creditsUsd": 17749656.65002577,
+    "heldUsd": 17749656.891410023,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218371962,
+    "time": "2026-10-03T16:03:33.338Z",
+    "creditsUsd": 17717667.7381709,
+    "heldUsd": 17717667.97955515,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218374962,
+    "time": "2026-10-03T16:32:53.198Z",
+    "creditsUsd": 17647647.87566572,
+    "heldUsd": 17647648.11704997,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218377962,
+    "time": "2026-10-03T17:02:12.532Z",
+    "creditsUsd": 17779591.029051326,
+    "heldUsd": 17779591.270435575,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218380962,
+    "time": "2026-10-03T17:31:44.105Z",
+    "creditsUsd": 17736647.008343525,
+    "heldUsd": 17736647.249727778,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218383962,
+    "time": "2026-10-03T18:01:07.305Z",
+    "creditsUsd": 17736647.008343525,
+    "heldUsd": 17736647.249727778,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218386962,
+    "time": "2026-10-03T18:30:38.698Z",
+    "creditsUsd": 17736573.50282896,
+    "heldUsd": 17736573.744213212,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218389962,
+    "time": "2026-10-03T18:59:57.616Z",
+    "creditsUsd": 17736573.50282896,
+    "heldUsd": 17736573.744213212,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218392962,
+    "time": "2026-10-03T19:29:22.283Z",
+    "creditsUsd": 17735074.19946343,
+    "heldUsd": 17735074.440847684,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218395962,
+    "time": "2026-10-03T19:58:32.229Z",
+    "creditsUsd": 17876569.488290604,
+    "heldUsd": 17876569.729674853,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218398962,
+    "time": "2026-10-03T20:28:02.153Z",
+    "creditsUsd": 17838075.597972423,
+    "heldUsd": 17838075.839356672,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218401962,
+    "time": "2026-10-03T20:57:24.182Z",
+    "creditsUsd": 17815872.833410703,
+    "heldUsd": 17815873.07479495,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218404962,
+    "time": "2026-10-03T21:26:51.092Z",
+    "creditsUsd": 17779923.911094125,
+    "heldUsd": 17779924.152478375,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218407962,
+    "time": "2026-10-03T21:56:07.909Z",
+    "creditsUsd": 17779923.911094125,
+    "heldUsd": 17779924.152478375,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218410962,
+    "time": "2026-10-03T22:25:22.873Z",
+    "creditsUsd": 17769769.517788894,
+    "heldUsd": 17769769.759173147,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218413962,
+    "time": "2026-10-03T22:54:36.852Z",
+    "creditsUsd": 17770327.728155453,
+    "heldUsd": 17770327.969539702,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218416962,
+    "time": "2026-10-03T23:23:56.203Z",
+    "creditsUsd": 17770359.945297327,
+    "heldUsd": 17770360.186681576,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218419962,
+    "time": "2026-10-03T23:53:07.935Z",
+    "creditsUsd": 17770359.945297327,
+    "heldUsd": 17770360.186681576,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218422962,
+    "time": "2026-10-04T00:22:22.588Z",
+    "creditsUsd": 17770359.945297327,
+    "heldUsd": 17770360.186681576,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218425962,
+    "time": "2026-10-04T00:51:35.956Z",
+    "creditsUsd": 17771150.40446914,
+    "heldUsd": 17771150.645853385,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218428962,
+    "time": "2026-10-04T01:20:51.604Z",
+    "creditsUsd": 17771230.695574503,
+    "heldUsd": 17771230.936958753,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218431962,
+    "time": "2026-10-04T01:50:09.369Z",
+    "creditsUsd": 17771230.695574503,
+    "heldUsd": 17771230.936958753,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218434962,
+    "time": "2026-10-04T02:19:24.254Z",
+    "creditsUsd": 17700206.249731284,
+    "heldUsd": 17700206.491115533,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218437962,
+    "time": "2026-10-04T02:48:37.703Z",
+    "creditsUsd": 17700206.249731284,
+    "heldUsd": 17700206.491115533,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218440962,
+    "time": "2026-10-04T03:17:50.076Z",
+    "creditsUsd": 17698534.941161353,
+    "heldUsd": 17698535.182545602,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218443962,
+    "time": "2026-10-04T03:47:04.147Z",
+    "creditsUsd": 17698534.941161353,
+    "heldUsd": 17698535.182545602,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218446962,
+    "time": "2026-10-04T04:16:19.675Z",
+    "creditsUsd": 17698534.943167627,
+    "heldUsd": 17698535.184551876,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218449962,
+    "time": "2026-10-04T04:45:45.034Z",
+    "creditsUsd": 17698534.915033877,
+    "heldUsd": 17698535.156418126,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218452962,
+    "time": "2026-10-04T05:15:06.924Z",
+    "creditsUsd": 17699693.654647052,
+    "heldUsd": 17699693.8960313,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218455962,
+    "time": "2026-10-04T05:44:28.513Z",
+    "creditsUsd": 17699693.654647052,
+    "heldUsd": 17699693.8960313,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218458962,
+    "time": "2026-10-04T06:13:56.414Z",
+    "creditsUsd": 17698680.66926416,
+    "heldUsd": 17698680.910648406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218461962,
+    "time": "2026-10-04T06:43:20.316Z",
+    "creditsUsd": 17698680.66926416,
+    "heldUsd": 17698680.910648406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218464962,
+    "time": "2026-10-04T07:12:38.684Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218467962,
+    "time": "2026-10-04T07:42:06.795Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218470962,
+    "time": "2026-10-04T08:11:31.549Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218473962,
+    "time": "2026-10-04T08:40:50.370Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218476962,
+    "time": "2026-10-04T09:10:05.712Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218479962,
+    "time": "2026-10-04T09:39:29.074Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218482962,
+    "time": "2026-10-04T10:08:53.682Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218485962,
+    "time": "2026-10-04T10:38:27.805Z",
+    "creditsUsd": 17698630.69086416,
+    "heldUsd": 17698630.932248406,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218488962,
+    "time": "2026-10-04T11:07:32.300Z",
+    "creditsUsd": 17701070.705350906,
+    "heldUsd": 17701070.94673515,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218491962,
+    "time": "2026-10-04T11:37:02.850Z",
+    "creditsUsd": 17699379.76803207,
+    "heldUsd": 17699380.009416316,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218494962,
+    "time": "2026-10-04T12:06:27.495Z",
+    "creditsUsd": 17699379.76803207,
+    "heldUsd": 17699380.009416316,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218497962,
+    "time": "2026-10-04T12:35:48.847Z",
+    "creditsUsd": 17699516.14783128,
+    "heldUsd": 17699516.38921553,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218500962,
+    "time": "2026-10-04T13:05:09.223Z",
+    "creditsUsd": 17699541.453891803,
+    "heldUsd": 17699541.69527605,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218503962,
+    "time": "2026-10-04T13:34:21.922Z",
+    "creditsUsd": 17699541.453891803,
+    "heldUsd": 17699541.69527605,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218506962,
+    "time": "2026-10-04T14:03:47.087Z",
+    "creditsUsd": 17699541.42366168,
+    "heldUsd": 17699541.66504593,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218509962,
+    "time": "2026-10-04T14:33:08.903Z",
+    "creditsUsd": 17699620.39726241,
+    "heldUsd": 17699620.638646655,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218512962,
+    "time": "2026-10-04T15:02:34.504Z",
+    "creditsUsd": 17699620.368034728,
+    "heldUsd": 17699620.609418977,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218515962,
+    "time": "2026-10-04T15:32:02.369Z",
+    "creditsUsd": 17699620.337804608,
+    "heldUsd": 17699620.579188854,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218518962,
+    "time": "2026-10-04T16:01:31.016Z",
+    "creditsUsd": 17699620.337804608,
+    "heldUsd": 17699620.579188854,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218521962,
+    "time": "2026-10-04T16:31:01.189Z",
+    "creditsUsd": 17699670.312706273,
+    "heldUsd": 17699670.554090522,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218524962,
+    "time": "2026-10-04T17:00:18.967Z",
+    "creditsUsd": 17699610.09157239,
+    "heldUsd": 17699610.33295664,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218527962,
+    "time": "2026-10-04T17:29:43.682Z",
+    "creditsUsd": 17699610.09157239,
+    "heldUsd": 17699610.33295664,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218530962,
+    "time": "2026-10-04T17:58:58.505Z",
+    "creditsUsd": 17699610.09157239,
+    "heldUsd": 17699610.33295664,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218533962,
+    "time": "2026-10-04T18:28:25.118Z",
+    "creditsUsd": 17700498.39952913,
+    "heldUsd": 17700498.64091338,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218536962,
+    "time": "2026-10-04T18:57:54.506Z",
+    "creditsUsd": 17700498.39952913,
+    "heldUsd": 17700498.64091338,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218539962,
+    "time": "2026-10-04T19:27:25.045Z",
+    "creditsUsd": 17700498.39952913,
+    "heldUsd": 17700498.64091338,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218542962,
+    "time": "2026-10-04T19:56:48.157Z",
+    "creditsUsd": 17703196.329333555,
+    "heldUsd": 17703196.570717804,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218545962,
+    "time": "2026-10-04T20:26:52.781Z",
+    "creditsUsd": 17704640.16894776,
+    "heldUsd": 17704640.41033201,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218548962,
+    "time": "2026-10-04T20:57:00.293Z",
+    "creditsUsd": 17704640.16894776,
+    "heldUsd": 17704640.41033201,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218551962,
+    "time": "2026-10-04T21:26:16.540Z",
+    "creditsUsd": 17704640.061494254,
+    "heldUsd": 17704640.302878503,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218554962,
+    "time": "2026-10-04T21:55:30.814Z",
+    "creditsUsd": 17704984.77076416,
+    "heldUsd": 17704985.012148414,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218557962,
+    "time": "2026-10-04T22:24:42.076Z",
+    "creditsUsd": 17704984.589741144,
+    "heldUsd": 17704984.831125394,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218560962,
+    "time": "2026-10-04T22:54:00.799Z",
+    "creditsUsd": 17703506.874204747,
+    "heldUsd": 17703507.115588997,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218563962,
+    "time": "2026-10-04T23:23:15.041Z",
+    "creditsUsd": 17703506.874204747,
+    "heldUsd": 17703507.115588997,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   },
+   {
+    "height": 218566962,
+    "time": "2026-10-04T23:52:36.797Z",
+    "creditsUsd": 17703506.874204747,
+    "heldUsd": 17703507.115588997,
+    "shortfallUsd": 0,
+    "shortfallShare": 0,
+    "tokensMaterial": 0
+   }
+  ],
+  "episode": {
+   "lastCleanBefore": {
+    "height": 217846962,
+    "time": "2026-09-30T00:15:14.482Z"
+   },
+   "firstShort": {
+    "height": 217849962,
+    "time": "2026-09-30T00:44:44.388Z",
+    "shortfallUsd": 2548.1181
+   },
+   "peak": {
+    "height": 217996962,
+    "time": "2026-10-01T01:57:03.686Z",
+    "shortfallUsd": 3834317.3368765777,
+    "shortfallShare": 0.20991414365289238,
+    "creditsUsd": 18266121.901804235,
+    "worst": {
+     "assetId": "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+     "symbol": "USDT(DEPRECATED)",
+     "blockchain": "bsc",
+     "creditsUnits": 3842954.4604821834,
+     "heldUnits": 5805.307530727046,
+     "gapUnits": 3837149.152951456,
+     "gapUsd": 3834317.3368765777,
+     "unbackedShare": 0.998489
+    }
+   },
+   "lastShort": {
+    "height": 218248962,
+    "time": "2026-10-02T20:00:51.816Z",
+    "shortfallUsd": 1800502.8690412291
+   },
+   "firstCleanAfter": {
+    "height": 218251962,
+    "time": "2026-10-02T20:30:11.405Z"
+   },
+   "readingsShort": 134,
+   "minHours": 67.26873,
+   "maxHours": 68.24914527777777
+  },
+  "hitToken": {
+   "assetId": "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+   "symbol": "USDT(DEPRECATED)",
+   "blockchain": "bsc"
+  },
+  "hitSeries": [
+   {
+    "height": 217555962,
+    "time": "2026-09-28T00:00:00.103Z",
+    "credits": 3979293.5156001677,
+    "held": 3979293.5156001677
+   },
+   {
+    "height": 217558962,
+    "time": "2026-09-28T00:29:34.752Z",
+    "credits": 3966919.9552683765,
+    "held": 3966954.2092139567
+   },
+   {
+    "height": 217561962,
+    "time": "2026-09-28T00:59:02.658Z",
+    "credits": 3967311.8628260344,
+    "held": 3967311.8628260344
+   },
+   {
+    "height": 217564962,
+    "time": "2026-09-28T01:28:39.164Z",
+    "credits": 4043131.138787041,
+    "held": 4043131.138787041
+   },
+   {
+    "height": 217567962,
+    "time": "2026-09-28T01:58:08.560Z",
+    "credits": 4058636.664763959,
+    "held": 4058636.664763959
+   },
+   {
+    "height": 217570962,
+    "time": "2026-09-28T02:27:48.499Z",
+    "credits": 4060990.6596376845,
+    "held": 4060990.6596376845
+   },
+   {
+    "height": 217573962,
+    "time": "2026-09-28T02:57:08.936Z",
+    "credits": 4070334.4502891684,
+    "held": 4070334.4502891684
+   },
+   {
+    "height": 217576962,
+    "time": "2026-09-28T03:26:31.291Z",
+    "credits": 4074318.934193846,
+    "held": 4074318.934193846
+   },
+   {
+    "height": 217579962,
+    "time": "2026-09-28T03:56:02.031Z",
+    "credits": 4073383.3448649365,
+    "held": 4073383.3448649365
+   },
+   {
+    "height": 217582962,
+    "time": "2026-09-28T04:25:23.219Z",
+    "credits": 4080913.439178546,
+    "held": 4080913.439178546
+   },
+   {
+    "height": 217585962,
+    "time": "2026-09-28T04:54:53.357Z",
+    "credits": 4044865.3843243397,
+    "held": 4044865.3843243397
+   },
+   {
+    "height": 217588962,
+    "time": "2026-09-28T05:24:24.680Z",
+    "credits": 4037258.3556272793,
+    "held": 4037258.3556272793
+   },
+   {
+    "height": 217591962,
+    "time": "2026-09-28T05:53:49.209Z",
+    "credits": 3999504.592872531,
+    "held": 3999504.592872531
+   },
+   {
+    "height": 217594962,
+    "time": "2026-09-28T06:23:22.011Z",
+    "credits": 3996189.9981954256,
+    "held": 3996189.9981954256
+   },
+   {
+    "height": 217597962,
+    "time": "2026-09-28T06:52:55.661Z",
+    "credits": 3954282.6593239787,
+    "held": 3954282.6593239787
+   },
+   {
+    "height": 217600962,
+    "time": "2026-09-28T07:22:25.806Z",
+    "credits": 4005525.983982429,
+    "held": 4005525.983982429
+   },
+   {
+    "height": 217603962,
+    "time": "2026-09-28T07:51:56.373Z",
+    "credits": 3974463.8820172907,
+    "held": 3974463.8820172907
+   },
+   {
+    "height": 217606962,
+    "time": "2026-09-28T08:21:18.118Z",
+    "credits": 3995256.011297583,
+    "held": 3995256.011297583
+   },
+   {
+    "height": 217609962,
+    "time": "2026-09-28T08:50:52.039Z",
+    "credits": 3964978.8091153298,
+    "held": 3964978.8091153298
+   },
+   {
+    "height": 217612962,
+    "time": "2026-09-28T09:20:17.869Z",
+    "credits": 4395895.462822293,
+    "held": 4395895.462822293
+   },
+   {
+    "height": 217615962,
+    "time": "2026-09-28T09:49:46.988Z",
+    "credits": 4923997.834186937,
+    "held": 4923997.834186937
+   },
+   {
+    "height": 217618962,
+    "time": "2026-09-28T10:19:17.534Z",
+    "credits": 4704920.615222875,
+    "held": 4704920.615222875
+   },
+   {
+    "height": 217621962,
+    "time": "2026-09-28T10:49:18.028Z",
+    "credits": 5473068.052026551,
+    "held": 5473068.052026551
+   },
+   {
+    "height": 217624962,
+    "time": "2026-09-28T11:18:57.981Z",
+    "credits": 4820437.005480257,
+    "held": 4820437.005480257
+   },
+   {
+    "height": 217627962,
+    "time": "2026-09-28T11:48:42.209Z",
+    "credits": 4841313.115937595,
+    "held": 4841313.115937595
+   },
+   {
+    "height": 217630962,
+    "time": "2026-09-28T12:18:12.468Z",
+    "credits": 4689368.709732614,
+    "held": 4689368.709732614
+   },
+   {
+    "height": 217633962,
+    "time": "2026-09-28T12:47:56.390Z",
+    "credits": 4620789.416484698,
+    "held": 4620789.416484698
+   },
+   {
+    "height": 217636962,
+    "time": "2026-09-28T13:17:36.591Z",
+    "credits": 4518402.832960414,
+    "held": 4518402.832960414
+   },
+   {
+    "height": 217639962,
+    "time": "2026-09-28T13:47:21.258Z",
+    "credits": 5428608.226796683,
+    "held": 5428608.226796683
+   },
+   {
+    "height": 217642962,
+    "time": "2026-09-28T14:17:02.980Z",
+    "credits": 4944962.932979952,
+    "held": 4944962.932979952
+   },
+   {
+    "height": 217645962,
+    "time": "2026-09-28T14:46:46.978Z",
+    "credits": 4961796.348151531,
+    "held": 4961796.348151531
+   },
+   {
+    "height": 217648962,
+    "time": "2026-09-28T15:16:27.512Z",
+    "credits": 4919281.827784854,
+    "held": 4919281.827784854
+   },
+   {
+    "height": 217651962,
+    "time": "2026-09-28T15:46:11.812Z",
+    "credits": 4888170.04941672,
+    "held": 4888170.04941672
+   },
+   {
+    "height": 217654962,
+    "time": "2026-09-28T16:15:49.418Z",
+    "credits": 4768149.882169296,
+    "held": 4768149.882169296
+   },
+   {
+    "height": 217657962,
+    "time": "2026-09-28T16:45:35.371Z",
+    "credits": 4583880.107105046,
+    "held": 4583880.107105046
+   },
+   {
+    "height": 217660962,
+    "time": "2026-09-28T17:15:41.471Z",
+    "credits": 4266524.813652878,
+    "held": 4266524.813652878
+   },
+   {
+    "height": 217663962,
+    "time": "2026-09-28T17:45:25.025Z",
+    "credits": 4053194.6179903434,
+    "held": 4053194.6179903434
+   },
+   {
+    "height": 217666962,
+    "time": "2026-09-28T18:15:01.645Z",
+    "credits": 4103115.929772579,
+    "held": 4103115.929772579
+   },
+   {
+    "height": 217669962,
+    "time": "2026-09-28T18:44:42.085Z",
+    "credits": 4117772.7042473545,
+    "held": 4117772.7042473545
+   },
+   {
+    "height": 217672962,
+    "time": "2026-09-28T19:15:09.003Z",
+    "credits": 4150060.3980040294,
+    "held": 4150060.3980040294
+   },
+   {
+    "height": 217675962,
+    "time": "2026-09-28T19:44:59.069Z",
+    "credits": 4115721.0895810113,
+    "held": 4115721.0895810113
+   },
+   {
+    "height": 217678962,
+    "time": "2026-09-28T20:14:30.016Z",
+    "credits": 4117965.2065040017,
+    "held": 4117965.2065040017
+   },
+   {
+    "height": 217681962,
+    "time": "2026-09-28T20:44:04.714Z",
+    "credits": 4012717.0100404564,
+    "held": 4012717.0100404564
+   },
+   {
+    "height": 217684962,
+    "time": "2026-09-28T21:13:38.135Z",
+    "credits": 4103973.954211112,
+    "held": 4103973.954211112
+   },
+   {
+    "height": 217687962,
+    "time": "2026-09-28T21:44:26.207Z",
+    "credits": 4109633.504740384,
+    "held": 4109633.504740384
+   },
+   {
+    "height": 217690962,
+    "time": "2026-09-28T22:14:04.917Z",
+    "credits": 4109845.8782152063,
+    "held": 4109845.8782152063
+   },
+   {
+    "height": 217693962,
+    "time": "2026-09-28T22:43:36.149Z",
+    "credits": 4108717.706340279,
+    "held": 4108717.706340279
+   },
+   {
+    "height": 217696962,
+    "time": "2026-09-28T23:13:11.747Z",
+    "credits": 4081356.691940191,
+    "held": 4081356.691940191
+   },
+   {
+    "height": 217699962,
+    "time": "2026-09-28T23:42:47.333Z",
+    "credits": 4078164.866666512,
+    "held": 4078164.866666512
+   },
+   {
+    "height": 217702962,
+    "time": "2026-09-29T00:12:27.426Z",
+    "credits": 4058495.8574602013,
+    "held": 4058495.8574602013
+   },
+   {
+    "height": 217705962,
+    "time": "2026-09-29T00:42:01.005Z",
+    "credits": 4036738.1852768105,
+    "held": 4036738.1852768105
+   },
+   {
+    "height": 217708962,
+    "time": "2026-09-29T01:11:40.975Z",
+    "credits": 4044018.2463066494,
+    "held": 4044018.2463066494
+   },
+   {
+    "height": 217711962,
+    "time": "2026-09-29T01:41:12.880Z",
+    "credits": 4048341.3341533835,
+    "held": 4048341.3341533835
+   },
+   {
+    "height": 217714962,
+    "time": "2026-09-29T02:10:50.343Z",
+    "credits": 4028917.416868269,
+    "held": 4028917.416868269
+   },
+   {
+    "height": 217717962,
+    "time": "2026-09-29T02:40:40.744Z",
+    "credits": 4047410.5081264437,
+    "held": 4047410.5081264437
+   },
+   {
+    "height": 217720962,
+    "time": "2026-09-29T03:10:12.272Z",
+    "credits": 3964672.4271984706,
+    "held": 3964672.4271984706
+   },
+   {
+    "height": 217723962,
+    "time": "2026-09-29T03:39:52.914Z",
+    "credits": 3919659.429060054,
+    "held": 3919659.429060054
+   },
+   {
+    "height": 217726962,
+    "time": "2026-09-29T04:09:47.629Z",
+    "credits": 3956329.7314645476,
+    "held": 3956329.7314645476
+   },
+   {
+    "height": 217729962,
+    "time": "2026-09-29T04:39:22.204Z",
+    "credits": 3959159.285012315,
+    "held": 3959159.285012315
+   },
+   {
+    "height": 217732962,
+    "time": "2026-09-29T05:09:02.055Z",
+    "credits": 3933040.3830453986,
+    "held": 3933040.3830453986
+   },
+   {
+    "height": 217735962,
+    "time": "2026-09-29T05:38:35.990Z",
+    "credits": 3931277.59589595,
+    "held": 3931277.59589595
+   },
+   {
+    "height": 217738962,
+    "time": "2026-09-29T06:08:51.134Z",
+    "credits": 4044226.704727688,
+    "held": 4044226.704727688
+   },
+   {
+    "height": 217741962,
+    "time": "2026-09-29T06:38:32.320Z",
+    "credits": 3928193.079413005,
+    "held": 3928193.079413005
+   },
+   {
+    "height": 217744962,
+    "time": "2026-09-29T07:08:50.488Z",
+    "credits": 4242304.71000021,
+    "held": 4242304.71000021
+   },
+   {
+    "height": 217747962,
+    "time": "2026-09-29T07:38:44.904Z",
+    "credits": 4232755.371700768,
+    "held": 4232755.371700768
+   },
+   {
+    "height": 217750962,
+    "time": "2026-09-29T08:08:27.250Z",
+    "credits": 4086864.707134304,
+    "held": 4086864.707134304
+   },
+   {
+    "height": 217753962,
+    "time": "2026-09-29T08:38:33.361Z",
+    "credits": 4173054.117320459,
+    "held": 4173054.117320459
+   },
+   {
+    "height": 217756962,
+    "time": "2026-09-29T09:08:21.258Z",
+    "credits": 4030650.2361071575,
+    "held": 4030650.2361071575
+   },
+   {
+    "height": 217759962,
+    "time": "2026-09-29T09:38:01.211Z",
+    "credits": 4037452.1757934433,
+    "held": 4037452.1757934433
+   },
+   {
+    "height": 217762962,
+    "time": "2026-09-29T10:08:03.522Z",
+    "credits": 4031790.161665769,
+    "held": 4031790.161665769
+   },
+   {
+    "height": 217765962,
+    "time": "2026-09-29T10:38:10.550Z",
+    "credits": 4063872.455078916,
+    "held": 4063872.455078916
+   },
+   {
+    "height": 217768962,
+    "time": "2026-09-29T11:08:03.979Z",
+    "credits": 4104222.2359841825,
+    "held": 4104222.2359841825
+   },
+   {
+    "height": 217771962,
+    "time": "2026-09-29T11:37:47.821Z",
+    "credits": 4116248.158785784,
+    "held": 4116248.158785784
+   },
+   {
+    "height": 217774962,
+    "time": "2026-09-29T12:07:47.107Z",
+    "credits": 4311232.866867033,
+    "held": 4311232.866867033
+   },
+   {
+    "height": 217777962,
+    "time": "2026-09-29T12:38:29.891Z",
+    "credits": 4034587.910651674,
+    "held": 4084974.9913525027
+   },
+   {
+    "height": 217780962,
+    "time": "2026-09-29T13:08:38.671Z",
+    "credits": 4032549.8778469665,
+    "held": 4032549.8778469665
+   },
+   {
+    "height": 217783962,
+    "time": "2026-09-29T13:38:49.418Z",
+    "credits": 4159156.683545778,
+    "held": 4159156.683545778
+   },
+   {
+    "height": 217786962,
+    "time": "2026-09-29T14:08:58.036Z",
+    "credits": 4039406.8841602434,
+    "held": 4039406.8841602434
+   },
+   {
+    "height": 217789962,
+    "time": "2026-09-29T14:38:58.504Z",
+    "credits": 4003632.3867658065,
+    "held": 4003632.3867658065
+   },
+   {
+    "height": 217792962,
+    "time": "2026-09-29T15:09:11.216Z",
+    "credits": 4098354.1893175463,
+    "held": 4098354.1893175463
+   },
+   {
+    "height": 217795962,
+    "time": "2026-09-29T15:39:07.530Z",
+    "credits": 4084520.2151351217,
+    "held": 4084520.2151351217
+   },
+   {
+    "height": 217798962,
+    "time": "2026-09-29T16:09:03.507Z",
+    "credits": 4101655.781969757,
+    "held": 4101655.781969757
+   },
+   {
+    "height": 217801962,
+    "time": "2026-09-29T16:38:48.341Z",
+    "credits": 4166506.125489878,
+    "held": 4166496.125489878
+   },
+   {
+    "height": 217804962,
+    "time": "2026-09-29T17:08:26.737Z",
+    "credits": 4038786.7586912448,
+    "held": 4038756.7586912448
+   },
+   {
+    "height": 217807962,
+    "time": "2026-09-29T17:38:08.454Z",
+    "credits": 4184808.667759616,
+    "held": 4184778.667759616
+   },
+   {
+    "height": 217810962,
+    "time": "2026-09-29T18:08:14.431Z",
+    "credits": 5269136.796042304,
+    "held": 5269106.796042304
+   },
+   {
+    "height": 217813962,
+    "time": "2026-09-29T18:41:28.533Z",
+    "credits": 4759788.525891687,
+    "held": 4759758.525891687
+   },
+   {
+    "height": 217816962,
+    "time": "2026-09-29T19:15:19.002Z",
+    "credits": 4416151.331055556,
+    "held": 4416121.331055556
+   },
+   {
+    "height": 217819962,
+    "time": "2026-09-29T19:48:02.360Z",
+    "credits": 4299490.514854121,
+    "held": 4299475.014854121
+   },
+   {
+    "height": 217822962,
+    "time": "2026-09-29T20:17:41.788Z",
+    "credits": 3998161.8613419104,
+    "held": 3998131.8613419104
+   },
+   {
+    "height": 217825962,
+    "time": "2026-09-29T20:47:12.131Z",
+    "credits": 4018538.6061854684,
+    "held": 4018508.6061854684
+   },
+   {
+    "height": 217828962,
+    "time": "2026-09-29T21:17:52.482Z",
+    "credits": 4016943.089679538,
+    "held": 4016913.089679538
+   },
+   {
+    "height": 217831962,
+    "time": "2026-09-29T21:47:31.537Z",
+    "credits": 4013549.5721219694,
+    "held": 4013519.5721219694
+   },
+   {
+    "height": 217834962,
+    "time": "2026-09-29T22:17:02.619Z",
+    "credits": 4009421.696510123,
+    "held": 4009391.696510123
+   },
+   {
+    "height": 217837962,
+    "time": "2026-09-29T22:46:29.855Z",
+    "credits": 3981436.3847259185,
+    "held": 3981406.3847259185
+   },
+   {
+    "height": 217840962,
+    "time": "2026-09-29T23:16:09.689Z",
+    "credits": 4026009.9530462422,
+    "held": 4025979.9530462422
+   },
+   {
+    "height": 217843962,
+    "time": "2026-09-29T23:45:47.051Z",
+    "credits": 4028247.124663844,
+    "held": 4028217.124663844
+   },
+   {
+    "height": 217846962,
+    "time": "2026-09-30T00:15:14.482Z",
+    "credits": 4029194.10939137,
+    "held": 4029044.10939137
+   },
+   {
+    "height": 217849962,
+    "time": "2026-09-30T00:44:44.388Z",
+    "credits": 4059052.206243211,
+    "held": 4056502.206243211
+   },
+   {
+    "height": 217852962,
+    "time": "2026-09-30T01:14:13.936Z",
+    "credits": 4064479.389019245,
+    "held": 4061929.389019245
+   },
+   {
+    "height": 217855962,
+    "time": "2026-09-30T01:43:48.095Z",
+    "credits": 4108600.407517044,
+    "held": 4106050.407517044
+   },
+   {
+    "height": 217858962,
+    "time": "2026-09-30T02:13:16.607Z",
+    "credits": 4125964.013622936,
+    "held": 4123414.013622936
+   },
+   {
+    "height": 217861962,
+    "time": "2026-09-30T02:43:07.870Z",
+    "credits": 4067771.141451403,
+    "held": 4065221.141451403
+   },
+   {
+    "height": 217864962,
+    "time": "2026-09-30T03:12:41.909Z",
+    "credits": 4116067.8786898116,
+    "held": 4113517.8786898116
+   },
+   {
+    "height": 217867962,
+    "time": "2026-09-30T03:41:56.895Z",
+    "credits": 4160352.148857087,
+    "held": 4157802.148857087
+   },
+   {
+    "height": 217870962,
+    "time": "2026-09-30T04:11:22.320Z",
+    "credits": 4124082.468760184,
+    "held": 4121532.468760184
+   },
+   {
+    "height": 217873962,
+    "time": "2026-09-30T04:41:05.697Z",
+    "credits": 4152282.917725574,
+    "held": 4149735.243321229
+   },
+   {
+    "height": 217876962,
+    "time": "2026-09-30T05:10:58.310Z",
+    "credits": 4199705.179912916,
+    "held": 4197155.179912916
+   },
+   {
+    "height": 217879962,
+    "time": "2026-09-30T05:42:07.687Z",
+    "credits": 4100055.2831119103,
+    "held": 4097505.2831119103
+   },
+   {
+    "height": 217882962,
+    "time": "2026-09-30T06:11:59.442Z",
+    "credits": 4087993.921110032,
+    "held": 4085443.921110032
+   },
+   {
+    "height": 217885962,
+    "time": "2026-09-30T06:45:51.322Z",
+    "credits": 4076407.9466921696,
+    "held": 4073857.9466921696
+   },
+   {
+    "height": 217888962,
+    "time": "2026-09-30T07:19:38.858Z",
+    "credits": 4044894.788441498,
+    "held": 4042344.788441498
+   },
+   {
+    "height": 217891962,
+    "time": "2026-09-30T07:52:39.653Z",
+    "credits": 4114191.1271110913,
+    "held": 4111641.1271110913
+   },
+   {
+    "height": 217894962,
+    "time": "2026-09-30T08:24:33.736Z",
+    "credits": 4273697.5020012595,
+    "held": 4271147.5020012595
+   },
+   {
+    "height": 217897962,
+    "time": "2026-09-30T08:56:38.524Z",
+    "credits": 4258501.983122091,
+    "held": 4255951.983122091
+   },
+   {
+    "height": 217900962,
+    "time": "2026-09-30T09:29:03.740Z",
+    "credits": 4252869.571227596,
+    "held": 4250319.571227596
+   },
+   {
+    "height": 217903962,
+    "time": "2026-09-30T10:01:31.417Z",
+    "credits": 4268058.052605395,
+    "held": 4265508.052605395
+   },
+   {
+    "height": 217906962,
+    "time": "2026-09-30T10:34:07.761Z",
+    "credits": 4244999.758484929,
+    "held": 4242449.758484929
+   },
+   {
+    "height": 217909962,
+    "time": "2026-09-30T11:06:19.158Z",
+    "credits": 4437129.326896346,
+    "held": 4434579.326896346
+   },
+   {
+    "height": 217912962,
+    "time": "2026-09-30T11:40:18.009Z",
+    "credits": 4156442.9830334694,
+    "held": 4153892.9830334694
+   },
+   {
+    "height": 217915962,
+    "time": "2026-09-30T12:13:40.208Z",
+    "credits": 4064758.634912376,
+    "held": 4062208.634912376
+   },
+   {
+    "height": 217918962,
+    "time": "2026-09-30T12:45:54.712Z",
+    "credits": 4513868.032838829,
+    "held": 4511318.032838829
+   },
+   {
+    "height": 217921962,
+    "time": "2026-09-30T13:18:43.714Z",
+    "credits": 4390607.932174754,
+    "held": 4388057.932174754
+   },
+   {
+    "height": 217924962,
+    "time": "2026-09-30T13:53:27.402Z",
+    "credits": 4111009.0747070983,
+    "held": 4108459.0747070983
+   },
+   {
+    "height": 217927962,
+    "time": "2026-09-30T14:27:16.509Z",
+    "credits": 4120654.453020056,
+    "held": 4118104.453020056
+   },
+   {
+    "height": 217930962,
+    "time": "2026-09-30T15:01:10.009Z",
+    "credits": 4169118.6419546693,
+    "held": 4166568.6419546693
+   },
+   {
+    "height": 217933962,
+    "time": "2026-09-30T15:35:29.373Z",
+    "credits": 4164809.068516939,
+    "held": 4162259.068516939
+   },
+   {
+    "height": 217936962,
+    "time": "2026-09-30T16:06:01.010Z",
+    "credits": 4267808.367599143,
+    "held": 4265258.367599143
+   },
+   {
+    "height": 217939962,
+    "time": "2026-09-30T16:35:58.926Z",
+    "credits": 4094877.370573688,
+    "held": 4092327.370573688
+   },
+   {
+    "height": 217942962,
+    "time": "2026-09-30T17:05:49.291Z",
+    "credits": 4174350.473109541,
+    "held": 4171800.473109541
+   },
+   {
+    "height": 217945962,
+    "time": "2026-09-30T17:35:59.596Z",
+    "credits": 3948910.9041163623,
+    "held": 3946360.9041163623
+   },
+   {
+    "height": 217948962,
+    "time": "2026-09-30T18:05:49.065Z",
+    "credits": 3859939.6246144646,
+    "held": 3857389.6246144646
+   },
+   {
+    "height": 217951962,
+    "time": "2026-09-30T18:35:28.586Z",
+    "credits": 3844163.560023893,
+    "held": 3841613.560023893
+   },
+   {
+    "height": 217954962,
+    "time": "2026-09-30T19:04:57.298Z",
+    "credits": 3896366.8738169083,
+    "held": 3893816.8738169083
+   },
+   {
+    "height": 217957962,
+    "time": "2026-09-30T19:34:27.202Z",
+    "credits": 3844340.692201222,
+    "held": 3841790.692201222
+   },
+   {
+    "height": 217960962,
+    "time": "2026-09-30T20:03:59.302Z",
+    "credits": 3819238.3066616743,
+    "held": 3816688.3066616743
+   },
+   {
+    "height": 217963962,
+    "time": "2026-09-30T20:33:23.504Z",
+    "credits": 3834321.2648452697,
+    "held": 3829232.2648452697
+   },
+   {
+    "height": 217966962,
+    "time": "2026-09-30T21:02:53.788Z",
+    "credits": 3824383.835897657,
+    "held": 3819294.835897657
+   },
+   {
+    "height": 217969962,
+    "time": "2026-09-30T21:32:31.845Z",
+    "credits": 3765720.380678695,
+    "held": 3760631.380678695
+   },
+   {
+    "height": 217972962,
+    "time": "2026-09-30T22:01:59.191Z",
+    "credits": 3820033.892616602,
+    "held": 3814944.892616602
+   },
+   {
+    "height": 217975962,
+    "time": "2026-09-30T22:31:26.399Z",
+    "credits": 3811954.7083842023,
+    "held": 3806865.7083842023
+   },
+   {
+    "height": 217978962,
+    "time": "2026-09-30T23:00:55.072Z",
+    "credits": 3839125.3973299838,
+    "held": 3798490.3973299838
+   },
+   {
+    "height": 217981962,
+    "time": "2026-09-30T23:30:17.599Z",
+    "credits": 3996093.6132812114,
+    "held": 3671090.6132812114
+   },
+   {
+    "height": 217984962,
+    "time": "2026-09-30T23:59:53.024Z",
+    "credits": 3817547.515656225,
+    "held": 2517568.515656225
+   },
+   {
+    "height": 217987962,
+    "time": "2026-10-01T00:29:14.464Z",
+    "credits": 3832828.510997837,
+    "held": 1032945.510997837
+   },
+   {
+    "height": 217990962,
+    "time": "2026-10-01T00:58:19.563Z",
+    "credits": 3800822.662356758,
+    "held": 201067.66235675782
+   },
+   {
+    "height": 217993962,
+    "time": "2026-10-01T01:27:42.039Z",
+    "credits": 3848797.651709224,
+    "held": 149298.65170922418
+   },
+   {
+    "height": 217996962,
+    "time": "2026-10-01T01:57:03.686Z",
+    "credits": 3842954.4604821834,
+    "held": 5805.307530727046
+   },
+   {
+    "height": 217999962,
+    "time": "2026-10-01T02:26:23.888Z",
+    "credits": 3861732.9804170737,
+    "held": 24583.82746561764
+   },
+   {
+    "height": 218002962,
+    "time": "2026-10-01T02:55:50.384Z",
+    "credits": 3853191.64528982,
+    "held": 16042.492338363863
+   },
+   {
+    "height": 218005962,
+    "time": "2026-10-01T03:25:12.403Z",
+    "credits": 3860790.3263140703,
+    "held": 31359.70925409072
+   },
+   {
+    "height": 218008962,
+    "time": "2026-10-01T03:54:44.149Z",
+    "credits": 3806157.648209032,
+    "held": 22405.109353507276
+   },
+   {
+    "height": 218011962,
+    "time": "2026-10-01T04:24:56.115Z",
+    "credits": 3827922.2795277447,
+    "held": 44169.740672219814
+   },
+   {
+    "height": 218014962,
+    "time": "2026-10-01T04:54:30.195Z",
+    "credits": 3829887.684912878,
+    "held": 46135.14605735339
+   },
+   {
+    "height": 218017962,
+    "time": "2026-10-01T05:23:53.906Z",
+    "credits": 3815484.2938971026,
+    "held": 31731.75504157803
+   },
+   {
+    "height": 218020962,
+    "time": "2026-10-01T05:53:13.691Z",
+    "credits": 3828260.17849973,
+    "held": 26427.556983822036
+   },
+   {
+    "height": 218023962,
+    "time": "2026-10-01T06:22:56.158Z",
+    "credits": 3818885.2971878503,
+    "held": 17052.675671942594
+   },
+   {
+    "height": 218026962,
+    "time": "2026-10-01T06:52:38.254Z",
+    "credits": 3819914.295506829,
+    "held": 18081.673990920866
+   },
+   {
+    "height": 218029962,
+    "time": "2026-10-01T07:22:17.897Z",
+    "credits": 3859356.046482616,
+    "held": 57523.42496670832
+   },
+   {
+    "height": 218032962,
+    "time": "2026-10-01T07:52:04.689Z",
+    "credits": 3845315.2661643317,
+    "held": 43482.64464842372
+   },
+   {
+    "height": 218035962,
+    "time": "2026-10-01T08:22:12.150Z",
+    "credits": 4126102.9158738437,
+    "held": 324270.29435793596
+   },
+   {
+    "height": 218038962,
+    "time": "2026-10-01T08:52:08.540Z",
+    "credits": 4085397.0927057383,
+    "held": 283564.47118983034
+   },
+   {
+    "height": 218041962,
+    "time": "2026-10-01T09:21:58.132Z",
+    "credits": 4085397.0927057383,
+    "held": 283564.47118983034
+   },
+   {
+    "height": 218044962,
+    "time": "2026-10-01T09:53:00.587Z",
+    "credits": 4085397.0927057383,
+    "held": 283564.47118983034
+   },
+   {
+    "height": 218047962,
+    "time": "2026-10-01T10:29:12.367Z",
+    "credits": 4085397.0927057383,
+    "held": 283564.47118983034
+   },
+   {
+    "height": 218050962,
+    "time": "2026-10-01T11:05:32.207Z",
+    "credits": 4085397.0927057383,
+    "held": 283564.47118983034
+   },
+   {
+    "height": 218053962,
+    "time": "2026-10-01T11:41:51.981Z",
+    "credits": 4084389.461909105,
+    "held": 282556.8403931974
+   },
+   {
+    "height": 218056962,
+    "time": "2026-10-01T12:17:53.859Z",
+    "credits": 4084389.461909105,
+    "held": 282556.8403931974
+   },
+   {
+    "height": 218059962,
+    "time": "2026-10-01T12:53:34.853Z",
+    "credits": 4084389.461909105,
+    "held": 282556.8403931974
+   },
+   {
+    "height": 218062962,
+    "time": "2026-10-01T13:27:03.234Z",
+    "credits": 4084389.461909105,
+    "held": 282556.8403931974
+   },
+   {
+    "height": 218065962,
+    "time": "2026-10-01T13:56:59.186Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218068962,
+    "time": "2026-10-01T14:27:07.628Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218071962,
+    "time": "2026-10-01T14:57:20.368Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218074962,
+    "time": "2026-10-01T15:27:03.660Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218077962,
+    "time": "2026-10-01T15:56:40.141Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218080962,
+    "time": "2026-10-01T16:26:25.328Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218083962,
+    "time": "2026-10-01T16:55:52.903Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218086962,
+    "time": "2026-10-01T17:25:44.702Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218089962,
+    "time": "2026-10-01T17:55:53.135Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218092962,
+    "time": "2026-10-01T18:25:31.367Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218095962,
+    "time": "2026-10-01T18:55:17.858Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218098962,
+    "time": "2026-10-01T19:24:44.348Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218101962,
+    "time": "2026-10-01T19:54:13.783Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218104962,
+    "time": "2026-10-01T20:23:46.905Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218107962,
+    "time": "2026-10-01T20:53:23.692Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218110962,
+    "time": "2026-10-01T21:23:38.588Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218113962,
+    "time": "2026-10-01T21:53:20.757Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218116962,
+    "time": "2026-10-01T22:22:44.277Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218119962,
+    "time": "2026-10-01T22:52:07.254Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218122962,
+    "time": "2026-10-01T23:21:24.121Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218125962,
+    "time": "2026-10-01T23:50:40.870Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218128962,
+    "time": "2026-10-02T00:20:38.320Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218131962,
+    "time": "2026-10-02T00:50:07.834Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218134962,
+    "time": "2026-10-02T01:19:22.716Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218137962,
+    "time": "2026-10-02T01:48:43.266Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218140962,
+    "time": "2026-10-02T02:18:40.871Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218143962,
+    "time": "2026-10-02T02:47:56.871Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218146962,
+    "time": "2026-10-02T03:17:11.294Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218149962,
+    "time": "2026-10-02T03:46:33.171Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218152962,
+    "time": "2026-10-02T04:16:05.238Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218155962,
+    "time": "2026-10-02T04:45:18.511Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218158962,
+    "time": "2026-10-02T05:14:40.320Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218161962,
+    "time": "2026-10-02T05:44:01.695Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218164962,
+    "time": "2026-10-02T06:13:21.331Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218167962,
+    "time": "2026-10-02T06:42:41.914Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218170962,
+    "time": "2026-10-02T07:12:01.642Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218173962,
+    "time": "2026-10-02T07:42:08.548Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218176962,
+    "time": "2026-10-02T08:11:48.553Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218179962,
+    "time": "2026-10-02T08:41:21.331Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218182962,
+    "time": "2026-10-02T09:10:44.816Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218185962,
+    "time": "2026-10-02T09:40:11.053Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218188962,
+    "time": "2026-10-02T10:09:59.339Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218191962,
+    "time": "2026-10-02T10:39:36.928Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218194962,
+    "time": "2026-10-02T11:09:00.385Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218197962,
+    "time": "2026-10-02T11:38:24.691Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218200962,
+    "time": "2026-10-02T12:08:01.616Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218203962,
+    "time": "2026-10-02T12:37:31.750Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218206962,
+    "time": "2026-10-02T13:06:56.972Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218209962,
+    "time": "2026-10-02T13:36:42.365Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218212962,
+    "time": "2026-10-02T14:07:04.313Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218215962,
+    "time": "2026-10-02T14:36:52.356Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218218962,
+    "time": "2026-10-02T15:06:35.917Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218221962,
+    "time": "2026-10-02T15:36:17.617Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218224962,
+    "time": "2026-10-02T16:05:36.661Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218227962,
+    "time": "2026-10-02T16:35:03.980Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218230962,
+    "time": "2026-10-02T17:04:35.329Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218233962,
+    "time": "2026-10-02T17:33:53.473Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218236962,
+    "time": "2026-10-02T18:03:13.472Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218239962,
+    "time": "2026-10-02T18:32:44.189Z",
+    "credits": 3869502.183743166,
+    "held": 67669.5622272579
+   },
+   {
+    "height": 218242962,
+    "time": "2026-10-02T19:02:00.348Z",
+    "credits": 3869502.183743166,
+    "held": 67671.5622272579
+   },
+   {
+    "height": 218245962,
+    "time": "2026-10-02T19:31:29.578Z",
+    "credits": 3869502.183743166,
+    "held": 167669.5622272579
+   },
+   {
+    "height": 218248962,
+    "time": "2026-10-02T20:00:51.816Z",
+    "credits": 3869502.183743166,
+    "held": 2067669.562227258
+   },
+   {
+    "height": 218251962,
+    "time": "2026-10-02T20:30:11.405Z",
+    "credits": 3869502.183743166,
+    "held": 3869502.183743166
+   },
+   {
+    "height": 218254962,
+    "time": "2026-10-02T20:59:33.861Z",
+    "credits": 3869503.4183110557,
+    "held": 3869503.4183110557
+   },
+   {
+    "height": 218257962,
+    "time": "2026-10-02T21:29:04.660Z",
+    "credits": 3820627.2187195886,
+    "held": 3820627.2187195886
+   },
+   {
+    "height": 218260962,
+    "time": "2026-10-02T21:58:17.978Z",
+    "credits": 3742031.340418927,
+    "held": 3742031.340418927
+   },
+   {
+    "height": 218263962,
+    "time": "2026-10-02T22:27:42.095Z",
+    "credits": 3745448.3788715783,
+    "held": 3745448.3788715783
+   },
+   {
+    "height": 218266962,
+    "time": "2026-10-02T22:57:01.867Z",
+    "credits": 3619129.0351913273,
+    "held": 3619129.0351913273
+   },
+   {
+    "height": 218269962,
+    "time": "2026-10-02T23:26:24.565Z",
+    "credits": 3615950.468828917,
+    "held": 3615950.468828917
+   },
+   {
+    "height": 218272962,
+    "time": "2026-10-02T23:55:41.829Z",
+    "credits": 3611750.468828917,
+    "held": 3611750.468828917
+   },
+   {
+    "height": 218275962,
+    "time": "2026-10-03T00:25:02.898Z",
+    "credits": 3608183.5953762867,
+    "held": 3608183.5953762867
+   },
+   {
+    "height": 218278962,
+    "time": "2026-10-03T00:54:26.022Z",
+    "credits": 3606607.2274149414,
+    "held": 3606607.2274149414
+   },
+   {
+    "height": 218281962,
+    "time": "2026-10-03T01:23:48.255Z",
+    "credits": 3606469.489979559,
+    "held": 3606469.489979559
+   },
+   {
+    "height": 218284962,
+    "time": "2026-10-03T01:53:11.263Z",
+    "credits": 3593510.8850289383,
+    "held": 3593510.8850289383
+   },
+   {
+    "height": 218287962,
+    "time": "2026-10-03T02:22:29.997Z",
+    "credits": 3608597.359344168,
+    "held": 3608597.359344168
+   },
+   {
+    "height": 218290962,
+    "time": "2026-10-03T02:51:38.073Z",
+    "credits": 3619980.401599706,
+    "held": 3619980.401599706
+   },
+   {
+    "height": 218293962,
+    "time": "2026-10-03T03:20:52.233Z",
+    "credits": 3622977.353067714,
+    "held": 3622977.353067714
+   },
+   {
+    "height": 218296962,
+    "time": "2026-10-03T03:49:57.783Z",
+    "credits": 3628828.4550405885,
+    "held": 3628828.4550405885
+   },
+   {
+    "height": 218299962,
+    "time": "2026-10-03T04:19:13.823Z",
+    "credits": 3628562.9522785298,
+    "held": 3628562.9522785298
+   },
+   {
+    "height": 218302962,
+    "time": "2026-10-03T04:48:35.324Z",
+    "credits": 3628562.9522785298,
+    "held": 3628562.9522785298
+   },
+   {
+    "height": 218305962,
+    "time": "2026-10-03T05:17:57.609Z",
+    "credits": 3621941.5652556326,
+    "held": 3621941.5652556326
+   },
+   {
+    "height": 218308962,
+    "time": "2026-10-03T05:47:05.350Z",
+    "credits": 3611952.594324634,
+    "held": 3611952.594324634
+   },
+   {
+    "height": 218311962,
+    "time": "2026-10-03T06:16:22.292Z",
+    "credits": 3619676.676945732,
+    "held": 3619676.676945732
+   },
+   {
+    "height": 218314962,
+    "time": "2026-10-03T06:45:37.865Z",
+    "credits": 3620789.0580577687,
+    "held": 3620789.0580577687
+   },
+   {
+    "height": 218317962,
+    "time": "2026-10-03T07:14:59.797Z",
+    "credits": 3618928.299944966,
+    "held": 3618928.299944966
+   },
+   {
+    "height": 218320962,
+    "time": "2026-10-03T07:44:14.899Z",
+    "credits": 3612068.2980877287,
+    "held": 3612068.2980877287
+   },
+   {
+    "height": 218323962,
+    "time": "2026-10-03T08:13:38.963Z",
+    "credits": 3607587.2596044973,
+    "held": 3607587.2596044973
+   },
+   {
+    "height": 218326962,
+    "time": "2026-10-03T08:42:51.759Z",
+    "credits": 3607297.0318994843,
+    "held": 3607297.0318994843
+   },
+   {
+    "height": 218329962,
+    "time": "2026-10-03T09:12:23.302Z",
+    "credits": 3612361.2167803086,
+    "held": 3612361.2167803086
+   },
+   {
+    "height": 218332962,
+    "time": "2026-10-03T09:41:45.123Z",
+    "credits": 3612980.6777782002,
+    "held": 3612980.6777782002
+   },
+   {
+    "height": 218335962,
+    "time": "2026-10-03T10:10:52.909Z",
+    "credits": 3612587.221792434,
+    "held": 3612587.221792434
+   },
+   {
+    "height": 218338962,
+    "time": "2026-10-03T10:40:21.292Z",
+    "credits": 3605488.919491964,
+    "held": 3605488.919491964
+   },
+   {
+    "height": 218341962,
+    "time": "2026-10-03T11:09:35.924Z",
+    "credits": 3607534.5292261364,
+    "held": 3607534.5292261364
+   },
+   {
+    "height": 218344962,
+    "time": "2026-10-03T11:38:49.206Z",
+    "credits": 3591588.5927393017,
+    "held": 3591588.5927393017
+   },
+   {
+    "height": 218347962,
+    "time": "2026-10-03T12:08:10.019Z",
+    "credits": 3562526.6173225124,
+    "held": 3562526.6173225124
+   },
+   {
+    "height": 218350962,
+    "time": "2026-10-03T12:37:29.488Z",
+    "credits": 3575513.206209911,
+    "held": 3575513.206209911
+   },
+   {
+    "height": 218353962,
+    "time": "2026-10-03T13:06:53.075Z",
+    "credits": 3556756.79568622,
+    "held": 3556756.79568622
+   },
+   {
+    "height": 218356962,
+    "time": "2026-10-03T13:36:08.880Z",
+    "credits": 3595332.284054201,
+    "held": 3595332.284054201
+   },
+   {
+    "height": 218359962,
+    "time": "2026-10-03T14:05:37.853Z",
+    "credits": 3590616.906128953,
+    "held": 3590616.906128953
+   },
+   {
+    "height": 218362962,
+    "time": "2026-10-03T14:35:08.445Z",
+    "credits": 3562699.331471353,
+    "held": 3562699.331471353
+   },
+   {
+    "height": 218365962,
+    "time": "2026-10-03T15:04:46.663Z",
+    "credits": 3563793.0702710953,
+    "held": 3563793.0702710953
+   },
+   {
+    "height": 218368962,
+    "time": "2026-10-03T15:34:15.659Z",
+    "credits": 3544725.045796871,
+    "held": 3544725.045796871
+   },
+   {
+    "height": 218371962,
+    "time": "2026-10-03T16:03:33.338Z",
+    "credits": 3523981.9291434377,
+    "held": 3523981.9291434377
+   },
+   {
+    "height": 218374962,
+    "time": "2026-10-03T16:32:53.198Z",
+    "credits": 3484476.4857263705,
+    "held": 3484476.4857263705
+   },
+   {
+    "height": 218377962,
+    "time": "2026-10-03T17:02:12.532Z",
+    "credits": 3616319.340316452,
+    "held": 3616319.340316452
+   },
+   {
+    "height": 218380962,
+    "time": "2026-10-03T17:31:44.105Z",
+    "credits": 3573427.3884163816,
+    "held": 3573427.3884163816
+   },
+   {
+    "height": 218383962,
+    "time": "2026-10-03T18:01:07.305Z",
+    "credits": 3573427.3884163816,
+    "held": 3573427.3884163816
+   },
+   {
+    "height": 218386962,
+    "time": "2026-10-03T18:30:38.698Z",
+    "credits": 3573427.3884163816,
+    "held": 3573427.3884163816
+   },
+   {
+    "height": 218389962,
+    "time": "2026-10-03T18:59:57.616Z",
+    "credits": 3573427.3884163816,
+    "held": 3573427.3884163816
+   },
+   {
+    "height": 218392962,
+    "time": "2026-10-03T19:29:22.283Z",
+    "credits": 3571926.9860480363,
+    "held": 3571926.9860480363
+   },
+   {
+    "height": 218395962,
+    "time": "2026-10-03T19:58:32.229Z",
+    "credits": 3668704.11232545,
+    "held": 3668704.11232545
+   },
+   {
+    "height": 218398962,
+    "time": "2026-10-03T20:28:02.153Z",
+    "credits": 3629636.175641734,
+    "held": 3629636.175641734
+   },
+   {
+    "height": 218401962,
+    "time": "2026-10-03T20:57:24.182Z",
+    "credits": 3607417.0299387444,
+    "held": 3607417.0299387444
+   },
+   {
+    "height": 218404962,
+    "time": "2026-10-03T21:26:51.092Z",
+    "credits": 3571441.754841163,
+    "held": 3571441.754841163
+   },
+   {
+    "height": 218407962,
+    "time": "2026-10-03T21:56:07.909Z",
+    "credits": 3571441.754841163,
+    "held": 3571441.754841163
+   },
+   {
+    "height": 218410962,
+    "time": "2026-10-03T22:25:22.873Z",
+    "credits": 3571471.8448411627,
+    "held": 3571471.8448411627
+   },
+   {
+    "height": 218413962,
+    "time": "2026-10-03T22:54:36.852Z",
+    "credits": 3572029.6912394073,
+    "held": 3572029.6912394073
+   },
+   {
+    "height": 218416962,
+    "time": "2026-10-03T23:23:56.203Z",
+    "credits": 3572061.9321750924,
+    "held": 3572061.9321750924
+   },
+   {
+    "height": 218419962,
+    "time": "2026-10-03T23:53:07.935Z",
+    "credits": 3572061.9321750924,
+    "held": 3572061.9321750924
+   },
+   {
+    "height": 218422962,
+    "time": "2026-10-04T00:22:22.588Z",
+    "credits": 3572061.9321750924,
+    "held": 3572061.9321750924
+   },
+   {
+    "height": 218425962,
+    "time": "2026-10-04T00:51:35.956Z",
+    "credits": 3572820.878825149,
+    "held": 3572820.878825149
+   },
+   {
+    "height": 218428962,
+    "time": "2026-10-04T01:20:51.604Z",
+    "credits": 3572863.513557649,
+    "held": 3572863.513557649
+   },
+   {
+    "height": 218431962,
+    "time": "2026-10-04T01:50:09.369Z",
+    "credits": 3572863.513557649,
+    "held": 3572863.513557649
+   },
+   {
+    "height": 218434962,
+    "time": "2026-10-04T02:19:24.254Z",
+    "credits": 3572863.513557649,
+    "held": 3572863.513557649
+   },
+   {
+    "height": 218437962,
+    "time": "2026-10-04T02:48:37.703Z",
+    "credits": 3572863.513557649,
+    "held": 3572863.513557649
+   },
+   {
+    "height": 218440962,
+    "time": "2026-10-04T03:17:50.076Z",
+    "credits": 3571139.548662384,
+    "held": 3571139.548662384
+   },
+   {
+    "height": 218443962,
+    "time": "2026-10-04T03:47:04.147Z",
+    "credits": 3571139.548662384,
+    "held": 3571139.548662384
+   },
+   {
+    "height": 218446962,
+    "time": "2026-10-04T04:16:19.675Z",
+    "credits": 3571139.558970394,
+    "held": 3571139.558970394
+   },
+   {
+    "height": 218449962,
+    "time": "2026-10-04T04:45:45.034Z",
+    "credits": 3571139.558970394,
+    "held": 3571139.558970394
+   },
+   {
+    "height": 218452962,
+    "time": "2026-10-04T05:15:06.924Z",
+    "credits": 3571252.6433263854,
+    "held": 3571252.6433263854
+   },
+   {
+    "height": 218455962,
+    "time": "2026-10-04T05:44:28.513Z",
+    "credits": 3571252.6433263854,
+    "held": 3571252.6433263854
+   },
+   {
+    "height": 218458962,
+    "time": "2026-10-04T06:13:56.414Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218461962,
+    "time": "2026-10-04T06:43:20.316Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218464962,
+    "time": "2026-10-04T07:12:38.684Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218467962,
+    "time": "2026-10-04T07:42:06.795Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218470962,
+    "time": "2026-10-04T08:11:31.549Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218473962,
+    "time": "2026-10-04T08:40:50.370Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218476962,
+    "time": "2026-10-04T09:10:05.712Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218479962,
+    "time": "2026-10-04T09:39:29.074Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218482962,
+    "time": "2026-10-04T10:08:53.682Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218485962,
+    "time": "2026-10-04T10:38:27.805Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218488962,
+    "time": "2026-10-04T11:07:32.300Z",
+    "credits": 3570238.983810928,
+    "held": 3570238.983810928
+   },
+   {
+    "height": 218491962,
+    "time": "2026-10-04T11:37:02.850Z",
+    "credits": 3568547.3959155967,
+    "held": 3568547.3959155967
+   },
+   {
+    "height": 218494962,
+    "time": "2026-10-04T12:06:27.495Z",
+    "credits": 3568547.3959155967,
+    "held": 3568547.3959155967
+   },
+   {
+    "height": 218497962,
+    "time": "2026-10-04T12:35:48.847Z",
+    "credits": 3568683.648422429,
+    "held": 3568683.648422429
+   },
+   {
+    "height": 218500962,
+    "time": "2026-10-04T13:05:09.223Z",
+    "credits": 3568683.648422429,
+    "held": 3568683.648422429
+   },
+   {
+    "height": 218503962,
+    "time": "2026-10-04T13:34:21.922Z",
+    "credits": 3568683.648422429,
+    "held": 3568683.648422429
+   },
+   {
+    "height": 218506962,
+    "time": "2026-10-04T14:03:47.087Z",
+    "credits": 3568683.648422429,
+    "held": 3568683.648422429
+   },
+   {
+    "height": 218509962,
+    "time": "2026-10-04T14:33:08.903Z",
+    "credits": 3568683.7304224293,
+    "held": 3568683.7304224293
+   },
+   {
+    "height": 218512962,
+    "time": "2026-10-04T15:02:34.504Z",
+    "credits": 3568683.7304224293,
+    "held": 3568683.7304224293
+   },
+   {
+    "height": 218515962,
+    "time": "2026-10-04T15:32:02.369Z",
+    "credits": 3568683.7304224293,
+    "held": 3568683.7304224293
+   },
+   {
+    "height": 218518962,
+    "time": "2026-10-04T16:01:31.016Z",
+    "credits": 3568683.7304224293,
+    "held": 3568683.7304224293
+   },
+   {
+    "height": 218521962,
+    "time": "2026-10-04T16:31:01.189Z",
+    "credits": 3568685.958082429,
+    "held": 3568685.958082429
+   },
+   {
+    "height": 218524962,
+    "time": "2026-10-04T17:00:18.967Z",
+    "credits": 3568685.958082429,
+    "held": 3568685.958082429
+   },
+   {
+    "height": 218527962,
+    "time": "2026-10-04T17:29:43.682Z",
+    "credits": 3568685.958082429,
+    "held": 3568685.958082429
+   },
+   {
+    "height": 218530962,
+    "time": "2026-10-04T17:58:58.505Z",
+    "credits": 3568685.958082429,
+    "held": 3568685.958082429
+   },
+   {
+    "height": 218533962,
+    "time": "2026-10-04T18:28:25.118Z",
+    "credits": 3569105.4071298204,
+    "held": 3569105.4071298204
+   },
+   {
+    "height": 218536962,
+    "time": "2026-10-04T18:57:54.506Z",
+    "credits": 3569105.4071298204,
+    "held": 3569105.4071298204
+   },
+   {
+    "height": 218539962,
+    "time": "2026-10-04T19:27:25.045Z",
+    "credits": 3569105.4071298204,
+    "held": 3569105.4071298204
+   },
+   {
+    "height": 218542962,
+    "time": "2026-10-04T19:56:48.157Z",
+    "credits": 3571805.427885841,
+    "held": 3571805.427885841
+   },
+   {
+    "height": 218545962,
+    "time": "2026-10-04T20:26:52.781Z",
+    "credits": 3573248.04398967,
+    "held": 3573248.04398967
+   },
+   {
+    "height": 218548962,
+    "time": "2026-10-04T20:57:00.293Z",
+    "credits": 3573248.04398967,
+    "held": 3573248.04398967
+   },
+   {
+    "height": 218551962,
+    "time": "2026-10-04T21:26:16.540Z",
+    "credits": 3573248.04398967,
+    "held": 3573248.04398967
+   },
+   {
+    "height": 218554962,
+    "time": "2026-10-04T21:55:30.814Z",
+    "credits": 3573248.04398967,
+    "held": 3573248.04398967
+   },
+   {
+    "height": 218557962,
+    "time": "2026-10-04T22:24:42.076Z",
+    "credits": 3573248.04398967,
+    "held": 3573248.04398967
+   },
+   {
+    "height": 218560962,
+    "time": "2026-10-04T22:54:00.799Z",
+    "credits": 3571769.2453940413,
+    "held": 3571769.2453940413
+   },
+   {
+    "height": 218563962,
+    "time": "2026-10-04T23:23:15.041Z",
+    "credits": 3571769.2453940413,
+    "held": 3571769.2453940413
+   },
+   {
+    "height": 218566962,
+    "time": "2026-10-04T23:52:36.797Z",
+    "credits": 3571769.2453940413,
+    "held": 3571769.2453940413
+   }
+  ],
+  "readings": {
+   "head": 1,
+   "daily": 99,
+   "full": 0,
+   "micro": 338,
+   "total": 438
+  },
+  "tokenChecks": 17452,
+  "sinceFix": {
+   "from": "2026-10-08",
+   "readings": 38,
+   "material": 0,
+   "maxShortfallUsd": 0
+  },
+  "firstReading": "2025-11-16T00:01:04.306Z"
+ },
+ "economics": {
+  "asOf": "2026-11-12",
+  "yearAgo": "2025-11-12",
+  "priceUsd": 3.58539248,
+  "intents": {
+   "volume30dUsd": 3774153452,
+   "volume30dYearAgoUsd": 2552126737,
+   "volume30dChange": 0.4788268142343435,
+   "volume365dUsd": 32927090833,
+   "fees30dUsd": 6048207,
+   "fees365dUsd": 54123578,
+   "feeRate30d": 0.0016025334096563914,
+   "revenue30dUsd": 1842648,
+   "revenue90dUsd": 5197151,
+   "revenue365dUsd": 9502663.05,
+   "revenueAnnualised30dUsd": 22418884,
+   "revenueAnnualised90dUsd": 21077334.611111112,
+   "captureShare30d": 0.30466020756234036
+  },
+  "l1": {
+   "txnsPerDay30d": 669188.4333333333,
+   "txnsPerDay30dYearAgo": 4392269.566666666,
+   "txnsChange": -0.8476440429768097,
+   "activeAccounts30d": 63922.63333333333,
+   "activeAccounts30dYearAgo": 261652.26666666666,
+   "activeAccountsChange": -0.755696237041325,
+   "fees30dUsd": 131392,
+   "intentsFeesMultiple": 46.03177514612762
+  },
+  "supply": {
+   "totalNear": 1311549122.982004,
+   "totalNearYearAgo": 1279811569.080164,
+   "issuedNear365d": 31737553.90183997,
+   "inflation365d": 0.024798614630941795,
+   "issuanceUsd365d": 113791587.09325169,
+   "revenueCoverage30dAnnualised": 0.19701706051105367,
+   "revenueCoverage90dAnnualised": 0.18522752999163578,
+   "revenueCoverage365d": 0.08350936385316966
+  }
+ },
+ "valuation": {
+  "allNearUsd": 4702418362.690272,
+  "revenueYield90dAnnualised": 0.004482232967262548
+ },
+ "retention": {
+  "beforeTo": "2026-09-28",
+  "volume30dBeforeUsd": 4608196211,
+  "volume30dNowUsd": 3774153452,
+  "change": -0.18099115593409354
+ },
+ "pause": {
+  "from": "2026-10-01",
+  "to": "2026-10-04",
+  "days": 4,
+  "baselineFrom": "2026-09-24",
+  "baselineTo": "2026-09-27",
+  "during": {
+   "volume": 390161724,
+   "fees": 790871,
+   "revenue": 297711
+  },
+  "baseline": {
+   "volume": 570480703,
+   "fees": 906109,
+   "revenue": 262134
+  },
+  "volumeChange": -0.3160825213749605,
+  "feesLostUsd": 115238,
+  "revenueLostUsd": 0
+ },
+ "incident": {
+  "postmortemUrl": "https://x.com/AlexAuroraDev/status/2111124226962870770",
+  "certikUrl": "https://www.certik.com/blog/hot-bridge-near-intents",
+  "official": [
+   {
+    "when": "2026-01-13",
+    "what": "Bug bounty report on a similar third-party call feature; fixed on mainnet within two days; not exploited."
+   },
+   {
+    "when": "2026-09-29 16:14",
+    "what": "First attacker transaction (postmortem and CertiK agree)."
+   },
+   {
+    "when": "2026-10-01 05:54",
+    "what": "Last attacker withdrawal (postmortem; CertiK lists a last payout at 06:08)."
+   },
+   {
+    "when": "2026-10-01 08:04",
+    "what": "Team identifies the withdrawal problem."
+   },
+   {
+    "when": "2026-10-01 08:33",
+    "what": "intents.near paused."
+   },
+   {
+    "when": "2026-10-01 11:20",
+    "what": "intents.near unpaused; affected routes stay paused and return over the following days."
+   },
+   {
+    "when": "2026-10-02",
+    "what": "Funds returned after negotiation (announced 15:52 UTC)."
+   },
+   {
+    "when": "2026-10-02 20:31",
+    "what": "Fix deployed on mainnet."
+   },
+   {
+    "when": "2026-10-07",
+    "what": "Second critical report on the same feature (paid $300K via bug bounty); deposit notifications removed."
+   }
+  ],
+  "criticalFindings": 3,
+  "exploited": 1,
+  "cleanFrom": "2026-10-08",
+  "lastDayBefore": "2026-09-28",
+  "pauseFrom": "2026-10-01",
+  "pauseDays": 4,
+  "baselineEnd": "2026-09-27"
+ },
+ "model": {
+  "inputs": {
+   "R": 21077334.611111112,
+   "C": 223076946.4351905,
+   "f": 0.017593927555299493,
+   "D": 35108.43299906898,
+   "h": 1,
+   "lambda": 0.5202991452991452,
+   "rho": 0.5
+  },
+  "custodyOnPeakDayUsd": 217934132.37748826,
+  "rate": {
+   "point": 0.5202991452991452,
+   "low": 0.026687857229419982,
+   "high": 2.4682286543335596,
+   "conf": 0.9,
+   "events": 1,
+   "years": 1.9219712525667352
+  },
+  "exposureFrom": "2024-12-10",
+  "base": {
+   "grossLossPerEvent": 3924799.634838167,
+   "netCostPerEvent": 1997508.2504181524,
+   "expectedAnnualCost": 1039301.8354205557,
+   "riskAdjustedRevenue": 20038032.775690556,
+   "drag": 0.04930897832179777,
+   "breakEvenLambda": 10.551813544048615,
+   "yearsOfRevenuePerEvent": 0.09477043882793167
+  },
+  "grid": [
+   {
+    "label": "low",
+    "lambda": 0.026687857229419982,
+    "cells": [
+     {
+      "rho": 1,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 35108.43299906898,
+      "expectedAnnualCost": 936.9688474278101,
+      "riskAdjustedRevenue": 21076397.642263684,
+      "drag": 0.00004445385836090861,
+      "breakEvenLambda": 600.3496257343655,
+      "yearsOfRevenuePerEvent": 0.0016656960496590136
+     },
+     {
+      "rho": 0.5,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 1997508.2504181524,
+      "expectedAnnualCost": 53309.21500174815,
+      "riskAdjustedRevenue": 21024025.396109365,
+      "drag": 0.00252921994100932,
+      "breakEvenLambda": 10.551813544048615,
+      "yearsOfRevenuePerEvent": 0.09477043882793167
+     },
+     {
+      "rho": 0,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 3959908.067837236,
+      "expectedAnnualCost": 105681.46115606849,
+      "riskAdjustedRevenue": 20971653.14995504,
+      "drag": 0.005013986023657732,
+      "breakEvenLambda": 5.322682812336807,
+      "yearsOfRevenuePerEvent": 0.1878751816062043
+     }
+    ]
+   },
+   {
+    "label": "observed",
+    "lambda": 0.5202991452991452,
+    "cells": [
+     {
+      "rho": 1,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 35108.43299906898,
+      "expectedAnnualCost": 18266.887682207896,
+      "riskAdjustedRevenue": 21059067.723428905,
+      "drag": 0.0008666602309657473,
+      "breakEvenLambda": 600.3496257343655,
+      "yearsOfRevenuePerEvent": 0.0016656960496590136
+     },
+     {
+      "rho": 0.5,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 1997508.2504181524,
+      "expectedAnnualCost": 1039301.8354205557,
+      "riskAdjustedRevenue": 20038032.775690556,
+      "drag": 0.04930897832179777,
+      "breakEvenLambda": 10.551813544048615,
+      "yearsOfRevenuePerEvent": 0.09477043882793167
+     },
+     {
+      "rho": 0,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 3959908.067837236,
+      "expectedAnnualCost": 2060336.7831589035,
+      "riskAdjustedRevenue": 19016997.82795221,
+      "drag": 0.09775129641262979,
+      "breakEvenLambda": 5.322682812336807,
+      "yearsOfRevenuePerEvent": 0.1878751816062043
+     }
+    ]
+   },
+   {
+    "label": "high",
+    "lambda": 2.4682286543335596,
+    "cells": [
+     {
+      "rho": 1,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 35108.43299906898,
+      "expectedAnnualCost": 86655.64033705197,
+      "riskAdjustedRevenue": 20990678.97077406,
+      "drag": 0.0041113187191785935,
+      "breakEvenLambda": 600.3496257343655,
+      "yearsOfRevenuePerEvent": 0.0016656960496590136
+     },
+     {
+      "rho": 0.5,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 1997508.2504181524,
+      "expectedAnnualCost": 4930307.100949779,
+      "riskAdjustedRevenue": 16147027.510161333,
+      "drag": 0.2339151126988667,
+      "breakEvenLambda": 10.551813544048615,
+      "yearsOfRevenuePerEvent": 0.09477043882793167
+     },
+     {
+      "rho": 0,
+      "grossLossPerEvent": 3924799.634838167,
+      "netCostPerEvent": 3959908.067837236,
+      "expectedAnnualCost": 9773958.561562506,
+      "riskAdjustedRevenue": 11303376.049548605,
+      "drag": 0.4637189066785548,
+      "breakEvenLambda": 5.322682812336807,
+      "yearsOfRevenuePerEvent": 0.1878751816062043
+     }
+    ]
+   }
+  ]
+ },
+ "kill": [
+  {
+   "id": "K1",
+   "title": "Solvency",
+   "rule": "No reading after 2026-10-08 shows a material shortfall (at least $100 and 1 basis point of a token's credits).",
+   "value": 0,
+   "display": "0 of 38 readings",
+   "status": "holds"
+  },
+  {
+   "id": "K2",
+   "title": "Usage",
+   "rule": "Intents volume over the last 30 days is not below the same 30 days a year earlier.",
+   "value": 0.4788268142343435,
+   "status": "holds"
+  },
+  {
+   "id": "K3",
+   "title": "Value capture",
+   "rule": "Revenue captured by NEAR (90 days, annualised) is at least 10% of the dollar value of one year of new NEAR supply.",
+   "value": 0.18522752999163578,
+   "status": "holds"
+  },
+  {
+   "id": "K4",
+   "title": "Security cost",
+   "rule": "Expected yearly cost of loss events (observed rate, half recovered) is at most 25% of captured revenue.",
+   "value": 0.04930897832179777,
+   "status": "holds"
+  }
+ ],
+ "killSummary": {
+  "holds": 4,
+  "triggered": 0,
+  "notMeasured": 0,
+  "total": 4
+ }
+}

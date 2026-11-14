@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zygostat: the case for NEAR, weighed on chain</title>
+<meta name="description" content="Zygostat is a long-term investment thesis for NEAR that anyone can re-run. It tests usage, value capture and whether NEAR Intents holds what it owes, from public data and NEAR chain state.">
+<meta name="theme-color" content="#0c0d0f">
+<meta property="og:title" content="Zygostat: the case for NEAR, weighed on chain">
+<meta property="og:description" content="4 of 4 conditions hold. Intents volume +48% year on year, 18.5% of new supply covered by captured revenue, and the October exploit reproduced from chain state.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20aria-hidden%3D%22true%22%3E%3Cpath%20class%3D%22l%22%20d%3D%22M17%202%20L14.6%207%20L18%2011.5%20L14%2016%20L18%2020.5%20L14.6%2025%20L17%2030%20A14%2014%200%201%201%2017%202%20Z%22%20fill%3D%22%23c9a34e%22%20transform%3D%22translate(-1.1%200)%22%2F%3E%3Cpath%20class%3D%22r%22%20d%3D%22M17%202%20L14.6%207%20L18%2011.5%20L14%2016%20L18%2020.5%20L14.6%2025%20L17%2030%20A14%2014%200%200%200%2017%202%20Z%22%20fill%3D%22%23ecebe6%22%20transform%3D%22translate(1.1%200)%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0c0d0f;
+  --ink-2: #131518;
+  --bone: #ecebe6;
+  --bone-2: #a9aaa6;
+  --bone-3: #6f716d;
+  --paper: #eeebe4;
+  --paper-ink: #111214;
+  --paper-2: #5a5c5f;
+  --paper-rule: rgba(17, 18, 20, 0.14);
+  --rule: rgba(236, 235, 230, 0.12);
+  --rule-soft: rgba(236, 235, 230, 0.06);
+  --brass: #c9a34e;
+  --brass-hi: #dcbd70;
+  --verdigris: #5fb8a2;
+  --rust: #d86a4f;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --text: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --pad: clamp(18px, 4vw, 48px);
+  --max: 1240px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--ink); color: var(--bone); font: 400 16px/1.6 var(--text); font-stretch: 100%; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: inherit; }
+svg { display: block; }
+::selection { background: var(--brass); color: var(--ink); }
+:focus-visible { outline: 1px solid var(--brass); outline-offset: 4px; }
+.wrap { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+section { position: relative; }
+
+/* Vertical column rules, very faint. */
+.cols {
+  position: absolute; top: 0; bottom: 0; z-index: 0; pointer-events: none;
+  left: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad)));
+  right: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad)));
+  background-image: linear-gradient(to right, var(--rule-soft) 1px, transparent 1px);
+  background-size: calc(100% / 12) 100%;
+  border-right: 1px solid var(--rule-soft);
+}
+.paper .cols { background-image: linear-gradient(to right, rgba(17, 18, 20, 0.05) 1px, transparent 1px); border-right-color: rgba(17, 18, 20, 0.05); }
+@media (max-width: 760px) { .cols { background-size: 25% 100%; } }
+
+.mono { font-family: var(--mono); font-size: 12px; letter-spacing: 0.02em; }
+.cap { font-family: var(--mono); font-size: 12px; color: var(--bone-3); letter-spacing: 0.02em; }
+.paper .cap { color: var(--paper-2); }
+.display { font-family: var(--display); font-stretch: 125%; font-weight: 500; letter-spacing: -0.035em; line-height: 0.98; margin: 0; }
+.num { font-family: var(--display); font-stretch: 125%; font-weight: 500; letter-spacing: -0.04em; font-variant-numeric: tabular-nums lining-nums; }
+
+/* ---------- masthead ---------- */
+.mast { position: sticky; top: 0; z-index: 30; background: rgba(12, 13, 15, 0.86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); }
+.mast .wrap { display: flex; align-items: center; gap: 36px; height: 64px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-family: var(--display); font-stretch: 125%; font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.brand svg { width: 26px; height: 26px; }
+.mast nav { display: flex; gap: 28px; font-size: 14px; color: var(--bone-2); }
+.mast nav a { text-decoration: none; }
+.mast nav a:hover { color: var(--bone); }
+.mast .sp { flex: 1; }
+.mast .date { color: var(--bone-3); }
+.mast .mlink { display: none; font-size: 14px; color: var(--bone-2); text-decoration: none; }
+@media (max-width: 860px) { .mast nav, .mast .date { display: none; } .mast .mlink { display: inline; } }
+
+/* ---------- buttons ---------- */
+.btn { display: inline-flex; align-items: center; gap: 14px; height: 50px; padding: 0 22px; border-radius: 2px; font: 500 15px var(--text); text-decoration: none; white-space: nowrap; cursor: pointer; transition: background 0.2s ease, color 0.2s ease; }
+.btn .ar { font-family: var(--mono); transition: transform 0.25s ease; }
+.btn:hover .ar { transform: translateX(4px); }
+.btn.solid { background: var(--brass); color: var(--ink); }
+.btn.solid:hover { background: var(--brass-hi); }
+.btn.small { height: 38px; padding: 0 14px; font-size: 13.5px; }
+.link { font-size: 15px; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; color: var(--bone); }
+.link:hover { color: var(--brass-hi); }
+.paper .link { color: var(--paper-ink); }
+
+/* ---------- 1. hero ---------- */
+.hero { min-height: calc(100svh - 64px); display: flex; align-items: center; padding: clamp(40px, 6vh, 88px) 0; border-bottom: 1px solid var(--rule); }
+.hero > .wrap { width: 100%; }
+.hero .grid { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.hero .kicker { margin: 0 0 clamp(18px, 3.5vh, 32px); color: var(--bone-3); }
+.hero .kicker b { color: var(--brass); font-weight: 500; }
+.hero h1 { font-size: clamp(42px, min(6vw, 10.5vh), 92px); }
+.hero p.lede { font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--bone-2); max-width: 44ch; margin: clamp(18px, 3.5vh, 30px) 0 clamp(22px, 4vh, 38px); }
+.hero .act { display: flex; flex-wrap: wrap; align-items: center; gap: 22px 30px; }
+
+.ledger { border-top: 1px solid var(--bone); }
+.ledger .head { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0 14px; }
+.ledger .row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 16px; padding: clamp(9px, 1.6vh, 15px) 0; border-top: 1px solid var(--rule); }
+.ledger .row span { font-size: 14px; color: var(--bone-2); }
+.ledger .row b { font-family: var(--mono); font-weight: 500; font-size: clamp(15px, 1.5vw, 19px); font-variant-numeric: tabular-nums; }
+.ledger .row.total { border-top: 1px solid var(--bone); }
+.ledger .row.total b { color: var(--verdigris); }
+.ledger .row.total.bad b { color: var(--rust); }
+.ledger .lfoot { padding-top: 14px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+@media (max-width: 920px) { .hero .grid { grid-template-columns: 1fr; } .ledger { margin-top: 8px; } }
+
+/* ---------- 2. evidence ---------- */
+.evidence { padding: clamp(64px, 9vw, 120px) 0; border-bottom: 1px solid var(--rule); }
+.sechead { display: grid; grid-template-columns: 7fr 5fr; gap: 24px 72px; align-items: end; margin-bottom: clamp(36px, 5vw, 64px); }
+.sechead .no { display: block; margin-bottom: 18px; color: var(--brass); }
+.sechead h2 { font-size: clamp(34px, 4.4vw, 60px); }
+.sechead p { margin: 0; color: var(--bone-2); max-width: 46ch; }
+.paper .sechead p { color: var(--paper-2); }
+@media (max-width: 920px) { .sechead { grid-template-columns: 1fr; } }
+
+.figs { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--bone); }
+.fig { padding: 28px 28px 30px 0; border-bottom: 1px solid var(--rule); min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+.fig + .fig { padding-left: 28px; border-left: 1px solid var(--rule); }
+.fig:nth-child(3n + 1) { padding-left: 0; border-left: 0; }
+.fig .v { font-size: clamp(44px, 5vw, 72px); line-height: 0.95; }
+.fig .v.pos { color: var(--verdigris); }
+.fig .v.neg { color: var(--rust); }
+.fig .k { font-size: 15px; color: var(--bone-2); max-width: 28ch; margin-top: 12px; }
+.fig .cap { display: flex; justify-content: space-between; gap: 12px; }
+@media (max-width: 860px) {
+  .figs { grid-template-columns: 1fr 1fr; }
+  .fig, .fig + .fig { padding: 22px 16px 24px 0; border-left: 0; min-height: 180px; }
+  .fig:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--rule); }
+}
+@media (max-width: 480px) {
+  .figs { grid-template-columns: 1fr; }
+  .fig:nth-child(even) { padding-left: 0; border-left: 0; }
+  .fig { min-height: 0; }
+}
+.evidence .note { margin-top: 18px; }
+
+/* ---------- 3. verdict (paper) ---------- */
+.paper { background: var(--paper); color: var(--paper-ink); color-scheme: light; }
+.paper .sechead .no { color: #8c6a1f; }
+.verdict { padding: clamp(64px, 9vw, 124px) 0; }
+.verdict .body { display: grid; grid-template-columns: 6fr 6fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+.conds { border-top: 1px solid var(--paper-ink); }
+.cond { display: grid; grid-template-columns: 54px 1fr auto; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--paper-rule); align-items: start; }
+.cond .id { font-family: var(--mono); font-size: 13px; color: var(--paper-2); padding-top: 4px; }
+.cond h3 { margin: 0 0 4px; font-family: var(--display); font-stretch: 125%; font-weight: 500; font-size: 21px; letter-spacing: -0.025em; }
+.cond p { margin: 0; color: var(--paper-2); font-size: 14.5px; max-width: 40ch; }
+.cond .st { text-align: right; }
+.cond .st .val { display: block; font-family: var(--mono); font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.cond .st .word { display: inline-flex; align-items: center; gap: 7px; margin-top: 6px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--paper-2); }
+.cond .st .word i { width: 7px; height: 7px; background: #2f8c76; }
+.cond .st .word.trig i { background: #b84a31; }
+.cond .st .word.pend i { background: #9a9a96; }
+.verdict .sum { display: flex; justify-content: space-between; gap: 12px; padding-top: 14px; }
+
+figure.ex { margin: 0; border-top: 1px solid var(--paper-ink); }
+figure.ex .top { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0 20px; }
+figure.ex svg { width: 100%; height: auto; }
+figure.ex figcaption { margin-top: 14px; font-size: 14px; color: var(--paper-2); max-width: 56ch; }
+figure.ex figcaption b { color: var(--paper-ink); font-weight: 500; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 12px; }
+.key span { display: inline-flex; align-items: center; gap: 8px; }
+.key i { display: inline-block; width: 18px; height: 2px; }
+.key i.sq { width: 10px; height: 10px; }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--paper-rule); margin-top: 22px; }
+.facts div { padding: 14px 14px 0 0; }
+.facts div + div { padding-left: 14px; border-left: 1px solid var(--paper-rule); }
+.facts b { display: block; white-space: nowrap; font-family: var(--display); font-stretch: 125%; font-weight: 500; font-size: clamp(18px, 1.8vw, 24px); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.facts b.neg { color: #b84a31; }
+.facts b.pos { color: #2f8c76; }
+@media (max-width: 920px) { .verdict .body { grid-template-columns: 1fr; } }
+@media (max-width: 480px) {
+  .cond { grid-template-columns: 40px 1fr; }
+  .cond .st { grid-column: 2; text-align: left; }
+  .facts { grid-template-columns: 1fr; }
+  .facts div + div { padding-left: 0; border-left: 0; }
+  .facts div { padding: 12px 0; border-bottom: 1px solid var(--paper-rule); }
+}
+
+/* ---------- 4. launch ---------- */
+.launch { padding: clamp(72px, 10vw, 140px) 0 40px; }
+.launch .grid { display: grid; grid-template-columns: 7fr 5fr; gap: 32px 72px; align-items: end; }
+.launch h2 { font-size: clamp(38px, 5.4vw, 80px); }
+.launch .side p { color: var(--bone-2); margin: 0 0 22px; max-width: 40ch; }
+.launch code { display: block; font-family: var(--mono); font-size: 13.5px; color: var(--bone); border: 1px solid var(--rule); border-left: 2px solid var(--brass); padding: 14px 16px; margin: 0 0 26px; overflow-x: auto; white-space: nowrap; }
+.launch code span { color: var(--bone-3); }
+.launch .act { display: flex; flex-wrap: wrap; align-items: center; gap: 22px 30px; }
+@media (max-width: 920px) { .launch .grid { grid-template-columns: 1fr; } }
+
+.foot { margin-top: clamp(72px, 10vw, 128px); border-top: 1px solid var(--bone); padding-top: 26px; display: grid; grid-template-columns: 5fr 2fr 2fr 2fr; gap: 28px; font-size: 14px; }
+.foot p { margin: 14px 0 0; color: var(--bone-2); max-width: 36ch; }
+.foot h5 { margin: 0 0 12px; font: 500 12px var(--mono); color: var(--bone-3); letter-spacing: 0.04em; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.foot ul a { text-decoration: none; color: var(--bone-2); }
+.foot ul a:hover { color: var(--bone); }
+.fine { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 16px; }
+@media (max-width: 860px) { .foot { grid-template-columns: 1fr 1fr; } .foot > :first-child { grid-column: 1 / -1; } }
+
+/* ---------- launch transition ---------- */
+.curtain { position: fixed; inset: 0; z-index: 100; pointer-events: none; background: var(--ink); opacity: 0; transition: opacity 0.45s ease; display: grid; place-items: center; }
+.curtain.go { opacity: 1; }
+.curtain svg { width: 54px; height: 54px; }
+.curtain .l, .curtain .r { transition: transform 0.6s cubic-bezier(.6, 0, .2, 1) 0.15s; }
+.curtain .l { transform: translateX(-5px); }
+.curtain .r { transform: translateX(5px); }
+.curtain.go .l, .curtain.go .r { transform: none; }
+
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .coin3d { animation: none; }
+  .curtain, .curtain .l, .curtain .r { transition: none; }
+  .btn .ar { transition: none; }
+}
+
+/* ---------- 3D token ---------- */
+.right { display: flex; flex-direction: column; }
+.coin3d { position: relative; width: clamp(150px, 28vh, 270px); aspect-ratio: 1; margin: 0 auto clamp(18px, 4vh, 40px); perspective: 900px; }
+.coin3d .spin { position: absolute; inset: 0; transform-style: preserve-3d;
+  transform: rotateX(calc(14deg + var(--my, 0) * -18deg)) rotateY(calc(-24deg + var(--mx, 0) * 30deg + var(--turn, 0) * 60deg)); }
+.coin3d .half { position: absolute; inset: 0; transform-style: preserve-3d; }
+.coin3d .half.l { transform: translateX(calc(-1px - var(--sp, 0) * 34px)) rotateY(calc(var(--sp, 0) * -14deg)) translateZ(calc(var(--sp, 0) * 10px)); }
+.coin3d .half.r { transform: translateX(calc(1px + var(--sp, 0) * 34px)) rotateY(calc(var(--sp, 0) * 14deg)) translateZ(calc(var(--sp, 0) * -10px)); }
+.coin3d .half svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.coin3d .shadow { position: absolute; left: 14%; right: 14%; bottom: -16%; height: 9%; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, 0.75), transparent); filter: blur(5px); transform: scaleX(calc(1 + var(--sp, 0) * 0.35)); }
+.motion .coin3d { animation: float 7s ease-in-out infinite; }
+@keyframes float { 50% { translate: 0 -8px; } }
+@media (max-width: 920px) { .coin3d { width: clamp(150px, 42vw, 230px); } .right { margin-top: 12px; } }
+
+/* ---------- depth on scroll ---------- */
+.motion [data-depth] {
+  transform-origin: 50% 0%;
+  transform: perspective(1400px) translate3d(0, calc((1 - var(--p, 0)) * 80px), calc((1 - var(--p, 0)) * -120px)) rotateX(calc((1 - var(--p, 0)) * 18deg));
+  opacity: calc(0.08 + var(--p, 0) * 0.92);
+  will-change: transform, opacity;
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+<div class="wrap">
+<a class="brand" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="l" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#c9a34e" transform="translate(-1.1 0)"/><path class="r" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#ecebe6" transform="translate(1.1 0)"/></svg>Zygostat</a>
+<nav aria-label="Sections"><a href="#evidence">Evidence</a><a href="#verdict">Verdict</a><a href="#run">Method</a><a href="docs.html">Docs</a></nav>
+<span class="sp"></span>
+<a class="mlink" href="docs.html">Docs</a>
+<span class="mono date">Data as of 12 November 2026</span>
+<a class="btn solid small launch-link" href="app.html">Launch <span class="ar">→</span></a>
+</div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-h">
+<div class="cols"></div>
+<div class="wrap grid">
+<div>
+<p class="mono kicker"><b>NEAR</b> / long-term investment thesis / Investment Thesis track</p>
+<h1 class="display" id="hero-h">The case for NEAR, weighed on chain.</h1>
+<p class="lede">An investment thesis you can re-run. It tests NEAR on usage, on value capture, and on the one thing a price chart cannot show: whether NEAR Intents holds what it owes its users.</p>
+<div class="act">
+<a class="btn solid launch-link" href="app.html">Launch Zygostat <span class="ar">→</span></a>
+<a class="link" href="#verdict">Read the verdict</a>
+</div>
+</div>
+<div class="right">
+<div class="coin3d" aria-hidden="true">
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6c87e"/><stop offset="1" stop-color="#a8822f"/></linearGradient><linearGradient id="gR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f6f1"/><stop offset="1" stop-color="#bdbcb5"/></linearGradient></defs></svg>
+<div class="spin"><div class="half l"><svg viewBox="0 0 32 32" style="transform:translateZ(-9.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="url(#gL)"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-8.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-6.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-5.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-3.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-2.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-0.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(0.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(2.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(3.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(5.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(6.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(8.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#6e5622"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(9.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="url(#gL)"/></svg></div><div class="half r"><svg viewBox="0 0 32 32" style="transform:translateZ(-9.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="url(#gR)"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-8.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-6.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-5.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-3.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-2.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(-0.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(0.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(2.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(3.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(5.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(6.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(8.3px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#7c7b76"/></svg><svg viewBox="0 0 32 32" style="transform:translateZ(9.8px)"><path d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="url(#gR)"/></svg></div></div>
+<div class="shadow"></div>
+</div>
+<div class="ledger" aria-label="The latest reading">
+<div class="head cap"><span>intents.near</span><span>block 224,410,412</span></div>
+<div class="row"><span>Credited to users</span><b>$223,076,946</b></div>
+<div class="row"><span>Held by the contract</span><b>$223,083,355</b></div>
+<div class="row total"><span>Held minus credited</span><b>+$6,409</b></div>
+<div class="row"><span>Conditions holding</span><b>4 of 4</b></div>
+<div class="lfoot cap"><span>195 tokens checked</span><span>2026-11-13 19:57 UTC</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="evidence" id="evidence" aria-labelledby="ev-h">
+<div class="cols"></div>
+<div class="wrap">
+<div class="sechead" data-depth="0">
+<div><span class="mono no">01 / Evidence</span><h2 class="display" id="ev-h">What the data says.</h2></div>
+<p>Each figure is quoted from a public series or read from NEAR mainnet. One command rebuilds every one of them from the raw data committed with the code.</p>
+</div>
+<div class="figs">
+<div class="fig" data-depth="0"><div><div class="v num">$3.77B</div><div class="k">swapped through NEAR Intents in the last 30 days</div></div><div class="cap"><span>DefiLlama</span><span>+48% y/y</span></div></div>
+<div class="fig" data-depth="1"><div><div class="v num neg">-85%</div><div class="k">NEAR base-layer transactions, year on year</div></div><div class="cap"><span>NearBlocks</span><span>30-day mean</span></div></div>
+<div class="fig" data-depth="2"><div><div class="v num">$21.1M</div><div class="k">revenue NEAR captures from Intents in a year</div></div><div class="cap"><span>DefiLlama</span><span>90 days annualised</span></div></div>
+<div class="fig" data-depth="0"><div><div class="v num">18.5%</div><div class="k">of the value of new NEAR supply that revenue covers</div></div><div class="cap"><span>Derived</span><span>31.74M NEAR issued</span></div></div>
+<div class="fig" data-depth="1"><div><div class="v num pos">$0</div><div class="k">owed to users but not held, today</div></div><div class="cap"><span>NEAR mainnet</span><span>block 224,410,412</span></div></div>
+<div class="fig" data-depth="2"><div><div class="v num neg">$3.83M</div><div class="k">owed to users but not held, on 1 October</div></div><div class="cap"><span>NEAR mainnet</span><span>archival state</span></div></div>
+</div>
+<p class="cap note" data-depth="0">Chain read at block 224,410,412, 2026-11-13 19:57 UTC. Market series as of 2026-11-12.</p>
+</div>
+</section>
+
+<section class="paper verdict" id="verdict" aria-labelledby="vd-h">
+<div class="cols"></div>
+<div class="wrap">
+<div class="sechead" data-depth="0">
+<div><span class="mono no">02 / Verdict</span><h2 class="display" id="vd-h">Four conditions decide it.</h2></div>
+<p>A price is not evidence. The thesis states in advance the four results that would end the case for NEAR, and every build recomputes them from raw data. A triggered condition is printed as triggered.</p>
+</div>
+<div class="body" data-depth="0">
+<div>
+<div class="conds">
+<div class="cond"><span class="id">K1</span><div><h3>Solvency</h3><p>NEAR Intents holds every token it credits, at every reading since the October fix.</p></div><div class="st"><span class="val">0 of 38 readings</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K2</span><div><h3>Usage</h3><p>Intents volume over 30 days is above the same 30 days a year earlier.</p></div><div class="st"><span class="val">+48%</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K3</span><div><h3>Value capture</h3><p>Revenue NEAR captures covers at least 10% of the value of new supply.</p></div><div class="st"><span class="val">18.5%</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K4</span><div><h3>Security cost</h3><p>The expected cost of the next loss stays under 25% of that revenue.</p></div><div class="st"><span class="val">4.9%</span><span class="word "><i></i>Holds</span></div></div>
+</div>
+<div class="sum cap"><span>4 of 4 hold</span><span>thresholds set 13 November 2026</span></div>
+</div>
+<figure class="ex">
+<div class="top cap"><span>Fig. 1 / Condition K1</span><span>USDT(DEPRECATED) on BSC</span></div>
+<svg viewBox="0 0 600 254" role="img" aria-label="Credited to users against held by the contract for the exploited token, around the October 2026 exploit">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#b84a31" stroke-width="2.2"/></pattern></defs>
+<line x1="2" x2="598" y1="228" y2="228" stroke="rgba(17,18,20,0.55)"/>
+<line x1="87.2" x2="87.2" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="87.2" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">29 Sep</text><line x1="172.4" x2="172.4" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="172.4" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">30 Sep</text><line x1="257.6" x2="257.6" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="257.6" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">1 Oct</text><line x1="342.8" x2="342.8" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="342.8" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">2 Oct</text><line x1="428.0" x2="428.0" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="428.0" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">3 Oct</text><line x1="513.2" x2="513.2" y1="228" y2="233" stroke="rgba(17,18,20,0.55)"/><text x="513.2" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="rgba(17,18,20,0.55)">4 Oct</text>
+<path d="M2.0 78.6 L3.8 79.1 L5.5 79.1 L7.2 76.2 L9.0 75.6 L10.7 75.6 L12.5 75.2 L14.2 75.1 L16.0 75.1 L17.7 74.8 L19.4 76.2 L21.2 76.4 L22.9 77.9 L24.7 78.0 L26.4 79.6 L28.2 77.6 L29.9 78.8 L31.7 78.0 L33.4 79.2 L35.2 63.0 L36.9 43.2 L38.6 51.4 L40.4 22.5 L42.2 47.0 L43.9 46.3 L45.7 52.0 L47.4 54.5 L49.2 58.4 L51.0 24.2 L52.7 42.4 L54.5 41.7 L56.2 43.3 L58.0 44.5 L59.7 49.0 L61.5 55.9 L63.3 67.8 L65.0 75.8 L66.8 74.0 L68.5 73.4 L70.4 72.2 L72.1 73.5 L73.9 73.4 L75.6 77.4 L77.4 73.9 L79.2 73.7 L80.9 73.7 L82.7 73.8 L84.4 74.8 L86.2 74.9 L87.9 75.6 L89.7 76.5 L91.4 76.2 L93.2 76.0 L94.9 76.8 L96.7 76.1 L98.5 79.2 L100.2 80.9 L102.0 79.5 L103.7 79.4 L105.5 80.4 L107.2 80.4 L109.0 76.2 L110.8 80.5 L112.6 68.7 L114.3 69.1 L116.1 74.6 L117.9 71.3 L119.7 76.7 L121.4 76.4 L123.2 76.6 L125.0 75.4 L126.7 73.9 L128.5 73.5 L130.3 66.2 L132.1 76.5 L133.9 76.6 L135.7 71.9 L137.4 76.4 L139.2 77.7 L141.0 74.2 L142.8 74.7 L144.5 74.0 L146.3 71.6 L148.1 76.4 L149.8 70.9 L151.6 30.2 L153.6 49.3 L155.6 62.2 L157.5 66.6 L159.3 77.9 L161.0 77.1 L162.8 77.2 L164.6 77.3 L166.3 77.5 L168.1 78.5 L169.8 76.9 L171.6 76.8 L173.3 76.7 L175.1 75.6 L176.8 75.4 L178.6 73.8 L180.3 73.1 L182.1 75.3 L183.8 73.5 L185.5 71.8 L187.3 73.2 L189.0 72.1 L190.8 70.3 L192.7 74.1 L194.4 74.5 L196.4 75.0 L198.4 76.2 L200.4 73.6 L202.3 67.6 L204.2 68.1 L206.1 68.4 L208.0 67.8 L209.9 68.6 L211.8 61.4 L213.8 72.0 L215.8 75.4 L217.7 58.6 L219.7 63.2 L221.7 73.7 L223.7 73.3 L225.7 71.5 L227.8 71.7 L229.6 67.8 L231.3 74.3 L233.1 71.3 L234.9 79.8 L236.7 83.1 L238.4 83.7 L240.2 81.7 L241.9 83.7 L243.7 84.6 L245.4 84.1 L247.1 84.4 L248.9 86.6 L250.6 84.6 L252.4 84.9 L254.1 83.9 L255.9 78.0 L257.6 84.7 L259.3 84.1 L261.1 85.3 L262.8 83.5 L264.5 83.7 L266.3 83.0 L268.0 83.4 L269.8 83.1 L271.5 85.1 L273.3 84.3 L275.0 84.2 L276.8 84.8 L278.5 84.3 L280.3 84.6 L282.0 84.6 L283.8 83.1 L285.5 83.6 L287.3 73.1 L289.1 74.6 L290.9 74.6 L292.7 74.6 L294.8 74.6 L297.0 74.6 L299.1 74.7 L301.3 74.7 L303.4 74.7 L305.4 74.7 L307.1 82.7 L308.9 82.7 L310.7 82.7 L312.5 82.7 L314.2 82.7 L316.0 82.7 L317.7 82.7 L319.5 82.7 L321.3 82.7 L323.0 82.7 L324.8 82.7 L326.5 82.7 L328.3 82.7 L330.0 82.7 L331.8 82.7 L333.6 82.7 L335.3 82.7 L337.1 82.7 L338.8 82.7 L340.5 82.7 L342.3 82.7 L344.0 82.7 L345.8 82.7 L347.5 82.7 L349.3 82.7 L351.0 82.7 L352.8 82.7 L354.5 82.7 L356.2 82.7 L358.0 82.7 L359.7 82.7 L361.4 82.7 L363.2 82.7 L364.9 82.7 L366.6 82.7 L368.4 82.7 L370.2 82.7 L371.9 82.7 L373.7 82.7 L375.4 82.7 L377.2 82.7 L378.9 82.7 L380.7 82.7 L382.4 82.7 L384.1 82.7 L385.9 82.7 L387.6 82.7 L389.4 82.7 L391.1 82.7 L392.9 82.7 L394.7 82.7 L396.5 82.7 L398.2 82.7 L400.0 82.7 L401.7 82.7 L403.4 82.7 L405.2 82.7 L406.9 82.7 L408.7 82.7 L410.4 82.7 L412.1 82.7 L413.9 82.7 L415.6 82.7 L417.4 82.7 L419.1 84.6 L420.8 87.5 L422.6 87.4 L424.3 92.1 L426.0 92.3 L427.8 92.4 L429.5 92.6 L431.2 92.6 L433.0 92.6 L434.7 93.1 L436.5 92.5 L438.2 92.1 L439.9 92.0 L441.6 91.8 L443.4 91.8 L445.1 91.8 L446.8 92.0 L448.6 92.4 L450.3 92.1 L452.0 92.1 L453.8 92.1 L455.5 92.4 L457.2 92.6 L459.0 92.6 L460.7 92.4 L462.4 92.4 L464.2 92.4 L465.9 92.7 L467.6 92.6 L469.4 93.2 L471.1 94.3 L472.8 93.8 L474.6 94.5 L476.3 93.0 L478.1 93.2 L479.8 94.3 L481.6 94.2 L483.3 94.9 L485.0 95.7 L486.8 97.2 L488.5 92.2 L490.3 93.9 L492.0 93.9 L493.7 93.9 L495.5 93.9 L497.2 93.9 L498.9 90.3 L500.7 91.7 L502.4 92.6 L504.2 93.9 L505.9 93.9 L507.6 93.9 L509.4 93.9 L511.1 93.9 L512.8 93.9 L514.6 93.9 L516.3 93.9 L518.0 93.9 L519.7 93.9 L521.5 93.9 L523.2 93.9 L524.9 93.9 L526.7 93.9 L528.4 93.9 L530.1 93.9 L531.9 93.9 L533.6 93.9 L535.4 94.0 L537.1 94.0 L538.8 94.0 L540.6 94.0 L542.3 94.0 L544.1 94.0 L545.8 94.0 L547.5 94.0 L549.3 94.0 L551.0 94.0 L552.7 94.0 L554.5 94.0 L556.2 94.0 L558.0 94.0 L559.7 94.0 L561.4 94.0 L563.2 94.0 L564.9 94.0 L566.6 94.0 L568.4 94.0 L570.1 94.0 L571.9 94.0 L573.6 94.0 L575.3 94.0 L577.1 94.0 L578.8 94.0 L580.6 94.0 L582.3 94.0 L584.0 93.9 L585.8 93.9 L587.6 93.9 L589.3 93.9 L591.1 93.9 L592.8 93.9 L594.5 93.9 L596.3 93.9 L598.0 93.9 L598.0 93.9 L596.3 93.9 L594.5 93.9 L592.8 93.9 L591.1 93.9 L589.3 93.9 L587.6 93.9 L585.8 93.9 L584.0 93.9 L582.3 94.0 L580.6 94.0 L578.8 94.0 L577.1 94.0 L575.3 94.0 L573.6 94.0 L571.9 94.0 L570.1 94.0 L568.4 94.0 L566.6 94.0 L564.9 94.0 L563.2 94.0 L561.4 94.0 L559.7 94.0 L558.0 94.0 L556.2 94.0 L554.5 94.0 L552.7 94.0 L551.0 94.0 L549.3 94.0 L547.5 94.0 L545.8 94.0 L544.1 94.0 L542.3 94.0 L540.6 94.0 L538.8 94.0 L537.1 94.0 L535.4 94.0 L533.6 93.9 L531.9 93.9 L530.1 93.9 L528.4 93.9 L526.7 93.9 L524.9 93.9 L523.2 93.9 L521.5 93.9 L519.7 93.9 L518.0 93.9 L516.3 93.9 L514.6 93.9 L512.8 93.9 L511.1 93.9 L509.4 93.9 L507.6 93.9 L505.9 93.9 L504.2 93.9 L502.4 92.6 L500.7 91.7 L498.9 90.3 L497.2 93.9 L495.5 93.9 L493.7 93.9 L492.0 93.9 L490.3 93.9 L488.5 92.2 L486.8 97.2 L485.0 95.7 L483.3 94.9 L481.6 94.2 L479.8 94.3 L478.1 93.2 L476.3 93.0 L474.6 94.5 L472.8 93.8 L471.1 94.3 L469.4 93.2 L467.6 92.6 L465.9 92.7 L464.2 92.4 L462.4 92.4 L460.7 92.4 L459.0 92.6 L457.2 92.6 L455.5 92.4 L453.8 92.1 L452.0 92.1 L450.3 92.1 L448.6 92.4 L446.8 92.0 L445.1 91.8 L443.4 91.8 L441.6 91.8 L439.9 92.0 L438.2 92.1 L436.5 92.5 L434.7 93.1 L433.0 92.6 L431.2 92.6 L429.5 92.6 L427.8 92.4 L426.0 92.3 L424.3 92.1 L422.6 87.4 L420.8 87.5 L419.1 84.6 L417.4 82.7 L415.6 82.7 L413.9 150.4 L412.1 221.7 L410.4 225.5 L408.7 225.5 L406.9 225.5 L405.2 225.5 L403.4 225.5 L401.7 225.5 L400.0 225.5 L398.2 225.5 L396.5 225.5 L394.7 225.5 L392.9 225.5 L391.1 225.5 L389.4 225.5 L387.6 225.5 L385.9 225.5 L384.1 225.5 L382.4 225.5 L380.7 225.5 L378.9 225.5 L377.2 225.5 L375.4 225.5 L373.7 225.5 L371.9 225.5 L370.2 225.5 L368.4 225.5 L366.6 225.5 L364.9 225.5 L363.2 225.5 L361.4 225.5 L359.7 225.5 L358.0 225.5 L356.2 225.5 L354.5 225.5 L352.8 225.5 L351.0 225.5 L349.3 225.5 L347.5 225.5 L345.8 225.5 L344.0 225.5 L342.3 225.5 L340.5 225.5 L338.8 225.5 L337.1 225.5 L335.3 225.5 L333.6 225.5 L331.8 225.5 L330.0 225.5 L328.3 225.5 L326.5 225.5 L324.8 225.5 L323.0 225.5 L321.3 225.5 L319.5 225.5 L317.7 225.5 L316.0 225.5 L314.2 225.5 L312.5 225.5 L310.7 225.5 L308.9 225.5 L307.1 225.5 L305.4 217.4 L303.4 217.4 L301.3 217.4 L299.1 217.4 L297.0 217.4 L294.8 217.4 L292.7 217.4 L290.9 217.4 L289.1 217.4 L287.3 215.8 L285.5 226.4 L283.8 225.8 L282.0 227.3 L280.3 227.4 L278.5 227.0 L276.8 226.8 L275.0 226.3 L273.3 226.3 L271.5 227.2 L269.8 226.8 L268.0 227.4 L266.3 227.1 L264.5 227.8 L262.8 222.4 L261.1 220.5 L259.3 189.2 L257.6 133.5 L255.9 90.2 L254.1 85.4 L252.4 85.1 L250.6 84.8 L248.9 86.8 L247.1 84.6 L245.4 84.3 L243.7 84.7 L241.9 83.8 L240.2 81.8 L238.4 83.8 L236.7 83.2 L234.9 79.9 L233.1 71.4 L231.3 74.4 L229.6 67.9 L227.8 71.8 L225.7 71.6 L223.7 73.4 L221.7 73.8 L219.7 63.3 L217.7 58.6 L215.8 75.5 L213.8 72.1 L211.8 61.5 L209.9 68.7 L208.0 67.9 L206.1 68.4 L204.2 68.2 L202.3 67.7 L200.4 73.7 L198.4 76.3 L196.4 75.1 L194.4 74.6 L192.7 74.2 L190.8 70.4 L189.0 72.2 L187.3 73.3 L185.5 71.9 L183.8 73.6 L182.1 75.4 L180.3 73.2 L178.6 73.9 L176.8 75.5 L175.1 75.7 L173.3 76.8 L171.6 76.8 L169.8 76.9 L168.1 78.5 L166.3 77.5 L164.6 77.3 L162.8 77.2 L161.0 77.1 L159.3 77.9 L157.5 66.6 L155.6 62.2 L153.6 49.3 L151.6 30.2 L149.8 70.9 L148.1 76.4 L146.3 71.6 L144.5 74.0 L142.8 74.7 L141.0 74.2 L139.2 77.7 L137.4 76.4 L135.7 71.9 L133.9 76.6 L132.1 76.5 L130.3 66.2 L128.5 73.5 L126.7 73.9 L125.0 75.4 L123.2 76.6 L121.4 76.4 L119.7 76.7 L117.9 71.3 L116.1 74.6 L114.3 69.1 L112.6 68.7 L110.8 80.5 L109.0 76.2 L107.2 80.4 L105.5 80.4 L103.7 79.4 L102.0 79.5 L100.2 80.9 L98.5 79.2 L96.7 76.1 L94.9 76.8 L93.2 76.0 L91.4 76.2 L89.7 76.5 L87.9 75.6 L86.2 74.9 L84.4 74.8 L82.7 73.8 L80.9 73.7 L79.2 73.7 L77.4 73.9 L75.6 77.4 L73.9 73.4 L72.1 73.5 L70.4 72.2 L68.5 73.4 L66.8 74.0 L65.0 75.8 L63.3 67.8 L61.5 55.9 L59.7 49.0 L58.0 44.5 L56.2 43.3 L54.5 41.7 L52.7 42.4 L51.0 24.2 L49.2 58.4 L47.4 54.5 L45.7 52.0 L43.9 46.3 L42.2 47.0 L40.4 22.5 L38.6 51.4 L36.9 43.2 L35.2 63.0 L33.4 79.2 L31.7 78.0 L29.9 78.8 L28.2 77.6 L26.4 79.6 L24.7 78.0 L22.9 77.9 L21.2 76.4 L19.4 76.2 L17.7 74.8 L16.0 75.1 L14.2 75.1 L12.5 75.2 L10.7 75.6 L9.0 75.6 L7.2 76.2 L5.5 79.1 L3.8 79.1 L2.0 78.6 Z" fill="url(#hatch)" opacity="0.75"/>
+<path d="M2.0 78.6L3.8 79.1L5.5 79.1L7.2 76.2L9.0 75.6L10.7 75.6L12.5 75.2L14.2 75.1L16.0 75.1L17.7 74.8L19.4 76.2L21.2 76.4L22.9 77.9L24.7 78.0L26.4 79.6L28.2 77.6L29.9 78.8L31.7 78.0L33.4 79.2L35.2 63.0L36.9 43.2L38.6 51.4L40.4 22.5L42.2 47.0L43.9 46.3L45.7 52.0L47.4 54.5L49.2 58.4L51.0 24.2L52.7 42.4L54.5 41.7L56.2 43.3L58.0 44.5L59.7 49.0L61.5 55.9L63.3 67.8L65.0 75.8L66.8 74.0L68.5 73.4L70.4 72.2L72.1 73.5L73.9 73.4L75.6 77.4L77.4 73.9L79.2 73.7L80.9 73.7L82.7 73.8L84.4 74.8L86.2 74.9L87.9 75.6L89.7 76.5L91.4 76.2L93.2 76.0L94.9 76.8L96.7 76.1L98.5 79.2L100.2 80.9L102.0 79.5L103.7 79.4L105.5 80.4L107.2 80.4L109.0 76.2L110.8 80.5L112.6 68.7L114.3 69.1L116.1 74.6L117.9 71.3L119.7 76.7L121.4 76.4L123.2 76.6L125.0 75.4L126.7 73.9L128.5 73.5L130.3 66.2L132.1 74.7L133.9 76.6L135.7 71.9L137.4 76.4L139.2 77.7L141.0 74.2L142.8 74.7L144.5 74.0L146.3 71.6L148.1 76.4L149.8 70.9L151.6 30.2L153.6 49.3L155.6 62.2L157.5 66.6L159.3 77.9L161.0 77.1L162.8 77.2L164.6 77.3L166.3 77.5L168.1 78.5L169.8 76.9L171.6 76.8L173.3 76.8L175.1 75.7L176.8 75.5L178.6 73.9L180.3 73.2L182.1 75.4L183.8 73.6L185.5 71.9L187.3 73.3L189.0 72.2L190.8 70.4L192.7 74.2L194.4 74.6L196.4 75.1L198.4 76.3L200.4 73.7L202.3 67.7L204.2 68.2L206.1 68.4L208.0 67.9L209.9 68.7L211.8 61.5L213.8 72.1L215.8 75.5L217.7 58.6L219.7 63.3L221.7 73.8L223.7 73.4L225.7 71.6L227.8 71.8L229.6 67.9L231.3 74.4L233.1 71.4L234.9 79.9L236.7 83.2L238.4 83.8L240.2 81.8L241.9 83.8L243.7 84.7L245.4 84.3L247.1 84.6L248.9 86.8L250.6 84.8L252.4 85.1L254.1 85.4L255.9 90.2L257.6 133.5L259.3 189.2L261.1 220.5L262.8 222.4L264.5 227.8L266.3 227.1L268.0 227.4L269.8 226.8L271.5 227.2L273.3 226.3L275.0 226.3L276.8 226.8L278.5 227.0L280.3 227.4L282.0 227.3L283.8 225.8L285.5 226.4L287.3 215.8L289.1 217.4L290.9 217.4L292.7 217.4L294.8 217.4L297.0 217.4L299.1 217.4L301.3 217.4L303.4 217.4L305.4 217.4L307.1 225.5L308.9 225.5L310.7 225.5L312.5 225.5L314.2 225.5L316.0 225.5L317.7 225.5L319.5 225.5L321.3 225.5L323.0 225.5L324.8 225.5L326.5 225.5L328.3 225.5L330.0 225.5L331.8 225.5L333.6 225.5L335.3 225.5L337.1 225.5L338.8 225.5L340.5 225.5L342.3 225.5L344.0 225.5L345.8 225.5L347.5 225.5L349.3 225.5L351.0 225.5L352.8 225.5L354.5 225.5L356.2 225.5L358.0 225.5L359.7 225.5L361.4 225.5L363.2 225.5L364.9 225.5L366.6 225.5L368.4 225.5L370.2 225.5L371.9 225.5L373.7 225.5L375.4 225.5L377.2 225.5L378.9 225.5L380.7 225.5L382.4 225.5L384.1 225.5L385.9 225.5L387.6 225.5L389.4 225.5L391.1 225.5L392.9 225.5L394.7 225.5L396.5 225.5L398.2 225.5L400.0 225.5L401.7 225.5L403.4 225.5L405.2 225.5L406.9 225.5L408.7 225.5L410.4 225.5L412.1 221.7L413.9 150.4L415.6 82.7L417.4 82.7L419.1 84.6L420.8 87.5L422.6 87.4L424.3 92.1L426.0 92.3L427.8 92.4L429.5 92.6L431.2 92.6L433.0 92.6L434.7 93.1L436.5 92.5L438.2 92.1L439.9 92.0L441.6 91.8L443.4 91.8L445.1 91.8L446.8 92.0L448.6 92.4L450.3 92.1L452.0 92.1L453.8 92.1L455.5 92.4L457.2 92.6L459.0 92.6L460.7 92.4L462.4 92.4L464.2 92.4L465.9 92.7L467.6 92.6L469.4 93.2L471.1 94.3L472.8 93.8L474.6 94.5L476.3 93.0L478.1 93.2L479.8 94.3L481.6 94.2L483.3 94.9L485.0 95.7L486.8 97.2L488.5 92.2L490.3 93.9L492.0 93.9L493.7 93.9L495.5 93.9L497.2 93.9L498.9 90.3L500.7 91.7L502.4 92.6L504.2 93.9L505.9 93.9L507.6 93.9L509.4 93.9L511.1 93.9L512.8 93.9L514.6 93.9L516.3 93.9L518.0 93.9L519.7 93.9L521.5 93.9L523.2 93.9L524.9 93.9L526.7 93.9L528.4 93.9L530.1 93.9L531.9 93.9L533.6 93.9L535.4 94.0L537.1 94.0L538.8 94.0L540.6 94.0L542.3 94.0L544.1 94.0L545.8 94.0L547.5 94.0L549.3 94.0L551.0 94.0L552.7 94.0L554.5 94.0L556.2 94.0L558.0 94.0L559.7 94.0L561.4 94.0L563.2 94.0L564.9 94.0L566.6 94.0L568.4 94.0L570.1 94.0L571.9 94.0L573.6 94.0L575.3 94.0L577.1 94.0L578.8 94.0L580.6 94.0L582.3 94.0L584.0 93.9L585.8 93.9L587.6 93.9L589.3 93.9L591.1 93.9L592.8 93.9L594.5 93.9L596.3 93.9L598.0 93.9" fill="none" stroke="#2f8c76" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M2.0 78.6L3.8 79.1L5.5 79.1L7.2 76.2L9.0 75.6L10.7 75.6L12.5 75.2L14.2 75.1L16.0 75.1L17.7 74.8L19.4 76.2L21.2 76.4L22.9 77.9L24.7 78.0L26.4 79.6L28.2 77.6L29.9 78.8L31.7 78.0L33.4 79.2L35.2 63.0L36.9 43.2L38.6 51.4L40.4 22.5L42.2 47.0L43.9 46.3L45.7 52.0L47.4 54.5L49.2 58.4L51.0 24.2L52.7 42.4L54.5 41.7L56.2 43.3L58.0 44.5L59.7 49.0L61.5 55.9L63.3 67.8L65.0 75.8L66.8 74.0L68.5 73.4L70.4 72.2L72.1 73.5L73.9 73.4L75.6 77.4L77.4 73.9L79.2 73.7L80.9 73.7L82.7 73.8L84.4 74.8L86.2 74.9L87.9 75.6L89.7 76.5L91.4 76.2L93.2 76.0L94.9 76.8L96.7 76.1L98.5 79.2L100.2 80.9L102.0 79.5L103.7 79.4L105.5 80.4L107.2 80.4L109.0 76.2L110.8 80.5L112.6 68.7L114.3 69.1L116.1 74.6L117.9 71.3L119.7 76.7L121.4 76.4L123.2 76.6L125.0 75.4L126.7 73.9L128.5 73.5L130.3 66.2L132.1 76.5L133.9 76.6L135.7 71.9L137.4 76.4L139.2 77.7L141.0 74.2L142.8 74.7L144.5 74.0L146.3 71.6L148.1 76.4L149.8 70.9L151.6 30.2L153.6 49.3L155.6 62.2L157.5 66.6L159.3 77.9L161.0 77.1L162.8 77.2L164.6 77.3L166.3 77.5L168.1 78.5L169.8 76.9L171.6 76.8L173.3 76.7L175.1 75.6L176.8 75.4L178.6 73.8L180.3 73.1L182.1 75.3L183.8 73.5L185.5 71.8L187.3 73.2L189.0 72.1L190.8 70.3L192.7 74.1L194.4 74.5L196.4 75.0L198.4 76.2L200.4 73.6L202.3 67.6L204.2 68.1L206.1 68.4L208.0 67.8L209.9 68.6L211.8 61.4L213.8 72.0L215.8 75.4L217.7 58.6L219.7 63.2L221.7 73.7L223.7 73.3L225.7 71.5L227.8 71.7L229.6 67.8L231.3 74.3L233.1 71.3L234.9 79.8L236.7 83.1L238.4 83.7L240.2 81.7L241.9 83.7L243.7 84.6L245.4 84.1L247.1 84.4L248.9 86.6L250.6 84.6L252.4 84.9L254.1 83.9L255.9 78.0L257.6 84.7L259.3 84.1L261.1 85.3L262.8 83.5L264.5 83.7L266.3 83.0L268.0 83.4L269.8 83.1L271.5 85.1L273.3 84.3L275.0 84.2L276.8 84.8L278.5 84.3L280.3 84.6L282.0 84.6L283.8 83.1L285.5 83.6L287.3 73.1L289.1 74.6L290.9 74.6L292.7 74.6L294.8 74.6L297.0 74.6L299.1 74.7L301.3 74.7L303.4 74.7L305.4 74.7L307.1 82.7L308.9 82.7L310.7 82.7L312.5 82.7L314.2 82.7L316.0 82.7L317.7 82.7L319.5 82.7L321.3 82.7L323.0 82.7L324.8 82.7L326.5 82.7L328.3 82.7L330.0 82.7L331.8 82.7L333.6 82.7L335.3 82.7L337.1 82.7L338.8 82.7L340.5 82.7L342.3 82.7L344.0 82.7L345.8 82.7L347.5 82.7L349.3 82.7L351.0 82.7L352.8 82.7L354.5 82.7L356.2 82.7L358.0 82.7L359.7 82.7L361.4 82.7L363.2 82.7L364.9 82.7L366.6 82.7L368.4 82.7L370.2 82.7L371.9 82.7L373.7 82.7L375.4 82.7L377.2 82.7L378.9 82.7L380.7 82.7L382.4 82.7L384.1 82.7L385.9 82.7L387.6 82.7L389.4 82.7L391.1 82.7L392.9 82.7L394.7 82.7L396.5 82.7L398.2 82.7L400.0 82.7L401.7 82.7L403.4 82.7L405.2 82.7L406.9 82.7L408.7 82.7L410.4 82.7L412.1 82.7L413.9 82.7L415.6 82.7L417.4 82.7L419.1 84.6L420.8 87.5L422.6 87.4L424.3 92.1L426.0 92.3L427.8 92.4L429.5 92.6L431.2 92.6L433.0 92.6L434.7 93.1L436.5 92.5L438.2 92.1L439.9 92.0L441.6 91.8L443.4 91.8L445.1 91.8L446.8 92.0L448.6 92.4L450.3 92.1L452.0 92.1L453.8 92.1L455.5 92.4L457.2 92.6L459.0 92.6L460.7 92.4L462.4 92.4L464.2 92.4L465.9 92.7L467.6 92.6L469.4 93.2L471.1 94.3L472.8 93.8L474.6 94.5L476.3 93.0L478.1 93.2L479.8 94.3L481.6 94.2L483.3 94.9L485.0 95.7L486.8 97.2L488.5 92.2L490.3 93.9L492.0 93.9L493.7 93.9L495.5 93.9L497.2 93.9L498.9 90.3L500.7 91.7L502.4 92.6L504.2 93.9L505.9 93.9L507.6 93.9L509.4 93.9L511.1 93.9L512.8 93.9L514.6 93.9L516.3 93.9L518.0 93.9L519.7 93.9L521.5 93.9L523.2 93.9L524.9 93.9L526.7 93.9L528.4 93.9L530.1 93.9L531.9 93.9L533.6 93.9L535.4 94.0L537.1 94.0L538.8 94.0L540.6 94.0L542.3 94.0L544.1 94.0L545.8 94.0L547.5 94.0L549.3 94.0L551.0 94.0L552.7 94.0L554.5 94.0L556.2 94.0L558.0 94.0L559.7 94.0L561.4 94.0L563.2 94.0L564.9 94.0L566.6 94.0L568.4 94.0L570.1 94.0L571.9 94.0L573.6 94.0L575.3 94.0L577.1 94.0L578.8 94.0L580.6 94.0L582.3 94.0L584.0 93.9L585.8 93.9L587.6 93.9L589.3 93.9L591.1 93.9L592.8 93.9L594.5 93.9L596.3 93.9L598.0 93.9" fill="none" stroke="#111214" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>
+<div class="key cap"><span><i style="background:#111214"></i>Credited to users</span><span><i style="background:#2f8c76"></i>Held by the contract</span><span><i class="sq" style="background:repeating-linear-gradient(45deg,#b84a31 0 2px,transparent 2px 5px)"></i>Unbacked</span></div>
+<figcaption><b>The one condition only chain data can test.</b> On 1 October the contract's ledger credited users with tokens it did not hold. Read back from archival state every 30 minutes, the gap opens, peaks and closes.</figcaption>
+<div class="facts"><div><b class="neg">$3.83M</b><span class="cap">largest gap</span></div><div><b>67 h</b><span class="cap">under-backed</span></div><div><b class="pos">2 Oct, 20:30</b><span class="cap">backed again (UTC)</span></div></div>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="launch" id="run" aria-labelledby="run-h">
+<div class="cols"></div>
+<div class="wrap">
+<div class="grid" data-depth="0">
+<div><span class="mono no" style="color:var(--brass);display:block;margin-bottom:18px">03 / Method</span><h2 class="display" id="run-h">Nothing here asks to be trusted.</h2></div>
+<div class="side">
+<p>Every number above is rebuilt from committed raw data by one command, and the solvency check can be re-run against the live chain from your browser.</p>
+<code><span>$</span> node src/build.mjs --check</code>
+<div class="act"><a class="btn solid launch-link" href="app.html">Launch Zygostat <span class="ar">→</span></a><a class="link" href="app.html#check">Re-check the chain now</a></div>
+</div>
+</div>
+<footer class="foot">
+<div><a class="brand" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="l" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#c9a34e" transform="translate(-1.1 0)"/><path class="r" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#ecebe6" transform="translate(1.1 0)"/></svg>Zygostat</a><p>A long-term investment thesis for NEAR. Open data, one command, no keys.</p></div>
+<div><h5>Product</h5><ul><li><a href="app.html#overview">Verdict</a></li><li><a href="app.html#check">Run the check</a></li><li><a href="app.html#model">Risk model</a></li></ul></div>
+<div><h5>Evidence</h5><ul><li><a href="app.html#exploit">The exploit</a></li><li><a href="app.html#history">History</a></li><li><a href="app.html#market">Usage and value</a></li></ul></div>
+<div><h5>Method</h5><ul><li><a href="docs.html">Docs</a></li><li><a href="app.html#method">Conditions</a></li><li><a href="app.html#method">Limits</a></li></ul></div>
+</footer>
+<div class="fine cap"><span>Built at NEAR HACKATHON, Investment Thesis track. Research, not financial advice.</span><span>The mark is a symbolon: a token broken in two, proven when the halves match.</span></div>
+</div>
+</section>
+
+</main>
+
+<div class="curtain" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="l" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 1 1 17 2 Z" fill="#c9a34e" transform="translate(-1.1 0)"/><path class="r" d="M17 2 L14.6 7 L18 11.5 L14 16 L18 20.5 L14.6 25 L17 30 A14 14 0 0 0 17 2 Z" fill="#ecebe6" transform="translate(1.1 0)"/></svg></div>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  root.classList.remove('no-js');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Launch: the screen goes dark and the two halves of the mark close, then the product loads.
+  const curtain = document.querySelector('.curtain');
+  document.querySelectorAll('.launch-link').forEach((a) => a.addEventListener('click', (ev) => {
+    if (reduce || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button !== 0) return;
+    ev.preventDefault();
+    curtain.classList.add('go');
+    setTimeout(() => { location.href = a.getAttribute('href'); }, 700);
+  }));
+  addEventListener('pageshow', () => curtain.classList.remove('go'));
+  if (reduce) return;
+  root.classList.add('motion');
+
+  // Depth: blocks rise into place in perspective as they enter the screen.
+  const depth = [...document.querySelectorAll('[data-depth]')];
+  // The token: follows the pointer; scrolling through the hero breaks it apart.
+  const hero = document.querySelector('.hero');
+  const coin = document.querySelector('.coin3d');
+  let tx = 0, ty = 0, mx = 0, my = 0;
+  addEventListener('pointermove', (e) => { tx = e.clientX / innerWidth - 0.5; ty = e.clientY / innerHeight - 0.5; }, { passive: true });
+  const start = performance.now();
+  const clamp = (v) => Math.max(0, Math.min(1, v));
+  const tick = (now) => {
+    const vh = innerHeight;
+    for (const el of depth) {
+      const r = el.getBoundingClientRect();
+      if (r.top > vh * 1.2 || r.bottom < -vh * 0.2) continue;
+      const p = clamp((vh - r.top) / (vh * 0.5) - (+el.dataset.depth || 0) * 0.08);
+      el.style.setProperty('--p', p.toFixed(3));
+    }
+    if (coin) {
+      mx += (tx - mx) * 0.07; my += (ty - my) * 0.07;
+      const hr = hero.getBoundingClientRect();
+      const split = clamp(-hr.top / (hr.height * 0.7));
+      const e = clamp((now - start - 250) / 1300);
+      const intro = 1 - (1 - Math.pow(1 - e, 3));
+      coin.style.setProperty('--mx', mx.toFixed(3));
+      coin.style.setProperty('--my', my.toFixed(3));
+      coin.style.setProperty('--sp', (split + intro).toFixed(3));
+      coin.style.setProperty('--turn', split.toFixed(3));
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
