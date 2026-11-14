@@ -210,7 +210,7 @@ ${h2('verify')}
 node src/build.mjs --check   # every page and number matches the committed data
 node src/verify.mjs          # each claim in the thesis, checked against the raw readings
 node src/verify.mjs --live   # the solvency check again, now, against the live chain</code></pre>
-<p>The raw data is in the repository under <code>data/raw/</code>, and <code>node src/build.mjs</code> rebuilds every page, number and document from it with no network. To refresh the data from the chain and from the market sources, see the README.</p>
+<p>The raw data is in the repository under <code>data/raw/</code>, and <code>node src/build.mjs</code> rebuilds every page, number and document from it with no network. The data also refreshes itself: every day an automated job takes new readings from the chain and the market sources, rebuilds every page and number, and publishes the result, so the verdict on this site moves forward on its own. If a condition fails on new data, it is published as Triggered.</p>
 <p>You can also reproduce the worst reading of the exploit without any of this code: the Exploit view lists two <code>curl</code> commands and the two numbers they should return.</p>
 
 ${h2('data')}

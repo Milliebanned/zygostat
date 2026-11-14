@@ -1,0 +1,61 @@
+name: refresh
+
+# Every day: read the chain and the market series again, rebuild every page
+# and number, and commit the result. The site on GitHub Pages updates from
+# that commit, so the dashboards and the four conditions stay live.
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Token list and market series
+        run: |
+          node src/registry.mjs
+          node src/fetch.mjs
+
+      - name: Solvency reading at the chain head (every token)
+        run: node src/scan.mjs head
+
+      - name: Daily solvency readings for the last 7 days (existing days are skipped)
+        run: node src/scan.mjs series "$(date -u -d '7 days ago' +%F)" "$(date -u +%F)" 1
+
+      - name: Rebuild the thesis, the site and every number
+        run: node src/build.mjs
+
+      - name: Unit tests
+        run: node --test
+
+      - name: Commit the new data and outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data out docs THESIS.md README.md
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "Daily refresh: data as of $(date -u +%F)"
+            git push
+          fi
+
+      # Reported, not blocking: if a condition is triggered, the refreshed
+      # thesis must still be published, and this step shows which check failed.
+      - name: Verify every claim
+        continue-on-error: true
+        run: node src/verify.mjs
