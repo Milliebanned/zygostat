@@ -4,6 +4,7 @@ A long-term investment thesis for NEAR that anyone can re-run. It tests the case
 
 Built at NEAR HACKATHON. Track: Investment Thesis (`thesis`).
 
+- **Live site:** https://milliebanned.github.io/zygostat/ (landing page; **Launch** opens the product, **Docs** the documentation). Refreshed daily from the chain.
 - **The thesis:** [`THESIS.md`](THESIS.md)
 - **The product:** [`docs/index.html`](docs/index.html) is the landing page; its **Launch** button opens the live product, [`docs/app.html`](docs/app.html). Open either file in a browser; no server needed.
 - **The docs:** [`docs/docs.html`](docs/docs.html) explains everything the product does in plain language, for readers with no blockchain background. It is linked from every page as **Docs**.
