@@ -289,7 +289,7 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 <nav aria-label="Site"><a href="index.html#evidence">Evidence</a><a href="index.html#verdict">Verdict</a><a class="on" href="docs.html" aria-current="page">Docs</a></nav>
 <span class="sp"></span>
 <a class="mlink" href="docs.html">Docs</a>
-<span class="mono date">Data as of 2026-11-13</span>
+<span class="mono date">Data as of 2026-11-14</span>
 <a class="btn solid small" href="app.html">Launch <span class="ar">→</span></a>
 </div>
 </header>
@@ -317,12 +317,12 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 
 <h2 id="thesis"><span class="n">02</span>The thesis in one minute</h2>
 <p>NEAR's base layer is shrinking while NEAR Intents, its cross-chain swap and settlement service, is growing fast. Intents is now the part of NEAR that earns meaningful money for the token. So the long-term case for NEAR is a bet that Intents becomes a place where cross-chain money settles, and stays one.</p>
-<div class="callout"><p>Today 4 of 4 conditions hold. Intents handled $3.8B in 30 days (+44% on a year earlier), NEAR captures about $21.2M a year from it, and the contract holding users&#39; money holds every token it owes.</p></div>
-<p>The case is conditional. Usage is real and growing. Value capture is real but small: captured revenue covers 19.6% of the value of the new NEAR issued each year, so holders are still diluted. And the contract that holds users' funds failed once, on 1 October 2026, when it owed $3.83M more of one token than it held. Zygostat measures that risk directly and prices it.</p>
+<div class="callout"><p>Today 4 of 4 conditions hold. Intents handled $3.85B in 30 days (+40% on a year earlier), NEAR captures about $21.5M a year from it, and the contract holding users&#39; money holds every token it owes.</p></div>
+<p>The case is conditional. Usage is real and growing. Value capture is real but small: captured revenue covers 19.6% of the value of the new NEAR issued each year, so holders are still diluted. And the contract that holds users' funds failed once, on 1 October 2026, when it owed $3.84M more of one token than it held. Zygostat measures that risk directly and prices it.</p>
 
 <h2 id="conditions"><span class="n">03</span>The four conditions</h2>
 <p>A price is not evidence. Instead of arguing from conviction, the thesis names four results that would end it. Every build of the project recomputes all four from raw data. A condition that fails is printed as <strong>Triggered</strong>; it is never explained away.</p>
-<div class="tw"><table class="t"><thead><tr><th>Condition</th><th>The rule</th><th>Now</th><th>Status</th></tr></thead><tbody><tr><td>K1 Solvency</td><td>No reading after 2026-10-08 shows a material shortfall (at least $100 and 1 basis point of a token&#39;s credits).</td><td class="n">0 of 39 readings</td><td class="n">Holds</td></tr><tr><td>K2 Usage</td><td>Intents volume over the last 30 days is not below the same 30 days a year earlier.</td><td class="n">+44%</td><td class="n">Holds</td></tr><tr><td>K3 Value capture</td><td>Revenue captured by NEAR (90 days, annualised) is at least 10% of the dollar value of one year of new NEAR supply.</td><td class="n">19.6%</td><td class="n">Holds</td></tr><tr><td>K4 Security cost</td><td>Expected yearly cost of loss events (observed rate, half recovered) is at most 25% of captured revenue.</td><td class="n">4.9%</td><td class="n">Holds</td></tr></tbody></table></div>
+<div class="tw"><table class="t"><thead><tr><th>Condition</th><th>The rule</th><th>Now</th><th>Status</th></tr></thead><tbody><tr><td>K1 Solvency</td><td>No reading after 2026-10-08 shows a material shortfall (at least $100 and 1 basis point of a token&#39;s credits).</td><td class="n">0 of 40 readings</td><td class="n">Holds</td></tr><tr><td>K2 Usage</td><td>Intents volume over the last 30 days is not below the same 30 days a year earlier.</td><td class="n">+40%</td><td class="n">Holds</td></tr><tr><td>K3 Value capture</td><td>Revenue captured by NEAR (90 days, annualised) is at least 10% of the dollar value of one year of new NEAR supply.</td><td class="n">19.6%</td><td class="n">Holds</td></tr><tr><td>K4 Security cost</td><td>Expected yearly cost of loss events (observed rate, half recovered) is at most 25% of captured revenue.</td><td class="n">4.8%</td><td class="n">Holds</td></tr></tbody></table></div>
 <p>The thresholds were written on 13 November 2026, after a first look at the data. That means they describe the past today; from the next rebuild on, they are real tests.</p>
 <h3>Why these four</h3>
 <ul>
@@ -340,48 +340,48 @@ article pre code { background: none; padding: 0; font-size: 1em; }
 </ol>
 <p>If credits are larger than holdings, users are owed tokens that are not there. Zygostat calls the difference the <strong>shortfall</strong>. A shortfall counts as <strong>material</strong> when it is worth at least $100 and is at least 0.01% of that token's credits; smaller gaps are still recorded.</p>
 <p>Both numbers can be read for any block in the chain's history, so the check can be run today and also backwards in time. Zygostat reads them from a public archive of NEAR's state, with no account or key. Two kinds of token are checked: ordinary NEAR tokens (NEP-141) and the multi-tokens of the HOT Omni bridge (NEP-245). Comparisons use exact whole numbers, so rounding cannot hide a gap.</p>
-<p>The latest reading, at block 224,487,769 (2026-11-14 08:19 UTC): 195 tokens checked, $214,177,422 credited, $214,183,800 held, shortfall $0. The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.</p>
+<p>The latest reading, at block 224,637,970 (2026-11-15 08:08 UTC): 195 tokens checked, $206,575,440 credited, $206,581,805 held, shortfall $0. The contract holds slightly more than it owes, which is normal: people sometimes send tokens to it directly.</p>
 
 <h2 id="exploit"><span class="n">05</span>The October exploit</h2>
 <p>On 1 October 2026 NEAR Intents was exploited for about $3.8M. The official postmortem explains that the contract kept a record of deposits that had in fact been refunded, so its ledger showed more than it held. That is exactly the gap described above, and it can be read back from the chain.</p>
 <p>Zygostat took a reading every 3,000 blocks (about every 30 minutes) from 28 September to 5 October, 338 readings in all. On the affected token, USDT(DEPRECATED) on BSC:</p>
 <div class="tw"><table class="t"><thead><tr><th>What the chain shows</th><th>Time (UTC)</th></tr></thead><tbody>
 <tr><td>Last reading fully backed</td><td class="n">2026-09-30 00:15 UTC</td></tr>
-<tr><td>First material shortfall ($2,548)</td><td class="n">2026-09-30 00:44 UTC</td></tr>
-<tr><td>Largest shortfall, $3,834,202 (99.8% of credits unbacked)</td><td class="n">2026-10-01 01:57 UTC</td></tr>
+<tr><td>First material shortfall ($2,549)</td><td class="n">2026-09-30 00:44 UTC</td></tr>
+<tr><td>Largest shortfall, $3,835,484 (99.8% of credits unbacked)</td><td class="n">2026-10-01 01:57 UTC</td></tr>
 <tr><td>Last reading still short</td><td class="n">2026-10-02 20:00 UTC</td></tr>
 <tr><td>First reading fully backed again</td><td class="n">2026-10-02 20:30 UTC</td></tr>
 </tbody></table></div>
-<p>The largest gap measured, $3,834,202, agrees with the official $3.8M. The contract was under-backed for between 67.3 and 68.2 hours, and backing returned at 2026-10-02 20:30 UTC, one minute before the official fix was deployed at 20:31 UTC. The postmortem also notes that a similar issue was reported in January and another on 7 October, after which the feature responsible was removed.</p>
+<p>The largest gap measured, $3,835,484, agrees with the official $3.8M. The contract was under-backed for between 67.3 and 68.2 hours, and backing returned at 2026-10-02 20:30 UTC, one minute before the official fix was deployed at 20:31 UTC. The postmortem also notes that a similar issue was reported in January and another on 7 October, after which the feature responsible was removed.</p>
 
 <h2 id="history"><span class="n">06</span>A year of readings</h2>
 <p>To see whether this ever happened at other times, the same check runs at midnight UTC: weekly from 2025-11-16, daily from 20 September 2026. Each of these readings checks credits for every token, and holdings for every multi-token and for the largest ordinary tokens (together most of the value credited).</p>
-<p>Across 439 readings and 17,511 individual token checks, apart from the October exploit, no reading shows a material shortfall. Since 2026-10-08, 0 of 39 readings show one.</p>
+<p>Across 440 readings and 17,570 individual token checks, apart from the October exploit, no reading shows a material shortfall. Since 2026-10-08, 0 of 40 readings show one.</p>
 
 <h2 id="market"><span class="n">07</span>Usage and value capture</h2>
 <p>Solvency is a condition, not a reason to own NEAR. The reasons would be usage and value capture, measured from public market data:</p>
 <div class="tw"><table class="t"><thead><tr><th>Measure</th><th>Now</th><th>A year earlier</th></tr></thead><tbody>
-<tr><td>Intents volume, 30 days</td><td class="n">$3.8B</td><td class="n">$2.64B</td></tr>
-<tr><td>Base-layer transactions a day (30-day mean)</td><td class="n">678.14K</td><td class="n">4.38M</td></tr>
-<tr><td>Active accounts a day (30-day mean)</td><td class="n">64.8K</td><td class="n">260.9K</td></tr>
-<tr><td>Revenue captured by NEAR, 90 days annualised</td><td class="n">$21.2M</td><td class="n"></td></tr>
-<tr><td>New NEAR issued in the last year</td><td class="n">31.74M</td><td class="n">2.48% of supply</td></tr>
+<tr><td>Intents volume, 30 days</td><td class="n">$3.85B</td><td class="n">$2.76B</td></tr>
+<tr><td>Base-layer transactions a day (30-day mean)</td><td class="n">677.55K</td><td class="n">4.37M</td></tr>
+<tr><td>Active accounts a day (30-day mean)</td><td class="n">65.6K</td><td class="n">260K</td></tr>
+<tr><td>Revenue captured by NEAR, 90 days annualised</td><td class="n">$21.5M</td><td class="n"></td></tr>
+<tr><td>New NEAR issued in the last year</td><td class="n">31.76M</td><td class="n">2.48% of supply</td></tr>
 <tr><td>Captured revenue as a share of that issuance</td><td class="n">19.6%</td><td class="n"></td></tr>
 </tbody></table></div>
-<p>Intents fees in the last 30 days were $5.83M, 45x the base layer's gas fees over the same days. These figures are quoted from DefiLlama and NearBlocks, not recomputed by Zygostat; the solvency numbers do not depend on them.</p>
+<p>Intents fees in the last 30 days were $6.11M, 57x the base layer's gas fees over the same days. These figures are quoted from DefiLlama and NearBlocks, not recomputed by Zygostat; the solvency numbers do not depend on them.</p>
 
 <h2 id="model"><span class="n">08</span>The risk model</h2>
 <p>The October loss happened and was recovered. The question for an investor is what an honest allowance for the next one costs. The model is one line:</p>
 <pre><code>expected cost a year = events a year x (share lost x custody x (1 - recovered) x paid from revenue + revenue lost to the pause)</code></pre>
 <div class="tw"><table class="t"><thead><tr><th>Input</th><th>Value</th><th>Where it comes from</th></tr></thead><tbody>
-<tr><td>Captured revenue a year</td><td class="n">$21.2M</td><td>DefiLlama, 90 days annualised</td></tr>
-<tr><td>Custody (credits, all tokens)</td><td class="n">$214.2M</td><td>The latest chain reading</td></tr>
-<tr><td>Share of custody lost in one event</td><td class="n">1.82%</td><td>The October gap over custody that day</td></tr>
-<tr><td>Loss events a year</td><td class="n">0.52</td><td>1 event in 1.92 years; 90% range 0.03 to 2.46</td></tr>
+<tr><td>Captured revenue a year</td><td class="n">$21.5M</td><td>DefiLlama, 90 days annualised</td></tr>
+<tr><td>Custody (credits, all tokens)</td><td class="n">$206.6M</td><td>The latest chain reading</td></tr>
+<tr><td>Share of custody lost in one event</td><td class="n">1.89%</td><td>The October gap over custody that day</td></tr>
+<tr><td>Loss events a year</td><td class="n">0.52</td><td>1 event in 1.93 years; 90% range 0.03 to 2.46</td></tr>
 <tr><td>Share recovered</td><td class="n">50%</td><td>Base case; 100% was observed once</td></tr>
-<tr><td>Revenue lost to one pause</td><td class="n">$35.71K</td><td>Fees during the 1 to 4 October pause against the week before</td></tr>
+<tr><td>Revenue lost to one pause</td><td class="n">$32.12K</td><td>Fees during the 1 to 4 October pause against the week before</td></tr>
 </tbody></table></div>
-<p>Base case: $1.03M a year, 4.9% of captured revenue. One event costs about 1.1 months of captured revenue, and events would have to happen 10.7 times a year to consume all of it. The Risk model view in the product has sliders for every assumption.</p>
+<p>Base case: $1.03M a year, 4.8% of captured revenue. One event costs about 1.1 months of captured revenue, and events would have to happen 10.8 times a year to consume all of it. The Risk model view in the product has sliders for every assumption.</p>
 
 <h2 id="product"><span class="n">09</span>Using the product</h2>
 <p>The landing page gives the thesis, the latest reading, the evidence and today's verdict. <strong>Launch</strong> opens the product, which has seven views. On a computer, use the rail on the left; on a phone, swipe the bar under the header. Each view has its own address, so it can be linked to directly.</p>
@@ -422,7 +422,7 @@ node src/verify.mjs --live   # the solvency check again, now, against the live c
 <li><strong>Listed tokens only.</strong> 203 of the 231 assets on the Intents list have a token contract on NEAR and are checked. The other 28 cannot be checked this way. NFTs and unlisted tokens are not checked.</li>
 <li><strong>Confidential balances</strong> are not on the public ledger.</li>
 <li><strong>History is sampled.</strong> A gap that opened and closed between two readings would not appear.</li>
-<li><strong>Past dollar values are approximate.</strong> Token amounts are exact; dollar totals use one price per token, taken on 2026-11-14.</li>
+<li><strong>Past dollar values are approximate.</strong> Token amounts are exact; dollar totals use one price per token, taken on 2026-11-15.</li>
 <li><strong>Market figures are quoted</strong> from DefiLlama and NearBlocks, not recomputed.</li>
 <li><strong>One event.</strong> The loss rate rests on a single exploit, so its range is wide. The model shows the range instead of hiding it.</li>
 <li><strong>No forecast.</strong> Nothing here predicts the price of NEAR. This is research, not financial advice.</li>
@@ -453,7 +453,7 @@ node src/verify.mjs --live   # the solvency check again, now, against the live c
 <p>On the next rebuild it is printed as Triggered, on this site and in the thesis, and the verdict changes with it.</p>
 <h3>Does the live check send my data anywhere?</h3>
 <p>No. Your browser reads public data from a public NEAR node. Nothing passes through a server of ours, and no wallet is needed.</p>
-<p class="cap" style="margin-top:56px">Built at NEAR HACKATHON, Investment Thesis track. Data as of 2026-11-13.</p>
+<p class="cap" style="margin-top:56px">Built at NEAR HACKATHON, Investment Thesis track. Data as of 2026-11-14.</p>
 </article>
 </div>
 
