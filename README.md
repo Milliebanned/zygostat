@@ -41,17 +41,17 @@ It also covers the one risk the usual numbers miss. The official postmortem of t
 ## Results
 
 <!-- results:start -->
-Series as of 2026-11-14. Chain read at block 224,637,970 (2026-11-15 08:08 UTC). 440 readings, 17,570 token checks.
+Series as of 2026-11-15. Chain read at block 224,790,855 (2026-11-16 08:16 UTC). 441 readings, 17,630 token checks.
 
 | Question | Answer from the data |
 |---|---|
 | Do the four conditions hold? | K1 solvency: HOLDS. K2 usage: HOLDS. K3 value capture: HOLDS. K4 security cost: HOLDS. |
-| Is Intents used? | $3.85B in 30 days, +40% on a year earlier. Base-layer transactions are -85%. |
-| Does NEAR capture value? | $21.5M a year (90 days annualised), which is 19.6% of the value of a year's new NEAR supply. |
-| Is `intents.near` fully backed now? | Yes. $206,575,440 credited to users, $206,581,805 held, shortfall $0, across 195 tokens. |
-| Was it ever not? | Yes. $3,835,484 short on USDT(DEPRECATED) on BSC at block 217,996,962 (2026-10-01 01:57 UTC): 99.8% of that token's credits had no backing. |
+| Is Intents used? | $3.91B in 30 days, +39% on a year earlier. Base-layer transactions are -84%. |
+| Does NEAR capture value? | $21.5M a year (90 days annualised), which is 22.4% of the value of a year's new NEAR supply. |
+| Is `intents.near` fully backed now? | Yes. $209,590,641 credited to users, $209,597,008 held, shortfall $0, across 196 tokens. |
+| Was it ever not? | Yes. $3,834,778 short on USDT(DEPRECATED) on BSC at block 217,996,962 (2026-10-01 01:57 UTC): 99.8% of that token's credits had no backing. |
 | For how long? | Between 67.3 and 68.2 hours (first short reading 2026-09-30 00:44 UTC, backed again by 2026-10-02 20:30 UTC). |
-| Since the fix? | 0 of 40 readings after 2026-10-08 show a material shortfall. |
+| Since the fix? | 0 of 41 readings after 2026-10-08 show a material shortfall. |
 | What does the security risk cost? | $1.03M a year in the base case, 4.8% of captured revenue. One event costs 1.1 months of it. |
 <!-- results:end -->
 
