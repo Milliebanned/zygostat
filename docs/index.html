@@ -7,7 +7,7 @@
 <meta name="description" content="Zygostat is a long-term investment thesis for NEAR that anyone can re-run. It tests usage, value capture and whether NEAR Intents holds what it owes, from public data and NEAR chain state.">
 <meta name="theme-color" content="#0c0d0f">
 <meta property="og:title" content="Zygostat: the case for NEAR, weighed on chain">
-<meta property="og:description" content="4 of 4 conditions hold. Intents volume +39% year on year, 22.4% of new supply covered by captured revenue, and the October exploit reproduced from chain state.">
+<meta property="og:description" content="4 of 4 conditions hold. Intents volume +36% year on year, 21.1% of new supply covered by captured revenue, and the October exploit reproduced from chain state.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2032%2032%22%20aria-hidden%3D%22true%22%3E%3Cpath%20class%3D%22l%22%20d%3D%22M17%202%20L14.6%207%20L18%2011.5%20L14%2016%20L18%2020.5%20L14.6%2025%20L17%2030%20A14%2014%200%201%201%2017%202%20Z%22%20fill%3D%22%23c9a34e%22%20transform%3D%22translate(-1.1%200)%22%2F%3E%3Cpath%20class%3D%22r%22%20d%3D%22M17%202%20L14.6%207%20L18%2011.5%20L14%2016%20L18%2020.5%20L14.6%2025%20L17%2030%20A14%2014%200%200%200%2017%202%20Z%22%20fill%3D%22%23ecebe6%22%20transform%3D%22translate(1.1%200)%22%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -247,7 +247,7 @@ figure.ex figcaption b { color: var(--paper-ink); font-weight: 500; }
 <nav aria-label="Sections"><a href="#evidence">Evidence</a><a href="#verdict">Verdict</a><a href="#run">Method</a><a href="docs.html">Docs</a></nav>
 <span class="sp"></span>
 <a class="mlink" href="docs.html">Docs</a>
-<span class="mono date">Data as of 15 November 2026</span>
+<span class="mono date">Data as of 16 November 2026</span>
 <a class="btn solid small launch-link" href="app.html">Launch <span class="ar">→</span></a>
 </div>
 </header>
@@ -273,12 +273,12 @@ figure.ex figcaption b { color: var(--paper-ink); font-weight: 500; }
 <div class="shadow"></div>
 </div>
 <div class="ledger" aria-label="The latest reading">
-<div class="head cap"><span>intents.near</span><span>block 224,790,855</span></div>
-<div class="row"><span>Credited to users</span><b>$209,590,641</b></div>
-<div class="row"><span>Held by the contract</span><b>$209,597,008</b></div>
-<div class="row total"><span>Held minus credited</span><b>+$6,367</b></div>
+<div class="head cap"><span>intents.near</span><span>block 224,944,656</span></div>
+<div class="row"><span>Credited to users</span><b>$210,379,960</b></div>
+<div class="row"><span>Held by the contract</span><b>$210,391,805</b></div>
+<div class="row total"><span>Held minus credited</span><b>+$11,846</b></div>
 <div class="row"><span>Conditions holding</span><b>4 of 4</b></div>
-<div class="lfoot cap"><span>196 tokens checked</span><span>2026-11-16 08:16 UTC</span></div>
+<div class="lfoot cap"><span>196 tokens checked</span><span>2026-11-17 09:30 UTC</span></div>
 </div>
 </div>
 </div>
@@ -292,14 +292,14 @@ figure.ex figcaption b { color: var(--paper-ink); font-weight: 500; }
 <p>Each figure is quoted from a public series or read from NEAR mainnet. One command rebuilds every one of them from the raw data committed with the code.</p>
 </div>
 <div class="figs">
-<div class="fig" data-depth="0"><div><div class="v num">$3.91B</div><div class="k">swapped through NEAR Intents in the last 30 days</div></div><div class="cap"><span>DefiLlama</span><span>+39% y/y</span></div></div>
+<div class="fig" data-depth="0"><div><div class="v num">$3.9B</div><div class="k">swapped through NEAR Intents in the last 30 days</div></div><div class="cap"><span>DefiLlama</span><span>+36% y/y</span></div></div>
 <div class="fig" data-depth="1"><div><div class="v num neg">-84%</div><div class="k">NEAR base-layer transactions, year on year</div></div><div class="cap"><span>NearBlocks</span><span>30-day mean</span></div></div>
-<div class="fig" data-depth="2"><div><div class="v num">$21.5M</div><div class="k">revenue NEAR captures from Intents in a year</div></div><div class="cap"><span>DefiLlama</span><span>90 days annualised</span></div></div>
-<div class="fig" data-depth="0"><div><div class="v num">22.4%</div><div class="k">of the value of new NEAR supply that revenue covers</div></div><div class="cap"><span>Derived</span><span>31.76M NEAR issued</span></div></div>
-<div class="fig" data-depth="1"><div><div class="v num pos">$0</div><div class="k">owed to users but not held, today</div></div><div class="cap"><span>NEAR mainnet</span><span>block 224,790,855</span></div></div>
+<div class="fig" data-depth="2"><div><div class="v num">$21.6M</div><div class="k">revenue NEAR captures from Intents in a year</div></div><div class="cap"><span>DefiLlama</span><span>90 days annualised</span></div></div>
+<div class="fig" data-depth="0"><div><div class="v num">21.1%</div><div class="k">of the value of new NEAR supply that revenue covers</div></div><div class="cap"><span>Derived</span><span>31.76M NEAR issued</span></div></div>
+<div class="fig" data-depth="1"><div><div class="v num pos">$0</div><div class="k">owed to users but not held, today</div></div><div class="cap"><span>NEAR mainnet</span><span>block 224,944,656</span></div></div>
 <div class="fig" data-depth="2"><div><div class="v num neg">$3.83M</div><div class="k">owed to users but not held, on 1 October</div></div><div class="cap"><span>NEAR mainnet</span><span>archival state</span></div></div>
 </div>
-<p class="cap note" data-depth="0">Chain read at block 224,790,855, 2026-11-16 08:16 UTC. Market series as of 2026-11-15.</p>
+<p class="cap note" data-depth="0">Chain read at block 224,944,656, 2026-11-17 09:30 UTC. Market series as of 2026-11-16.</p>
 </div>
 </section>
 
@@ -313,9 +313,9 @@ figure.ex figcaption b { color: var(--paper-ink); font-weight: 500; }
 <div class="body" data-depth="0">
 <div>
 <div class="conds">
-<div class="cond"><span class="id">K1</span><div><h3>Solvency</h3><p>NEAR Intents holds every token it credits, at every reading since the October fix.</p></div><div class="st"><span class="val">0 of 41 readings</span><span class="word "><i></i>Holds</span></div></div>
-<div class="cond"><span class="id">K2</span><div><h3>Usage</h3><p>Intents volume over 30 days is above the same 30 days a year earlier.</p></div><div class="st"><span class="val">+39%</span><span class="word "><i></i>Holds</span></div></div>
-<div class="cond"><span class="id">K3</span><div><h3>Value capture</h3><p>Revenue NEAR captures covers at least 10% of the value of new supply.</p></div><div class="st"><span class="val">22.4%</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K1</span><div><h3>Solvency</h3><p>NEAR Intents holds every token it credits, at every reading since the October fix.</p></div><div class="st"><span class="val">0 of 42 readings</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K2</span><div><h3>Usage</h3><p>Intents volume over 30 days is above the same 30 days a year earlier.</p></div><div class="st"><span class="val">+36%</span><span class="word "><i></i>Holds</span></div></div>
+<div class="cond"><span class="id">K3</span><div><h3>Value capture</h3><p>Revenue NEAR captures covers at least 10% of the value of new supply.</p></div><div class="st"><span class="val">21.1%</span><span class="word "><i></i>Holds</span></div></div>
 <div class="cond"><span class="id">K4</span><div><h3>Security cost</h3><p>The expected cost of the next loss stays under 25% of that revenue.</p></div><div class="st"><span class="val">4.8%</span><span class="word "><i></i>Holds</span></div></div>
 </div>
 <div class="sum cap"><span>4 of 4 hold</span><span>thresholds set 13 November 2026</span></div>
