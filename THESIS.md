@@ -1,6 +1,6 @@
 # Zygostat: a solvency-first investment thesis for NEAR
 
-Data as of 2026-11-18. 4 of 4 conditions hold, 0 triggered, 0 not measured.
+Data as of 2026-11-19. 4 of 4 conditions hold, 0 triggered, 0 not measured.
 
 This file is generated. Every number in it is written by `node src/build.mjs` from the raw data in `data/raw/`, and `node src/build.mjs --check` fails if the file and the data disagree. To change a number, change the data or the code, not this text. The source of the text is `src/thesis.tmpl.md`.
 
@@ -16,11 +16,11 @@ A settlement layer has to hold what it owes. If the contract that keeps users' m
 
 ## Verdict
 
-- **Usage is growing.** Intents handled $3.9B in the last 30 days, +27% on the same 30 days a year earlier.
-- **Value capture is real but small.** NEAR captured $5.32M in the last 90 days. At that pace it covers 20.0% of the value of a year's new NEAR supply. Holders are still being diluted.
-- **The contract is solvent now.** At block 225,237,040 (2026-11-19 09:05 UTC), 197 tokens were checked: $215,915,816 credited to users, $215,922,203 held, shortfall $0.
-- **It was not solvent in October.** For between 67.3 and 68.2 hours, users were credited $3,833,895 more of one token than the contract held. This repository reproduces that from chain state.
-- **The risk is affordable at the observed rate, and that rate is uncertain.** An allowance for the next loss event consumes 4.7% of captured revenue in the base case. At the top of the 90% interval for the event rate, with nothing recovered, it consumes 44.6%.
+- **Usage is growing.** Intents handled $3.9B in the last 30 days, +24% on the same 30 days a year earlier.
+- **Value capture is real but small.** NEAR captured $5.28M in the last 90 days. At that pace it covers 20.4% of the value of a year's new NEAR supply. Holders are still being diluted.
+- **The contract is solvent now.** At block 225,382,220 (2026-11-20 08:51 UTC), 197 tokens were checked: $206,108,893 credited to users, $206,115,249 held, shortfall $0.
+- **It was not solvent in October.** For between 67.3 and 68.2 hours, users were credited $3,833,753 more of one token than the contract held. This repository reproduces that from chain state.
+- **The risk is affordable at the observed rate, and that rate is uncertain.** An allowance for the next loss event consumes 4.9% of captured revenue in the base case. At the top of the 90% interval for the event rate, with nothing recovered, it consumes 45.7%.
 
 The case for NEAR is therefore conditional, and the condition that matters most is the one the market cannot see on a price chart: whether `intents.near` holds what it owes. That can be checked by anyone, at any block, with two calls. This repository does it and keeps doing it.
 
@@ -30,11 +30,11 @@ The case for NEAR is therefore conditional, and the condition that matters most 
 
 | Measure | Now | A year earlier | Change |
 |---|---|---|---|
-| Intents volume, 30 days | $3.9B | $3.08B | +27% |
-| Base-layer transactions a day (30-day mean) | 685.33K | 4.35M | -84% |
-| Base-layer active accounts a day (30-day mean) | 68.9K | 256K | -73% |
+| Intents volume, 30 days | $3.9B | $3.15B | +24% |
+| Base-layer transactions a day (30-day mean) | 685.54K | 4.33M | -84% |
+| Base-layer active accounts a day (30-day mean) | 69.7K | 255.2K | -73% |
 
-Intents volume over the last 365 days was $33B. Intents fees in the last 30 days were $6.64M, which is 66x the base layer's gas fees ($101.2K) over the same days.
+Intents volume over the last 365 days was $33B. Intents fees in the last 30 days were $6.66M, which is 67x the base layer's gas fees ($99.8K) over the same days.
 
 Sources: DefiLlama (`api.llama.fi/summary/dexs/near-intents`, `.../fees/near-intents`, `.../fees/near`) and NearBlocks (`api.nearblocks.io/v1/charts`). These are quoted, not recomputed here.
 
@@ -42,21 +42,21 @@ Sources: DefiLlama (`api.llama.fi/summary/dexs/near-intents`, `.../fees/near-int
 
 | Measure | Value |
 |---|---|
-| Intents gross fees, 30 days | $6.64M (17.0 basis points of volume) |
-| Revenue captured by NEAR, 30 days | $1.69M (25.5% of fees) |
-| Revenue captured by NEAR, 90 days | $5.32M |
-| Captured revenue, 90 days annualised | $21.6M |
-| Captured revenue, last 365 days | $9.63M |
+| Intents gross fees, 30 days | $6.66M (17.1 basis points of volume) |
+| Revenue captured by NEAR, 30 days | $1.66M (24.9% of fees) |
+| Revenue captured by NEAR, 90 days | $5.28M |
+| Captured revenue, 90 days annualised | $21.4M |
+| Captured revenue, last 365 days | $9.67M |
 | NEAR issued over the last 365 days | 31.78M NEAR (2.48% of supply) |
-| Value of that issuance at $3.39 | $107.8M |
-| Captured revenue as a share of issuance (90 days annualised) | 20.0% |
-| The same, using the last 365 days of revenue | 8.9% |
-| Value of all NEAR at $3.39 | $4.45B |
-| Captured revenue as a yield on that | 0.48% |
+| Value of that issuance at $3.30 | $104.9M |
+| Captured revenue as a share of issuance (90 days annualised) | 20.4% |
+| The same, using the last 365 days of revenue | 9.2% |
+| Value of all NEAR at $3.30 | $4.33B |
+| Captured revenue as a yield on that | 0.49% |
 
 "Revenue captured by NEAR" follows DefiLlama's definition: NEAR swept into the revenue wallets, which it says reconciles with the on-chain buyback. Supply comes from NearBlocks and is cross-checked against the `total_supply` field of NEAR block headers stored with each reading.
 
-The gap between issuance and captured revenue is $86.3M a year. Until captured revenue at least matches the value of new issuance, a NEAR holder is paying for security with dilution; today Intents offsets 20.0% of it.
+The gap between issuance and captured revenue is $83.5M a year. Until captured revenue at least matches the value of new issuance, a NEAR holder is paying for security with dilution; today Intents offsets 20.4% of it.
 
 ### 3. Solvency, measured
 
@@ -68,9 +68,9 @@ The gap between issuance and captured revenue is $86.3M a year. Until captured r
 
 A shortfall is *material* when it is at least $100 and at least 1 basis point of that token's credits.
 
-**Now.** Block 225,237,040, 2026-11-19 09:05 UTC: 197 tokens checked, $215,915,816 credited, $215,922,203 held, 0 tokens short, shortfall $0. The contract holds $6,387 more than it credits.
+**Now.** Block 225,382,220, 2026-11-20 08:51 UTC: 197 tokens checked, $206,108,893 credited, $206,115,249 held, 0 tokens short, shortfall $0. The contract holds $6,356 more than it credits.
 
-**History.** 444 readings and 17,808 token checks from 2025-11-16: 105 at UTC midnight (weekly, then daily from 20 September 2026), 338 about 30 minutes apart through the exploit week, and one of every token at the head.
+**History.** 445 readings and 17,867 token checks from 2025-11-16: 106 at UTC midnight (weekly, then daily from 20 September 2026), 338 about 30 minutes apart through the exploit week, and one of every token at the head.
 
 **The October exploit, from chain state.** Token: USDT(DEPRECATED) on BSC (`nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g`).
 
@@ -78,15 +78,15 @@ A shortfall is *material* when it is at least $100 and at least 1 basis point of
 |---|---|---|
 | Last reading fully backed | 217,846,962 | 2026-09-30 00:15 UTC |
 | First reading with a material shortfall ($2,548) | 217,849,962 | 2026-09-30 00:44 UTC |
-| Largest shortfall, $3,833,895 | 217,996,962 | 2026-10-01 01:57 UTC |
+| Largest shortfall, $3,833,753 | 217,996,962 | 2026-10-01 01:57 UTC |
 | Last reading still short | 218,248,962 | 2026-10-02 20:00 UTC |
 | First reading fully backed again | 218,251,962 | 2026-10-02 20:30 UTC |
 
 At the largest shortfall, users were credited 3,842,954 tokens and the contract held 5,805: 99.8% of the credits had no backing. 134 readings in a row were short.
 
-The official postmortem puts the loss at about $3.8M and the first attacker transaction at 16:14 UTC on 29 September. The figure here, $3,833,895, was read independently from archival state and agrees with it. The postmortem also names the gap that let it run: the team compared origin-chain balances with NEAR-side balances, but did not compare users' total credits with the contract's own holdings. That second comparison is exactly the check above.
+The official postmortem puts the loss at about $3.8M and the first attacker transaction at 16:14 UTC on 29 September. The figure here, $3,833,753, was read independently from archival state and agrees with it. The postmortem also names the gap that let it run: the team compared origin-chain balances with NEAR-side balances, but did not compare users' total credits with the contract's own holdings. That second comparison is exactly the check above.
 
-**Since the fix.** The vulnerable feature was removed on 7 October. From 2026-10-08, 0 of 44 readings show a material shortfall. The largest shortfall of any size in that period is $0.
+**Since the fix.** The vulnerable feature was removed on 7 October. From 2026-10-08, 0 of 45 readings show a material shortfall. The largest shortfall of any size in that period is $0.
 
 ### 4. The cost of the risk
 
@@ -96,23 +96,23 @@ Inputs, all measured here or stated:
 |---|---|---|
 | Captured revenue a year, R | {{m_R}} | 90 days annualised (section 2) |
 | Custody, C | {{m_C}} | credits for every token at the head |
-| Share of custody lost in one event, f | 1.81% | $3.83M over $212.3M in custody that day |
-| Loss events a year | 0.52 (90% interval 0.03 to 2.45) | 1 exploited loss in 1.94 years, counted from 2024-12-10 |
+| Share of custody lost in one event, f | 1.93% | $3.83M over $198.6M in custody that day |
+| Loss events a year | 0.52 (90% interval 0.03 to 2.44) | 1 exploited loss in 1.94 years, counted from 2024-12-10 |
 | Revenue lost to one pause, D | {{m_D}} | fees lost over 2026-10-01 to 2026-10-04 against 2026-09-24 to 2026-09-27, times the capture share |
 | Share of a loss recovered | 50% in the base case | 100% was observed once; that is not a rule |
 | Share of an unrecovered loss paid from captured revenue, h | 100% | assumption, the hardest case for holders |
 
 `expected cost a year = events a year x (f x C x (1 - recovered) x h + D)`
 
-Base case: $1.02M a year, 4.7% of captured revenue, leaving $20.5M. One event costs 1.1 months of captured revenue. The event rate would have to reach 10.9 a year to consume all of it.
+Base case: $1.04M a year, 4.9% of captured revenue, leaving $20.4M. One event costs 1.1 months of captured revenue. The event rate would have to reach 10.6 a year to consume all of it.
 
 Expected cost a year, with its share of captured revenue:
 
 | Loss events a year | Fully recovered | Half recovered | Nothing recovered |
 |---|---|---|---|
-| 0.03 (low end) | $778 (0.0%) | $52.37K (0.2%) | $103.96K (0.5%) |
-| 0.52 (observed) | $15.16K (0.1%) | $1.02M (4.7%) | $2.03M (9.4%) |
-| 2.45 (high end) | $71.91K (0.3%) | $4.84M (22.5%) | $9.61M (44.6%) |
+| 0.03 (low end) | $757 (0.0%) | $53.33K (0.2%) | $105.9K (0.5%) |
+| 0.52 (observed) | $14.75K (0.1%) | $1.04M (4.9%) | $2.06M (9.6%) |
+| 2.44 (high end) | $69.99K (0.3%) | $4.93M (23.0%) | $9.79M (45.7%) |
 
 The pause itself was not free. Volume over 2026-10-01 to 2026-10-04 was $390.2M against $570.5M a week earlier (-31.6%), and $115.24K of fees went missing. Users came back: volume in the last 30 days is -15% against the 30 days to 2026-09-28, before the attack began.
 
@@ -121,12 +121,12 @@ The pause itself was not free. Volume over 2026-10-01 to 2026-10-04 was $390.2M 
 These are the facts that cut against owning NEAR on this argument. They are not footnotes.
 
 1. **The base layer is shrinking.** Transactions are -84% and active accounts -73% year on year. NEAR as a busy general-purpose chain is not what this thesis buys.
-2. **Captured revenue is small against dilution.** 20.0% coverage means the token still inflates net, by about $86.3M a year at today's price. As a yield on the value of all NEAR, captured revenue is 0.48%.
+2. **Captured revenue is small against dilution.** 20.4% coverage means the token still inflates net, by about $83.5M a year at today's price. As a yield on the value of all NEAR, captured revenue is 0.49%.
 3. **The solvency invariant has already failed once, and nobody was watching it.** By the postmortem's own timeline the attack ran from 29 September to 1 October before it was noticed. The readings here show the contract under-backed for 67.3 to 68.2 hours.
 4. **It was the third critical finding in one feature in a year.** The postmortem lists a similar report in January and another on 7 October, after the exploit. One feature produced all three.
 5. **Recovery was a negotiation, not a control.** The funds came back because the attacker agreed to return them. The model's base case does not assume that happens again.
 6. **CertiK reports a gap between published and deployed code.** Its analysis says a refund cap was added to the public repository in March 2026 while the contract deployed on 1 October lacked it. This repository has not verified that claim; it is quoted because, if true, it is a process risk that no on-chain balance check can see.
-7. **The rate is one data point.** One event in 1.94 years supports anything from 0.03 to 2.45 events a year. The thesis survives the middle of that range and is strained at the top of it.
+7. **The rate is one data point.** One event in 1.94 years supports anything from 0.03 to 2.44 events a year. The thesis survives the middle of that range and is strained at the top of it.
 8. **Fees are quoted, not derived.** Volume, fees and revenue come from DefiLlama, and this repository does not recompute them from chain data. The solvency numbers are independent of that source; the value-capture numbers are not.
 
 ## What would change the thesis
@@ -135,10 +135,10 @@ Each condition is a number recomputed on every build. The thresholds were writte
 
 | | Condition | Now | Status |
 |---|---|---|---|
-| K1 | No reading after 2026-10-08 shows a material shortfall | 0 of 44 readings | HOLDS |
-| K2 | Intents 30-day volume is not below the same 30 days a year earlier | +27% | HOLDS |
-| K3 | Captured revenue (90 days annualised) is at least 10% of the value of a year's new supply | 20.0% | HOLDS |
-| K4 | Expected yearly security cost (observed rate, half recovered) is at most 25% of captured revenue | 4.7% | HOLDS |
+| K1 | No reading after 2026-10-08 shows a material shortfall | 0 of 45 readings | HOLDS |
+| K2 | Intents 30-day volume is not below the same 30 days a year earlier | +24% | HOLDS |
+| K3 | Captured revenue (90 days annualised) is at least 10% of the value of a year's new supply | 20.4% | HOLDS |
+| K4 | Expected yearly security cost (observed rate, half recovered) is at most 25% of captured revenue | 4.9% | HOLDS |
 
 K1 is the one to watch. A single material shortfall after 2026-10-08 means the fix did not hold, and the thesis fails on that reading alone, whatever volume is doing.
 
@@ -150,7 +150,7 @@ What would make the case stronger, and is not true yet: captured revenue above t
 - **Confidential balances.** They are not on the public ledger.
 - **Tokens off the list.** 204 of the 232 assets on the 1Click list have a token contract on NEAR and are checked. The other 28 have none. Tokens in the contract that are not on the list, and NFTs, are not checked.
 - **Between readings.** History is sampled. A shortfall that opened and closed between two readings would not appear.
-- **Past dollar values.** Token amounts are exact. Dollar totals use one price per token, taken on 2026-11-19.
+- **Past dollar values.** Token amounts are exact. Dollar totals use one price per token, taken on 2026-11-20.
 - **Price.** Nothing here forecasts the price of NEAR.
 
 ## Reproduce it
